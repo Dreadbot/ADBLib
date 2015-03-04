@@ -1,0 +1,72 @@
+To Implement:
+
+-Tier I
+	-Abstract base drivebase class
+		-Has to have some kind of enum for the drivebase type?
+		-Uses an array of SimpleMotors. Each motor handels PID on its own.
+	-Traction drive
+	-Mecanum Drive
+	-Omni drive
+		-Accepts motorgrouping as perpendicular motors (name?)
+	-Tread drive?
+	-SimpleMotor
+		-PWM Motor
+		-CAN Motor
+		-Invert
+		-PID capability iff it's a CANTalon.
+	-SimplePneumatic
+		-Single Solenoid
+		-Double Solenoid
+		-Convert from float
+		-Invert
+	-MotorGrouping
+		-List of SimpleMotors, can accept float input
+		-Automatic motor management.
+	-PneumaticGrouping
+		-List of SimplePnuematics
+		-Can convert from float
+		-Can accept WPILib value enums
+	-SimpleGamepad
+		-Has normal, default settings
+		-Update function allows to grab all current inputs once and only once
+		-Allows deadzones, inverts, cooldowns, etc. to be set on a button-per-button basis.
+		-Maybe allows for force feedback. Maybe.
+Tier II
+	-OutputEngine
+		-Singleton
+		-Manages literally all motors and pneumatics
+			-If enabled (#precompiler), implement some way of disabling constructors for WPILib
+			 outputs outside ADBLib
+		-Can return SimplePneumatics
+		-Can return SimpleMotors
+		-Can return PWM/CAN motors
+		-Can return Double/Single solenoids
+	-InputEngine
+		-Singleton
+		-Handles all sensors (especially ones that need special setups/settings, such as encoders)
+		-Handles all SimpleGamepads
+	-ConfigLoader
+		-Loads config from a multiline string in a header (Config.h?) or from an XML file.
+		-Can pass loaded settings to OutputEngine, InputEngine, and all related classes.
+	-FiniteStateMachine
+		-Core FSM functionality (states, transitions, etc)
+		-"Blip" state support?
+	-FSMState
+		-Core FSM state functionality
+		-Some way of holding FSM-object-dependent information?
+		-Substate support? (probably a class that inherits FSMState)
+	-FSMTransition
+		-Core FSM transition functionality
+		-Might have to be some kind of special handeling for blip states
+	-Robot Positioning System
+		-Uses the internal gyroscope/acellerometer (sp?) to get robot position relative to the start position
+	-Vision
+		-Vision switching of some kind?
+		-Needs some sort of robust system for getting and image from any camera and putting one to the dashboard
+Tier III?
+	-Events?
+		-Events behave like regular events, but carry data for the robot to interpret.
+		-Input events? Output events? Sensor events?
+	-Pathing/Obstacle avoidance?
+	-HUD overlay?
+		-Extremely very unlikely. Literally the last priortiy.
