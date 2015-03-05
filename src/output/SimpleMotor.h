@@ -1,5 +1,5 @@
 #pragma once
-#include <WPILib>
+#include <WPILib.h>
 
 /*
  * \brief A simple motor class that allows for control of a motor, regardless of what type it is.
@@ -11,7 +11,7 @@ namespace ADBLib
 	public:
 		enum MotorType {CAN, PWM};
 
-		virtual SimpleMotor();
+		SimpleMotor();
 		virtual void set(float value); //!< Smart set - automatically handles for invert, CAN/PWM controls. Give it a value and go.
 		void setPWMMotor(Talon* motor); //!< Sets a PWM motor, removing the CAN motor in the process. Checks for nullptrs.
 		void setCANMotor(CANTalon* motor); //!< Sets a CAN motor, removing the PWM motor in the process. Checks for nullptrs.
