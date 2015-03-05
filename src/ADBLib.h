@@ -1,3 +1,5 @@
+#pragma once
+#include <WPILib.h>
 
 //Drivebase
 #include "drivebase/Drivebase.h"
