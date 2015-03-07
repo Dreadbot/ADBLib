@@ -11,11 +11,12 @@ namespace ADBLib
 	class Drivebase
 	{
 	public:
-		enum motorPos {frontLeft, frontRight, backRight, backLeft};
+		enum MotorPos {frontLeft, frontRight, backRight, backLeft};
 
 		virtual Drivebase() = 0;
 		virtual ~Drivebase() = 0;
 		virtual void Drive(float x = 0.0, float y = 0.0, float r = 0.0) = 0;
 	protected:
+		*SimpleMotor motors[4];
 	};
 }
