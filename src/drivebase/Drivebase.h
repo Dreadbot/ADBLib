@@ -21,10 +21,12 @@ namespace ADBLib
 		virtual void disable(); //!< Disables all drive motors, regardless of whether they are CAN or PWM.
 		virtual void setMotor(SimpleMotor* motor, MotorPos position); //!< Allows the setting of an individual motor.
 		virtual void setMotors(SimpleMotor* mFrontLeft, SimpleMotor* mFrontRight, SimpleMotor* mBackRight, SimpleMotor* mBackLeft); //!< Allows setting of all four motors at once.
+		void normSpeeds();
 
 		bool getEnabled(); //!< Gets the status of the drivebase - enabled or disabled.
 	protected:
 		SimpleMotor* motors[4];
 		bool enabled;
+		float speeds[4];
 	};
 }
