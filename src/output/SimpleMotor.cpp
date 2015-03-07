@@ -8,9 +8,13 @@ namespace ADBLib
 		type = PWM;
 		CANMotor = nullptr;
 		PWMMotor = nullptr;
+		enabled = true;
 	}
 	void SimpleMotor::set(float value)
 	{
+		if (!enabled)
+			return;
+
 		//Account for inverts
 		if (invert)
 			value = !value;
@@ -49,5 +53,17 @@ namespace ADBLib
 	SimpleMotor::MotorType SimpleMotor::getType()
 	{
 		return type;
+	}
+	void SimpleMotor::enable()
+	{
+		if (type == CAN)
+			CANMotor->EnableControl();
+		enabled = true;
+	}
+	void SimpleMotor::disable()
+	{
+		if (type == CAN)
+			CANMotor->Disable();
+		enabled = false;
 	}
 }
