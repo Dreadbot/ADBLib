@@ -15,14 +15,14 @@ namespace ADBLib
 		enum MotorPos {frontLeft, frontRight, backRight, backLeft};
 
 		Drivebase();
-		virtual ~Drivebase() = 0;
-		virtual void drive(float x = 0.0, float y = 0.0, float r = 0.0) = 0;
-		virtual void enable();
-		virtual void disable();
-		virtual void setMotor(SimpleMotor* motor, MotorPos position);
-		virtual void setMotors(SimpleMotor* mFrontLeft, SimpleMotor* mFrontRight, SimpleMotor* mBackRight, SimpleMotor* mBackLeft);
+		virtual ~Drivebase() = 0; //!< Override this constructor if necessary. Do NOT delete anything in the motors array!
+		virtual void drive(float x = 0.0, float y = 0.0, float r = 0.0) = 0; //!< Override this for drivebase-specific behavior.
+		virtual void enable();	//!< Enables all drive motors, regardless of whether they are CAN or PWM.
+		virtual void disable(); //!< Disables all drive motors, regardless of whether they are CAN or PWM.
+		virtual void setMotor(SimpleMotor* motor, MotorPos position); //!< Allows the setting of an individual motor.
+		virtual void setMotors(SimpleMotor* mFrontLeft, SimpleMotor* mFrontRight, SimpleMotor* mBackRight, SimpleMotor* mBackLeft); //!< Allows setting of all four motors at once.
 
-		bool getEnabled();
+		bool getEnabled(); //!< Gets the status of the drivebase - enabled or disabled.
 	protected:
 		SimpleMotor* motors[4];
 		bool enabled;
