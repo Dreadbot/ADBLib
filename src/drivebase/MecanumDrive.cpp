@@ -7,17 +7,12 @@ namespace ADBLib
 		motors[frontRight]->setInvert(true);
 		motors[backLeft]->setInvert(true);
 
-		float speeds[4];
 		speeds[frontLeft] = x + y + r;
 		speeds[frontRight] = x + y - r;
 		speeds[backRight] = x + y - r;
 		speeds[backLeft] = x + y + r;
 
-		//Normalize wheel speed settings
-		float mag = std::max_element(speeds, speeds + 4);
-		if (mag > 1.0)
-			for (int i = 0; i < 4; ++i)
-				speeds[i] /= mag;
+		normSpeeds();
 
 		for (int i = 0; i < 4; i++)
 			motors[i]->set(speeds[i]);

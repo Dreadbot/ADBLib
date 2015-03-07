@@ -45,7 +45,11 @@ namespace ADBLib
 	}
 	void Drivebase::normSpeeds()
 	{
-		float mag = std::max_element(speeds, speeds + 4);
+		float absSpeeds[4];
+		for (int i = 0; i < 4; ++i)
+			absSpeeds = fabs(speeds[i]);
+
+		float mag = *std::max_element(absSpeeds, absSpeeds + 4);
 		if (mag > 1.0)
 			for (int i = 0; i < 4; ++i)
 				speeds[i] /= mag;
