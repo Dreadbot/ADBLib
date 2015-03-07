@@ -13,10 +13,10 @@ namespace ADBLib
 	public:
 		enum MotorPos {frontLeft, frontRight, backRight, backLeft};
 
-		virtual Drivebase() = 0;
+		Drivebase();
 		virtual ~Drivebase() = 0;
 		virtual void Drive(float x = 0.0, float y = 0.0, float r = 0.0) = 0;
 	protected:
-		*SimpleMotor motors[4];
+		SimpleMotor* motors[4];
 	};
 }
