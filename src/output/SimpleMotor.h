@@ -18,6 +18,7 @@ namespace ADBLib
 		void setInvert(bool newInvert); //!< Sets an invert that is automatically handled for in set().
 		void enable(); //!< Enables the motor.
 		void disable(); //!< Disables the motor.
+		void setVoltageRampRate(float rate);
 
 		MotorType getType(); //!< Returns the type of the motor - CAN or PWM.
 		bool getInvert(); //!< Returns if the motor is inverted. True is invert, false is no invert.

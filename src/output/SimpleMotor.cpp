@@ -66,4 +66,9 @@ namespace ADBLib
 			CANMotor->Disable();
 		enabled = false;
 	}
+	void SimpleMotor::setVoltageRampRate(float rate)
+	{
+		if (type == CAN)
+			CANMotor->SetVoltageRampRate(rate);
+	}
 }
