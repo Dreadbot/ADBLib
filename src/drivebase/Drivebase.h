@@ -3,6 +3,7 @@
 
 #include "../output/SimpleMotor.h"
 #include "../../lib/hydra/hmath.h"
+#include "algorithm"
 
 /*
  * \brief Base abstract class for all drivebases to use.
