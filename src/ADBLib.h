@@ -6,6 +6,7 @@
 #include "drivebase/MecanumDrive.h"
 #include "drivebase/OmniDrive.h"
 #include "drivebase/TractionDrive.h"
+#include "drivebase/OctocanumDrive.h"
 
 //Output
 #include "output/SimpleMotor.h"
