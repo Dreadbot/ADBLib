@@ -14,7 +14,8 @@ namespace ADBLib
 
 		normSpeeds();
 
-		for (int i = 0; i < 4; i++)
-			motors[i]->set(speeds[i]);
+		for (int i = 0; i < 4; ++i)
+			if (motors[i] != nullptr)
+				motors[i]->set(speeds[i]);
 	}
 }
