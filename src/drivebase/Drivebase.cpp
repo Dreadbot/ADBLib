@@ -8,6 +8,7 @@ namespace ADBLib
 		for (int i = 0; i < 4; ++i)
 		{
 			motors[i] = nullptr;
+			speeds[i] = 0.0;
 		}
 	}
 	void Drivebase::enable()
