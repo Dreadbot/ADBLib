@@ -13,7 +13,8 @@ namespace ADBLib
 	}
 	void MotorGroup::addMotor(SimpleMotor* newMotor)
 	{
-		motors.push_back(newMotor);
+		if (newMotor != nullptr)
+			motors.push_back(newMotor);
 	}
 	void MotorGroup::setName(string newName)
 	{

@@ -3,6 +3,7 @@
 #include <vector>
 #include <string.h>
 #include "SimpleMotor.h"
+
 using std::vector;
 using std::string;
 
