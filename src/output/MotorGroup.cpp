@@ -1,4 +1,4 @@
-#include "MotorGrouping.h"
+#include "MotorGroup.h"
 
 namespace ADBLib
 {
