@@ -11,7 +11,7 @@ namespace ADBLib
 		enum PIDK {Kp, Ki, Kd};
 
 		PIDMotor();
-		PIDMotor(double P, double I, double D);
+		PIDMotor(double P, double I, double D, PIDSource* newSource);
 		~PIDMotor();
 
 		//SimpleMotor overrides
@@ -31,16 +31,17 @@ namespace ADBLib
 		//PIDMotor-specific stuff
 		void setK(double newVal, PIDK slot);
 		void setPID(double newP, double newI, double newD);
-		void setPeriod(unsigned float newPeriod);
-		void setSource(PIDSource* source);
+		void setPeriod(float newPeriod);
+		void setSource(PIDSource* newSource);
 
 		double getK(PIDK slot);
 		float getPeriod();
 	protected:
-		void setupCntrl();
+		void setupCtrl();
 
 		PIDController* pidctrl;
 		double PIDValues[3];
-		unsigned float period;
+		float period;
+		PIDSource* source;
 	};
 }
