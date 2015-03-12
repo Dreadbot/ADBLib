@@ -10,6 +10,10 @@ namespace ADBLib
 		PWMMotor = nullptr;
 		enabled = true;
 	}
+	SimpleMotor::~SimpleMotor()
+	{
+		//Nope
+	}
 	void SimpleMotor::set(float value)
 	{
 		if (!enabled)
