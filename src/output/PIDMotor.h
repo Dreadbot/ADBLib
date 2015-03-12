@@ -37,6 +37,8 @@ namespace ADBLib
 		double getK(PIDK slot);
 		float getPeriod();
 	protected:
+		void setupCntrl();
+
 		PIDController* pidctrl;
 		double PIDValues[3];
 		unsigned float period;
