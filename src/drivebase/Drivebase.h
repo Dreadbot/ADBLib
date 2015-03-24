@@ -1,6 +1,8 @@
 #pragma once
 #include <WPILib.h>
 #include <algorithm>
+#include <string>
+using std::string;
 
 #include "../output/SimpleMotor.h"
 #include "../../lib/hydra/hmath.h"
@@ -14,6 +16,7 @@ namespace ADBLib
 	{
 	public:
 		enum MotorPos {frontLeft, frontRight, backRight, backLeft};
+		const string MotorNames[4] = {"Front-left", "Front-Right", "Back-Right", "Back-Left"};
 
 		Drivebase();
 		virtual void drive(float x = 0.0, float y = 0.0, float r = 0.0) = 0; //!< Override this for drivebase-specific behavior.

@@ -13,3 +13,4 @@
 #include "output/SimplePneumatic.h"
 #include "output/MotorGroup.h"
 #include "output/PneumaticGroup.h"
+#include "output/PIDMotor.h"
