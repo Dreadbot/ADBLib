@@ -1,33 +1,25 @@
 To Implement:
 
 -Tier I
-	-MotorGrouping
-		-List of SimpleMotors, can accept float input
-		-Automatic motor management.
-	-PneumaticGrouping
-		-List of SimplePnuematics
-		-Can convert from float
 	-SimpleGamepad
-		-Has normal, default settings
-		-Update function allows to grab all current inputs once and only once
+		-Has normal, default settings, acts similarly to WPILib's joystick
 		-Allows deadzones, inverts, cooldowns, etc. to be set on a button-per-button basis.
+			-Maybe attached to the get function for a button with a default setting, like gamepad->getButton(buttonID, cooldown = 30 ms) or something like that
 		-Maybe allows for force feedback. Maybe.
+	-Logging
+		-Should allow logging access from anywhere
+		-File output, log buffers, timestamps, etc. 
 Tier II
 	-OutputEngine
 		-Singleton
-		-Manages literally all motors and pneumatics
-			-If enabled (#precompiler), implement some way of disabling constructors for WPILib
-			 outputs outside ADBLib
+		-Manages motors and pneumatics - stuff should preferablly be accessed through here
+			-Should be SIMPLE to use - no overly complicated function calls for global hardware stuff
 		-Can return SimplePneumatics
 		-Can return SimpleMotors
 		-Can return PWM/CAN motors
 		-Can return Double/Single solenoids
-	-InputEngine
-		-Singleton
-		-Handles all sensors (especially ones that need special setups/settings, such as encoders)
-		-Handles all SimpleGamepads
 	-ConfigLoader
-		-Loads config from a multiline string in a header (Config.h?) or from an XML file.
+		-Loads config from an XML file or a multiline-string
 		-Can pass loaded settings to OutputEngine, InputEngine, and all related classes.
 	-FiniteStateMachine
 		-Core FSM functionality (states, transitions, etc)
@@ -40,14 +32,24 @@ Tier II
 		-Core FSM transition functionality
 		-Might have to be some kind of special handeling for blip states
 	-Robot Positioning System
-		-Uses the internal gyroscope/acellerometer (sp?) to get robot position relative to the start position
+		-Uses the internal gyroscope/acellerometer (sp?) to get robot position relative to the start position.
+		-Possibility of supporting an external gyro, or maybe even a "mouse"-style tracking system with a camera pointed at the floor.
 	-Vision
-		-Vision switching of some kind?
-		-Needs some sort of robust system for getting and image from any camera and putting one to the dashboard
+		-Vision switching of some kind
+			-Preferably a "switch to this camera" or "switch to that camera" thing
+			-Needs a getImage() function that returns an image regardless of what camera is active.
+		-Needs some sort of robust system for getting and image from any camera and putting one to the dashboard - maybe an automatic dashboard push, if enabled.
+Tier II.V
+	-RoboRadar
+		-Uses one or more rotating ultrasonic sensors to scan the environmap and return some form of array containing a map of the nearby area.
+		-Could be used for autonomous or as a neat way for drivers to drive around better.
+		-Uses triangulation. Needs precise measurement information on positioning and rotation.
+		-Maybe PID for positioning, maybe just a "here's my measurement, here's the angle it was taken at"-type thing.
 Tier III?
 	-Events?
 		-Events behave like regular events, but carry data for the robot to interpret.
-		-Input events? Output events? Sensor events?
+		-Input events? Sensor events? Amazing but tough.
 	-Pathing/Obstacle avoidance?
+		-Would need either pre-programmed obstacles or RoboRadar data.
 	-HUD overlay?
 		-Extremely very unlikely. Literally the last priortiy.
