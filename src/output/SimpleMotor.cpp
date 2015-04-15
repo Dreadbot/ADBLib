@@ -24,7 +24,7 @@ namespace ADBLib
 			value = !value;
 
 		if (type == CAN && CANMotor != nullptr)
-			CANMotor->Set(value);
+			CANMotor->Set(value, (uint8_t)0x00);
 		if (type == PWM && PWMMotor != nullptr)
 			PWMMotor->Set(value);
 	}

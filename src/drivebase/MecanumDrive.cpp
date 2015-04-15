@@ -16,6 +16,10 @@ namespace ADBLib
 
 		for (int i = 0; i < 4; ++i)
 			if (motors[i] != nullptr)
+			{
+				SmartDashboard::PutNumber(MotorNames[i] + ".set", speeds[i]);
+				SmartDashboard::PutNumber(MotorNames[i] + ".pointer", (long)motors[i]);
 				motors[i]->set(speeds[i]);
+			}
 	}
 }
