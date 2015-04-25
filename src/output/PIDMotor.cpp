@@ -40,7 +40,7 @@ namespace ADBLib
 		if (invert)
 			value = -value;
 
-		pidctrl->SetSetpoint(value); //This should work. Should.
+		pidctrl->SetSetpoint(value * 1023.f); //This should work. Should.
 	}
 	void PIDMotor::setPWMMotor(Talon* motor)
 	{
@@ -161,6 +161,5 @@ namespace ADBLib
 				source,
 				output,
 				period);
-
 	}
 }

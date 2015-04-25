@@ -36,6 +36,8 @@ namespace ADBLib
 		type = CAN;
 		PWMMotor = nullptr;
 		CANMotor = motor;
+
+		CANMotor->SetControlMode(CANSpeedController::ControlMode::kPercentVbus); //Acceps values from 1 to -1
 	}
 	void SimpleMotor::setPWMMotor(Talon* motor)
 	{
