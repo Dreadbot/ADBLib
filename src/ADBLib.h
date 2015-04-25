@@ -8,6 +8,9 @@
 #include "drivebase/TractionDrive.h"
 #include "drivebase/OctocanumDrive.h"
 
+//Input
+#include "input/Controller.h"
+
 //Output
 #include "output/SimpleMotor.h"
 #include "output/SimplePneumatic.h"
