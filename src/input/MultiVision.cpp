@@ -5,11 +5,14 @@ namespace ADBLib
 	Camera* MultiVision::current = nullptr;
 	bool MultiVision::switchCamera(string camName)
 	{
-		if (cameras.count(camName) == 0 || current == nullptr)
+		if (current == nullptr)
 			return false;
 
+		if (cameras.count(camName) == 0)
+			cameras[camName] = new Camera(camName);
+
 		current->stop();
-		current = &cameras[camName].second;
+		current = cameras[camName];
 		return current->start();
 	}
 	void MultiVision::postImage()
@@ -33,7 +36,7 @@ namespace ADBLib
 	Camera* MultiVision::getCamera(string camName)
 	{
 		if (cameras.count(camName) == 0)
-			return nullptr;
-		return &cameras[camName].second;
+			cameras[camName] = new Camera(camName);
+		return cameras[camName];
 	}
 }

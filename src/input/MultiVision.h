@@ -15,7 +15,7 @@ namespace ADBLib
 		static Image* getCurrentImage();			//!< Get an image from the currently active camera.
 		static Camera* getCamera(string camName);	//!< Returns a pointer to a camera object. If no camera at this name exists, creates a new camera.
 	protected:
-		static unordered_map<string, Camera> cameras;
+		static unordered_map<string, Camera*> cameras;
 		static Camera* current;
 	};
 }
