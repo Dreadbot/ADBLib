@@ -14,3 +14,7 @@
 #include "output/MotorGroup.h"
 #include "output/PneumaticGroup.h"
 #include "output/PIDMotor.h"
+
+//Misc & Utility
+#include "../lib/hydra/Logger.h"
+#include "../lib/hydra/hmath.h"
