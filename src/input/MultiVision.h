@@ -7,6 +7,9 @@ using std::unordered_map;
 
 namespace ADBLib
 {
+	/*
+	 * \brief Camera manager-type class that allows easy camera switching/handeling.
+	 */
 	class MultiVision
 	{
 	public:
