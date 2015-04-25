@@ -2,7 +2,7 @@
 
 namespace ADBLib
 {
-	/*
+	/**
 	 * \brief Initializes the Controller object with no joystick; you will need to use setJoystick to set the joystick if you use this constructor.
 	 */
 	Controller::Controller()
@@ -16,9 +16,9 @@ namespace ADBLib
 		}
 	}
 
-	/*
+	/**
 	 * \brief Initializes the controller object with a pre-set Joystick.
-	 * @param newJoystick A shared_ptr for a joystick object. If this joystick is only in use here, use std::make_shared
+	 * \param newJoystick A shared_ptr for a joystick object. If this joystick is only in use here, use std::make_shared
 	 */
 	Controller::Controller(std::shared_ptr<Joystick> newJoystick)
 	{
@@ -31,10 +31,10 @@ namespace ADBLib
 		}
 	}
 
-	/*
+	/**
 	 * \brief Returns the state the the button as a boolean. Automatically handels for button cooldown.
-	 * @param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode).
-	 * @param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
+	 * \param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode).
+	 * \param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
 	 */
 	bool Controller::getButton(int ID, float cooldown)
 	{
@@ -53,9 +53,9 @@ namespace ADBLib
 		return false;
 	}
 
-	/*
+	/**
 	 * \brief Gets the raw button setting as true or false, disregarding any active cooldowns.
-	 * @param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode)
+	 * \param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode)
 	 */
 	bool Controller::getButtonRaw(int ID)
 	{
@@ -64,9 +64,9 @@ namespace ADBLib
 		return joystick->GetRawButton(ID);
 	}
 
-	/*
+	/**
 	 * \brief Get the state of the joystick axis. Returns values that depend on your set max/min output settings.
-	 * @param ID The ID of the axis.
+	 * \param ID The ID of the axis.
 	 */
 	double Controller::getAxis(int ID)
 	{
@@ -78,10 +78,11 @@ namespace ADBLib
 		return (input * delta) + axisRanges[ID][0];
 	}
 
-	/*
+	/**
 	 * \brief Sets the input range for a specific axis.
-	 * @param max The new maximum input.
-	 * @param min The new minimum input.
+	 * \param axisID The ID of the axis whose range is being modified.
+	 * \param max The new maximum input.
+	 * \param min The new minimum input.
 	 */
 	void Controller::setInputRange(int axisID, float max, float min)
 	{
@@ -91,19 +92,19 @@ namespace ADBLib
 		axisRanges[axisID][1] = max;
 	}
 
-	/*
+	/**
 	 * \brief Sets the joystick to get data from.
-	 * @param newJoystick A shared pointer to the joystick to use.
+	 * \param newJoystick A shared pointer to the joystick to use.
 	 */
 	void Controller::setJoystick(std::shared_ptr<Joystick> newJoystick)
 	{
 		joystick = newJoystick;
 	}
 
-	/*
+	/**
 	 * \brief Make the controller rumble using built-in rumbler thingies.
-	 * @param side The side on which the joystick will rumble. Definedby WPILib.
-	 * @param intensity The intensity of vibration on a scale from 0 to 1.
+	 * \param side The side on which the joystick will rumble. Definedby WPILib.
+	 * \param intensity The intensity of vibration on a scale from 0 to 1.
 	 */
 	void Controller::setRumble(Joystick::RumbleType side, float intensity)
 	{
