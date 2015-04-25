@@ -1,11 +1,5 @@
 To Implement:
 
--Tier I - Core systems
-	-SimpleGamepad
-		-Has normal, default settings, acts similarly to WPILib's joystick
-		-Allows deadzones, inverts, cooldowns, etc. to be set on a button-per-button basis.
-			-Maybe attached to the get function for a button with a default setting, like gamepad->getButton(buttonID, cooldown = 30 ms) or something like that
-		-Maybe allows for force feedback. It looks like WPILib has a thing for that, so why not?
 Tier II
 	-OutputEngine
 		-Singleton
