@@ -10,6 +10,8 @@
 
 //Input
 #include "input/Controller.h"
+#include "input/MultiVision.h"
+#include "input/Camera.h"
 
 //Output
 #include "output/SimpleMotor.h"
