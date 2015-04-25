@@ -1,56 +1,21 @@
 To Implement:
 
--Tier I
-	-Abstract base drivebase class
-		-Has to have some kind of enum for the drivebase type?
-		-Uses an array of SimpleMotors. Each motor handels PID on its own.
-	-Traction drive
-	-Mecanum Drive
-	-Omni drive
-		-Accepts motorgrouping as perpendicular motors (name?)
-	-Tread drive?
-	-SimpleMotor
-		-PWM Motor
-		-CAN Motor
-		-Invert
-		-PID capability iff it's a CANTalon.
-	-SimplePneumatic
-		-Single Solenoid
-		-Double Solenoid
-		-Convert from float
-		-Invert
-	-MotorGrouping
-		-List of SimpleMotors, can accept float input
-		-Automatic motor management.
-	-PneumaticGrouping
-		-List of SimplePnuematics
-		-Can convert from float
-		-Can accept WPILib value enums
-	-SimpleGamepad
-		-Has normal, default settings
-		-Update function allows to grab all current inputs once and only once
-		-Allows deadzones, inverts, cooldowns, etc. to be set on a button-per-button basis.
-		-Maybe allows for force feedback. Maybe.
 Tier II
 	-OutputEngine
 		-Singleton
-		-Manages literally all motors and pneumatics
-			-If enabled (#precompiler), implement some way of disabling constructors for WPILib
-			 outputs outside ADBLib
+		-Manages motors and pneumatics - stuff should preferablly be accessed through here
+			-Should be SIMPLE to use - no overly complicated function calls for global hardware stuff
+		-Should have some way of recieving information from ConfigLoader, so output settings (including PID) can be done without manually setting them in the 
 		-Can return SimplePneumatics
 		-Can return SimpleMotors
 		-Can return PWM/CAN motors
 		-Can return Double/Single solenoids
-	-InputEngine
-		-Singleton
-		-Handles all sensors (especially ones that need special setups/settings, such as encoders)
-		-Handles all SimpleGamepads
 	-ConfigLoader
-		-Loads config from a multiline string in a header (Config.h?) or from an XML file.
-		-Can pass loaded settings to OutputEngine, InputEngine, and all related classes.
+		-Loads config from an XML file or a multiline-string
+		-Singleton, allows any given part of the program to grab config settings
 	-FiniteStateMachine
 		-Core FSM functionality (states, transitions, etc)
-		-"Blip" state support?
+		-"Blip" state support? Would be an incredibly useful anti-kludging tool.
 	-FSMState
 		-Core FSM state functionality
 		-Some way of holding FSM-object-dependent information?
@@ -59,14 +24,15 @@ Tier II
 		-Core FSM transition functionality
 		-Might have to be some kind of special handeling for blip states
 	-Robot Positioning System
-		-Uses the internal gyroscope/acellerometer (sp?) to get robot position relative to the start position
+		-Uses the internal accelerometer and an external gyroscope to get robot position relative to the start position.
 	-Vision
-		-Vision switching of some kind?
-		-Needs some sort of robust system for getting and image from any camera and putting one to the dashboard
-Tier III?
-	-Events?
-		-Events behave like regular events, but carry data for the robot to interpret.
-		-Input events? Output events? Sensor events?
-	-Pathing/Obstacle avoidance?
-	-HUD overlay?
-		-Extremely very unlikely. Literally the last priortiy.
+		-Vision switching of some kind
+			-Preferably a "switch to this camera" or "switch to that camera" thing
+			-Needs a getImage() function that returns an image regardless of what camera is active.
+		-Needs some sort of robust system for getting an image from any camera and putting one to the dashboard - maybe an automatic dashboard push, if enabled.
+Tier III
+	-RoboRadar
+		-Uses one or more rotating ultrasonic sensors to scan the environmap and return some form of array containing a map of the nearby area.
+		-Could be used for autonomous or as a neat way for drivers to drive around better.
+		-Uses triangulation. Needs precise measurement information on positioning and rotation.
+		-Maybe PID for positioning, maybe just a "here's my measurement, here's the angle it was taken at"-type thing.

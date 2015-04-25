@@ -10,6 +10,10 @@ namespace ADBLib
 		PWMMotor = nullptr;
 		enabled = true;
 	}
+	SimpleMotor::~SimpleMotor()
+	{
+		//Nope
+	}
 	void SimpleMotor::set(float value)
 	{
 		if (!enabled)
@@ -20,7 +24,7 @@ namespace ADBLib
 			value = !value;
 
 		if (type == CAN && CANMotor != nullptr)
-			CANMotor->Set(value);
+			CANMotor->Set(value, (uint8_t)0x00);
 		if (type == PWM && PWMMotor != nullptr)
 			PWMMotor->Set(value);
 	}
@@ -32,6 +36,8 @@ namespace ADBLib
 		type = CAN;
 		PWMMotor = nullptr;
 		CANMotor = motor;
+
+		CANMotor->SetControlMode(CANSpeedController::ControlMode::kPercentVbus); //Acceps values from 1 to -1
 	}
 	void SimpleMotor::setPWMMotor(Talon* motor)
 	{
