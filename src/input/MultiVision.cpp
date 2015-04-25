@@ -2,7 +2,10 @@
 
 namespace ADBLib
 {
-	Camera* MultiVision::current = nullptr;
+	MultiVision::MultiVision()
+	{
+		current = nullptr;
+	}
 	bool MultiVision::switchCamera(string camName)
 	{
 		if (current == nullptr)

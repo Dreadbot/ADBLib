@@ -21,7 +21,5 @@ namespace ADBLib
 		Image* frame;
 		bool enabled;
 		IMAQdxSession camSession;
-
-		//friend class MultiVision;
 	};
 }
