@@ -11,6 +11,7 @@ namespace ADBLib
 	class FiniteStateMachine
 	{
 	public:
+		FiniteStateMachine();
 		virtual void init(FSMTransition* newStateTable, FSMState* initState);
 		virtual void update();
 		virtual ~FiniteStateMachine() {}

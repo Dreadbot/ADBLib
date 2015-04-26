@@ -12,6 +12,5 @@ namespace ADBLib
 		FSMState* currentState;
 		int input;
 		FSMState* nextState;
-		bool blip;
 	};
 }
