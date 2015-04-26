@@ -26,7 +26,8 @@ namespace ADBLib
 		void setContinuous(bool newCont); //!< Sets whether this PID motor is continuous or no. See documentation for PIDController in WPILib
 		void setInputRange(float newMax, float newMin); //!< Sets the input range expected from the sensor.
 		void setOutputRange(float newMax, float newMin); //!< Sets the output range that the output expects
-		void setPercentTolerance(float newPToler); //!< Sets the percent tolerance of the PID controller..
+		void setPercentTolerance(float newPToler); //!< Sets the percent tolerance of the PID controller.
+		void setControlType(CANTalon::ControlMode type); //!< Sets the control mode. Only affects CANTalons.
 
 		//PIDMotor-specific stuff
 		void setK(double newVal, PIDK slot); //!< Sets a PID constant.

@@ -102,6 +102,11 @@ namespace ADBLib
 		if (pidctrl != nullptr)
 			pidctrl->SetPercentTolerance(newPToler);
 	}
+	void PIDMotor::setControlType(CANTalon::ControlMode type)
+	{
+		if (CANMotor != nullptr)
+			CANMotor->SetControlMode(type);
+	}
 	void PIDMotor::setK(double newVal, PIDK slot)
 	{
 		PIDValues[3] = newVal;
