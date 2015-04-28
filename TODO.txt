@@ -1,16 +1,6 @@
 To Implement:
 
 Tier II
-	-FiniteStateMachine
-		-Core FSM functionality (states, transitions, etc)
-		-"Blip" state support? Would be an incredibly useful anti-kludging tool.
-	-FSMState
-		-Core FSM state functionality
-		-Some way of holding FSM-object-dependent information?
-		-Substate support? (probably a class that inherits FSMState)
-	-FSMTransition
-		-Core FSM transition functionality
-		-Might have to be some kind of special handeling for blip states
 	-Robot Positioning System
 		-Uses the internal accelerometer and an external gyroscope to get robot position relative to the start position.
 Tier III
