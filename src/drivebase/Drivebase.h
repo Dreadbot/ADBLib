@@ -5,7 +5,6 @@
 using std::string;
 
 #include "../output/SimpleMotor.h"
-#include "../../lib/hydra/hmath.h"
 
 /*
  * \brief Base abstract class for all drivebases to use.

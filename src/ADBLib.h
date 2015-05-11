@@ -20,6 +20,7 @@
 #include "output/PneumaticGroup.h"
 #include "output/PIDMotor.h"
 
-//Misc & Utility
+//External library files
 #include "../lib/hydra/Logger.h"
-#include "../lib/hydra/hmath.h"
+#include "../lib/hydra/Matrix.h"
+#include "../lib/hydra/Vector3D.h"
