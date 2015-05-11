@@ -12,6 +12,7 @@
 #include "input/Controller.h"
 #include "input/MultiVision.h"
 #include "input/Camera.h"
+#include "input/MPU6050.h"
 
 //Output
 #include "output/SimpleMotor.h"
