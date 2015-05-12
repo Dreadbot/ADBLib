@@ -102,6 +102,12 @@ namespace ADBLib
 				vals[ax], vals[ay], vals[az],	//Accelerometer
 				vals[mx], vals[my], vals[mz]);	//Magnetometer (no really, WTH?)
 
+		//The values in the array must now be updated to the filter's rotation values...which are stored as a quaternion.
+		//http://www.tinkerforge.com/en/doc/Software/Bricks/IMU_Brick_CSharp.html
+		vals[gx] = atan2(2*q2*q0 - 2*q1*q3, 1 - 2*q2*q2 - 2*q3*q3);
+		vals[gy] = atan2(2*q1*q0 - 2*q2*q3, 1 - 2*q1*q1 - 2*q3*q3);
+		vals[gz] = asin(2*q1*q2 + 2*q3*q0); //q0, q1, q2, and q3 are global variables. MadgwickAHRS should be a class, but whatever.
+
 		//Add the current velocity's values to the previous position
 		positions[X] += vel.getX() * time;
 		positions[Y] += vel.getY() * time;
@@ -109,9 +115,9 @@ namespace ADBLib
 
 		//Assemble a vector with acceleration in gees converted to m/s (?), then correct for rotation.
 		Vector3D newVel(vals[ax] * gConv * time, vals[ay] * gConv * time, vals[az] * gConv * time); //TODO: Test to make sure this works
-		newVel.rotateX(-vals[gx] * H_RADCONV); //TODO: Confirm extracted gyro values are in degrees (Vector3D accepts radians)
-		newVel.rotateY(-vals[gx] * H_RADCONV);
-		newVel.rotateZ(-vals[gz] * H_RADCONV);
+		newVel.rotateX(-vals[gx]);
+		newVel.rotateY(-vals[gx]);
+		newVel.rotateZ(-vals[gz]);
 
 		vel = vel + newVel; //Finalize current velocity.
 	}

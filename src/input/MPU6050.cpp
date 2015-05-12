@@ -3399,6 +3399,6 @@ namespace ADBLib
 	 */
 	float q15toFloat(int16_t q15)
 	{
-		return (float)q15 * pow(2.0, -15); //TODO: Check if it's Q15 or two's complement. Conflicting data.
+		return (float)q15 * pow(2.0, -15); //TODO: Check if it's Q15 or two's complement. This could be the dumbest conversion ever (I'm pretty sure it is!)
 	}
 }
