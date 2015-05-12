@@ -48,26 +48,9 @@ namespace ADBLib
 	{
 		return positions[dir];
 	}
-	double RoboPositioner::getVelocity(rpsDir dir)
+	Vector3D RoboPositioner::getVelocity()
 	{
-		//Requires interfacing with the velocity vector, so
-		//no nice arrays can be used.
-
-		switch (dir)
-		{
-		case X:
-			return vel.getX();
-			break;
-		case Y:
-			return vel.getY();
-			break;
-		case Z:
-			return vel.getZ();
-			break;
-		default:
-			return 0; //Good practice says to do this, so whatever.
-			break;
-		}
+		return vel;
 	}
 	double RoboPositioner::getRotation(rpsDir dir)
 	{

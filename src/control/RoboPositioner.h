@@ -21,9 +21,9 @@ namespace ADBLib
 		enum rpsDir {X, Y, Z}; //External use
 		RoboPositioner(MPU6050* newGyro); 	//!< Uses the built-in accelerometer and a given gyroscope.
 		void resetInertFrame();				//!< Resets positions and rotations, but leaves velocity unchanged and adjusts velocity direction to compensate.
-		double getPosition(rpsDir dir);	//!< Gets the current positions relative to the position of the most recent reset.
-		double getVelocity(rpsDir dir);	//!< Gets the velocity relative to the ground.
-		double getRotation(rpsDir dir);	//!< Gets the rotation relative to the starting rotation.
+		double getPosition(rpsDir dir);		//!< Gets the current positions relative to the position of the most recent reset.
+		Vector3D getVelocity();				//!< Gets the velocity relative to the ground.
+		double getRotation(rpsDir dir);		//!< Gets the rotation relative to the starting rotation.
 		void update();						//!< Should be called regularly. Updates all calculations.
 	protected:
 		enum rpsData {gx = 0, gy, gz, ax, ay, az, mx, my, mz};
