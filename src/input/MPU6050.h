@@ -37,7 +37,7 @@ THE SOFTWARE.
 #ifndef _MPU6050_H_
 #define _MPU6050_H_
 
-#include "I2Cdev.h"
+#include "../../lib/I2Cdev.h"
 
 //Magnetometer Registers
 #define MPU9150_RA_MAG_ADDRESS		0x0C
