@@ -80,16 +80,16 @@ namespace ADBLib
 			vals[9] = q15toFloat(temp[i]);
 
 		//Run a Madgwick filter to dramatically increase accuracy of readings
-		MadgwickAHRSupdate(
+		mdgw.update(
 				vals[gx], vals[gy], vals[gz],	//Gyroscope
 				vals[ax], vals[ay], vals[az],	//Accelerometer
 				vals[mx], vals[my], vals[mz]);	//Magnetometer (no really, WTH?)
 
 		//The values in the array must now be updated to the filter's rotation values...which are stored as a quaternion.
 		//http://www.tinkerforge.com/en/doc/Software/Bricks/IMU_Brick_CSharp.html
-		vals[gx] = atan2(2*q2*q0 - 2*q1*q3, 1 - 2*q2*q2 - 2*q3*q3);
-		vals[gy] = atan2(2*q1*q0 - 2*q2*q3, 1 - 2*q1*q1 - 2*q3*q3);
-		vals[gz] = asin(2*q1*q2 + 2*q3*q0); //q0, q1, q2, and q3 are global variables. MadgwickAHRS should be a class, but whatever.
+		vals[gx] = atan2(2*mdgw.q2*mdgw.q0 - 2*mdgw.q1*mdgw.q3, 1 - 2*mdgw.q2*mdgw.q2 - 2*mdgw.q3*mdgw.q3);
+		vals[gy] = atan2(2*mdgw.q1*mdgw.q0 - 2*mdgw.q2*mdgw.q3, 1 - 2*mdgw.q1*mdgw.q1 - 2*mdgw.q3*mdgw.q3);
+		vals[gz] = asin(2*mdgw.q1*mdgw.q2 + 2*mdgw.q3*mdgw.q0);
 
 		//Add the current velocity's values to the previous position
 		positions[X] += vel.getX() * time;

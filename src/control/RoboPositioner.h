@@ -34,5 +34,6 @@ namespace ADBLib
 
 		Timer interval;
 		MPU6050* gyro;
+		MadgwickAHRS mdgw;
 	};
 }

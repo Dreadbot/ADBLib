@@ -10,22 +10,20 @@
 // 02/10/2011	SOH Madgwick	Optimised for reduced CPU load
 //
 //=====================================================================================================
-#ifndef MadgwickAHRS_h
-#define MadgwickAHRS_h
+#pragma once
+#include <math.h>
 
-//----------------------------------------------------------------------------------------------------
-// Variable declaration
+namespace ADBLib
+{
+	class MadgwickAHRS
+	{
+	public:
+		MadgwickAHRS();
+		void update(float gx, float gy, float gz, float ax, float ay, float az, float mx, float my, float mz);
+		void updateIMU(float gx, float gy, float gz, float ax, float ay, float az);
 
-extern volatile float beta;				// algorithm gain
-extern volatile float q0, q1, q2, q3;	// quaternion of sensor frame relative to auxiliary frame
-					//w	, x	, y	, z?
-//---------------------------------------------------------------------------------------------------
-// Function declarations
-
-void MadgwickAHRSupdate(float gx, float gy, float gz, float ax, float ay, float az, float mx, float my, float mz);
-void MadgwickAHRSupdateIMU(float gx, float gy, float gz, float ax, float ay, float az);
-
-#endif
-//=====================================================================================================
-// End of file
-//=====================================================================================================
+		volatile float q0, q1, q2, q3;
+	private:
+		volatile float beta;
+	};
+}
