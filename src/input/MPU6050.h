@@ -998,6 +998,5 @@ namespace ADBLib
 		uint8_t devAddr;
 		uint8_t buffer[14];
 	};
-	float q15toFloat(int16_t q15); //!< Converts a Q15-format number to regular ol' floating point.
 }
 #endif /* _MPU6050_H_ */

@@ -55,9 +55,7 @@ namespace ADBLib
 	double RoboPositioner::getRotation(rpsDir dir)
 	{
 		//Since we don't know WHICH rotation to grab, grab all of 'em!
-		int16_t temp[3];
-		gyro->getRotation(&temp[gx], &temp[gy], &temp[gz]);
-		return q15toFloat(temp[dir] - startRots[dir]);
+		return rotations[dir] - startRots[dir];
 	}
 	void RoboPositioner::update()
 	{
@@ -76,8 +74,13 @@ namespace ADBLib
 				&temp[mx], &temp[my], &temp[mz]);	//Magnetometer (WTH???)
 
 		//Convert to floating point numbers
-		for (int i = 0; i < 9; i++)
-			vals[9] = q15toFloat(temp[i]);
+		for (int i = 0; i < 3; i++)
+			vals[i] = (float)temp[i] * accFactors[1]; //Max 4g
+		for (int i = 3; i < 6; i++)
+			vals[i] = (float)temp[i] * gyrFactors[0]; //Max 250 dps (degrees per second)
+		for (int i = 6; i < 9; i++)
+			vals[i] = (float)temp[i] * magFactor;
+
 
 		//Run a Madgwick filter to dramatically increase accuracy of readings
 		mdgw.update(
@@ -95,6 +98,8 @@ namespace ADBLib
 		positions[X] += vel.getX() * time;
 		positions[Y] += vel.getY() * time;
 		positions[Z] += vel.getZ() * time;
+		for (int i = 0; i < 3; i++)
+			rotations[3] += vals[i + 3] * time; //Hopefully add current rotation?
 
 		//Assemble a vector with acceleration in gees converted to m/s (?), then correct for rotation.
 		Vector3D newVel(vals[ax] * gConv * time, vals[ay] * gConv * time, vals[az] * gConv * time); //TODO: Test to make sure this works

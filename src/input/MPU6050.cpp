@@ -3393,12 +3393,4 @@ namespace ADBLib
 	{
 		I2Cdev::writeByte(devAddr, MPU6050_RA_DMP_CFG_2, config);
 	}
-
-	/*
-	 * \brief Converts a number in Q15 (used in certain hardware thingies) to a floating point.
-	 */
-	float q15toFloat(int16_t q15)
-	{
-		return (float)q15 * pow(2.0, -15); //TODO: Check if it's Q15 or two's complement. This could be the dumbest conversion ever (I'm pretty sure it is!)
-	}
 }
