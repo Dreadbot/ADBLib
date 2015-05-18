@@ -30,9 +30,9 @@ namespace ADBLib
 
 		double rotDiffs[3];
 		int16_t temp[3];
-		gyro->getRotation(&temp[gx], &temp[gy], &temp[gz]); //Works because gx, gy, and gz are 0, 1, and 2, respectively.
+		gyro->getRotation(&temp[X], &temp[Y], &temp[Z]); //Works because gx, gy, and gz are 0, 1, and 2, respectively.
 		for (int i = 0; i < 3; i++)
-			rotDiffs[3] = q15toFloat(temp[i]) - startRots[i];
+			rotDiffs[3] = rotations[i] - startRots[i];
 
 		//Rotate velocity vector to compensate for new starting rotations
 		//TODO: Determine if this correction works.
@@ -42,7 +42,7 @@ namespace ADBLib
 
 		//Reset rotations
 		for (int i = 0; i < 3; i++)
-			startRots[i] = q15toFloat(temp[i]);
+			startRots[i] = ((float)temp[i] * gyrFactors[0]);
 	}
 	double RoboPositioner::getPosition(rpsDir dir)
 	{
@@ -103,9 +103,9 @@ namespace ADBLib
 
 		//Assemble a vector with acceleration in gees converted to m/s (?), then correct for rotation.
 		Vector3D newVel(vals[ax] * gConv * time, vals[ay] * gConv * time, vals[az] * gConv * time); //TODO: Test to make sure this works
-		newVel.rotateX(-vals[gx]);
-		newVel.rotateY(-vals[gx]);
-		newVel.rotateZ(-vals[gz]);
+		newVel.rotateX(-rotations[X]);
+		newVel.rotateY(-rotations[Y]);
+		newVel.rotateZ(-rotations[Z]);
 
 		vel = vel + newVel; //Finalize current velocity.
 	}
