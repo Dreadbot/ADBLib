@@ -1,2 +1,7 @@
 src/Robot.cpp
 docs/
+/Debug/
+/.cproject
+/build.properties
+/build.xml
+/.project
