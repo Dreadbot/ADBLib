@@ -29,13 +29,17 @@ namespace ADBLib
 	public:
 		Path(Drivebase* newDrivebase, RoboPositioner* newRPS);
 		void reset(); //!< Resets the starting location to the current position, and moves the waypoint iterator to the beginning
-		void pushWaypoint(double xLoc, double yLoc, double tSpeed, double rSpeed, waypoint::srMode smode, waypoint::rlMode rmode); //!< Push a new waypoint to the end of the waypoint list.
-		bool executePath(); //!< Updates the RPS and uses data from it to compute the proper path to go to the waypoints in series.
+		void pushWaypoint(double xLoc, double yLoc, double tSpeed, double rSpeed, waypoint::srMode smode, waypoint::rlMode rmode);
+		void pushWaypoint(waypoint nwp);
+		void setTolerance(double meters); //!< Sets the distance tolerance.
+		bool executePath();
 	protected:
 		vector<waypoint> waypoints;
+		vector<waypoint>::iterator currentWP;
 		Drivebase* drivebase;
 		RoboPositioner* rps;
 		double startPos[3];
+		double tolerance;
 		bool active;
 	};
 }

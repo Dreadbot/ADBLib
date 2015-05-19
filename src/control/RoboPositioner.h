@@ -25,13 +25,14 @@ namespace ADBLib
 	};
 	const double magFactor = 0.3f; //Convert to uT
 
+	enum rpsDir {X, Y, Z}; //!< For usage by stuff outside of RoboPositioner.
+
 	/*
 	 * \brief Robot positioning class that uses rotation and inertial measurements to determine location and velocity. All measurements in meters and related units.
 	 */
 	class RoboPositioner
 	{
 	public:
-		enum rpsDir {X, Y, Z}; //External use
 		RoboPositioner(MPU6050* newGyro); 	//!< Uses the built-in accelerometer and a given gyroscope.
 		void resetInertFrame();				//!< Resets positions and rotations, but leaves velocity unchanged and adjusts velocity direction to compensate.
 		double getPosition(rpsDir dir);		//!< Gets the current positions relative to the position of the most recent reset.
