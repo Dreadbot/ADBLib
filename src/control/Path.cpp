@@ -67,9 +67,9 @@ namespace ADBLib
 			return false; //Distance within tolerance; advance waypoints.
 		}
 
-		double rotDiff = rps->getRotation(rpsDir::Z) - dir.getAngleZ(); //Iffy -- possible problem with the bit on getRotation.
+		double rotDiff = rps->getRotation(rpsDir::Y) - dir.getAngleZ(); //Iffy -- possible problem with the bit on getRotation.
 		Vector3D robotDir(0, 0, wp.tSpeed);
-		robotDir.rotateZ(-rotDiff); //Take the robot's needed velocity, set it to 90 degrees, and rotate it by the rotation difference. This way, translation will work normally.
+		robotDir.rotateY(-rotDiff); //Take the robot's needed velocity, set it to 90 degrees, and rotate it by the rotation difference. This way, translation will work normally.
 
 		//Actual drive commands
 		if (wp.smode == waypoint::SRMODE_STRAFE_ONLY)
