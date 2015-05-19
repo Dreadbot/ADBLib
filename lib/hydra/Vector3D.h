@@ -16,7 +16,7 @@ namespace Hydra
         Vector3D(double newX, double newY, double newZ);
 
         void normalize();
-        inline double getMag() const;
+        double getMag() const;
         void setMag(double newMag);
         double getADelt(Vector3D vec) const;  //!< Returns the angle between two vectors, in radians (?)
 
