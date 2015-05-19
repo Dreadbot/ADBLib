@@ -28,10 +28,10 @@ namespace ADBLib
 	{
 	public:
 		Path(Drivebase* newDrivebase, RoboPositioner* newRPS);
-		void reset(); //!< Resets the starting location to the current position, and moves the waypoint iterator to the beginning
+		void reset();
 		void pushWaypoint(double xLoc, double yLoc, double tSpeed, double rSpeed, waypoint::srMode smode, waypoint::rlMode rmode);
 		void pushWaypoint(waypoint nwp);
-		void setTolerance(double meters); //!< Sets the distance tolerance.
+		void setTolerance(double meters);
 		bool executePath();
 	protected:
 		vector<waypoint> waypoints;

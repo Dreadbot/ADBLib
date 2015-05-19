@@ -2,6 +2,12 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Uses traction wheels to drive. Capable of forward/reverse and left/right.
+	 * @param x Discarded; traction drive incapable of strafing.
+	 * @param y Forward/Reverse. Positive is forward, negative is reverse. From 1 to -1.
+	 * @param r Rotation. Positive is clockwise, negative is counterclockwise. From 1 to -1.
+	 */
 	void TractionDrive::drive(float x, float y, float r)
 	{
 		motors[backLeft]->setInvert(true); //Experimental

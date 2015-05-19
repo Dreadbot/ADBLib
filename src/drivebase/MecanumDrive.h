@@ -4,6 +4,9 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Mecanum drive class that uses mecanum wheels for full translation and rotation.
+	 */
 	class MecanumDrive : public Drivebase
 	{
 	public:

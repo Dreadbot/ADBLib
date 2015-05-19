@@ -2,6 +2,10 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Constructor; accepts an MPU9150
+	 * @param newGyro An MPU9150 disguised as an MPU6050.
+	 */
 	RoboPositioner::RoboPositioner(MPU6050* newGyro)
 	{
 		gyro = newGyro;
@@ -18,6 +22,10 @@ namespace ADBLib
 			startRots[i] = 0;
 		}
 	}
+
+	/**
+	 * @brief Resets positions and rotations and adjusts velocity to compensate.
+	 */
 	void RoboPositioner::resetInertFrame()
 	{
 		//Reset positions to 0
@@ -44,19 +52,43 @@ namespace ADBLib
 		for (int i = 0; i < 3; i++)
 			startRots[i] = ((float)temp[i] * gyrFactors[0]);
 	}
+
+	/**
+	 * @brief Gets the position relative to the position of the most resent reset.
+	 * @param dir The direction, X, Y, or Z.
+	 * @return Distance from, in meters.
+	 */
 	double RoboPositioner::getPosition(rpsDir dir)
 	{
 		return positions[dir];
 	}
+
+	/**
+	 * @brief Gets the velocity vector of the robot.
+	 * @return A Vector3D object for the velocity.
+	 */
 	Vector3D RoboPositioner::getVelocity()
 	{
 		return vel;
 	}
+
+	/**
+	 * @brief Gets the rotation of the robot.
+	 * @param dir The direction to get rotation from.
+	 * @return Rotation relative to the starting rotation, in radians.
+	 * @note To get yaw (left/right), get rotation along the Z axis (?).
+	 */
 	double RoboPositioner::getRotation(rpsDir dir)
 	{
-		//Since we don't know WHICH rotation to grab, grab all of 'em!
 		return rotations[dir] - startRots[dir];
 	}
+
+	/**
+	 * @brief Updates the robot position, rotation, and velocity.
+	 * @note You need to call this function iteratively; the shorter the interval,
+	 * the more accurate it will be. It handles timing on its own. It is reccomended
+	 * to set up a notifier loop thingy for this.
+	 */
 	void RoboPositioner::update()
 	{
 		//Grab values from MPU

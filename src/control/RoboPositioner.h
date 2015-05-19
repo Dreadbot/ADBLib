@@ -33,12 +33,12 @@ namespace ADBLib
 	class RoboPositioner
 	{
 	public:
-		RoboPositioner(MPU6050* newGyro); 	//!< Uses the built-in accelerometer and a given gyroscope.
-		void resetInertFrame();				//!< Resets positions and rotations, but leaves velocity unchanged and adjusts velocity direction to compensate.
-		double getPosition(rpsDir dir);		//!< Gets the current positions relative to the position of the most recent reset.
-		Vector3D getVelocity();				//!< Gets the velocity relative to the ground.
-		double getRotation(rpsDir dir);		//!< Gets the rotation relative to the starting rotation, in rads
-		void update();						//!< Should be called regularly. Updates all calculations.
+		RoboPositioner(MPU6050* newGyro);
+		void resetInertFrame();
+		double getPosition(rpsDir dir);
+		Vector3D getVelocity();
+		double getRotation(rpsDir dir);
+		void update();
 	protected:
 		enum rpsData {gx = 0, gy, gz, ax, ay, az, mx, my, mz};
 

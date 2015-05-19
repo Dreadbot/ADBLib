@@ -4,8 +4,8 @@
 
 namespace ADBLib
 {
-	/*
-	 * \brief Simple TractionDrive class for driving with a traction drive. Discards x velocity.
+	/**
+	 * @brief Simple TractionDrive class for driving with a traction drive. Discards x velocity.
 	 */
 	class TractionDrive : public Drivebase
 	{

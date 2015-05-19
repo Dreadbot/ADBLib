@@ -2,12 +2,22 @@
 
 namespace ADBLib
 {
-	OctocanumDrive::OctocanumDrive()
+	/**
+	 * @brief Constructor. Sets all solenoids and motors to nullptr.
+	 */
+	OctocanumDrive::OctocanumDrive() : Drivebase()
 	{
 		mode = mecanum;
 		for (int i = 0; i < 4; ++i)
 			solenoids[i] = nullptr;
 	}
+
+	/**
+	 * @brief Drives with full translational and rotational capability.
+	 * @param x Strafing. Negative is left, positive is right. From -1 to 1. Only available in mecanum mode.
+	 * @param y Forward/Reverse. Positive is forward, negative is reverse. From 1 to -1.
+	 * @param r Rotation. Positive is clockwise, negative is counterclockwise. From 1 to -1.
+	 */
 	void OctocanumDrive::drive(float x, float y, float r)
 	{
 		if (mode == mecanum)
@@ -56,14 +66,30 @@ namespace ADBLib
 			}
 		}
 	}
+
+	/**
+	 * @brief Switches modes. Will
+	 * @param newMode The mode to switch to.
+	 */
 	void OctocanumDrive::switchMode(driveMode newMode)
 	{
 		mode = newMode;
 	}
+
+	/**
+	 * @brief Sets the pneumatic at a given position. Uses wheel-based positioning.
+	 * @param newPneumatic The pneumatic to use.
+	 * @param pos The position of the pneumatic.
+	 */
 	void OctocanumDrive::setPneumatic(SimplePneumatic* newPneumatic, MotorPos pos)
 	{
 		solenoids[pos] = newPneumatic;
 	}
+
+	/**
+	 * @brief Gets the current mode of the drivebase.
+	 * @return The mode.
+	 */
 	OctocanumDrive::driveMode OctocanumDrive::getMode()
 	{
 		return mode;

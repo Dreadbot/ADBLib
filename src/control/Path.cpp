@@ -2,6 +2,12 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Constructor. Accepts any drivebase and any RoboPositioner.
+	 * @param newDrivebase Any drivebase. Settings for using it specified on a waypoint basis.
+	 * @param newRPS The RoboPositioner. You'll need to update this outside the Path class.
+	 * @note While the Path is running, do NOT reset the RPS. If you do, you need to reset the path as well.
+	 */
 	Path::Path(Drivebase* newDrivebase, RoboPositioner* newRPS)
 	{
 		drivebase = newDrivebase;
@@ -10,6 +16,10 @@ namespace ADBLib
 		tolerance = 0.25; //meters
 		reset();
 	}
+
+	/**
+	 * @brief Reset the path to start at the first waypoint and reset the positions.
+	 */
 	void Path::reset()
 	{
 		currentWP = waypoints.begin();
@@ -30,6 +40,7 @@ namespace ADBLib
 		waypoint nwp {xLoc, yLoc, tSpeed, rSpeed, smode, rmode};
 		waypoints.push_back(nwp);
 	}
+
 	void Path::pushWaypoint(waypoint nwp)
 	{
 		waypoints.push_back(nwp);

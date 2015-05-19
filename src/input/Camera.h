@@ -11,11 +11,11 @@ namespace ADBLib
 	class Camera
 	{
 	public:
-		Camera(string newName);	//!< Accepts a camera name that can be obtained from roborio-TEAMNAME.local
-		bool start();			//!< Starts this camera.
-		bool stop();			//!< Stops this camera.
-		bool getEnabled();		//!< Gets the status of the camera - true for on, false for off.
-		Image* getImage();		//!< Gets the image on this camera.
+		Camera(string newName);
+		bool start();
+		bool stop();
+		bool getEnabled();
+		Image* getImage();
 	protected:
 		string name;
 		Image* frame;
