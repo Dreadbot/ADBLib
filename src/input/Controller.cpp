@@ -70,7 +70,7 @@ namespace ADBLib
 	 */
 	double Controller::getAxis(int ID)
 	{
-		if (ID >= 15 || ID <= 0)
+		if (ID > 15 || ID < 0)
 			return 0;
 
 		double delta = axisRanges[ID][1] - axisRanges[ID][0]; //max - min
