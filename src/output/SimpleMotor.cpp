@@ -15,6 +15,24 @@ namespace ADBLib
 	}
 
 	/**
+	 * @brief Constructor; automatically configures this motor as a PWM motor.
+	 * @param newTalon A PWM motor (as a Talon)
+	 */
+	SimpleMotor::SimpleMotor(Talon* newTalon) : SimpleMotor()
+	{
+		setPWMMotor(newTalon);
+	}
+
+	/**
+	 * @brief Constructor; automatically congirues this motor as a CAN motor.
+	 * @param newCANTalon A CAN motor (as a CANTalon)
+	 */
+	SimpleMotor::SimpleMotor(CANTalon* newCANTalon) : SimpleMotor()
+	{
+		setCANMotor(newCANTalon);
+	}
+
+	/**
 	 * @brief Smart set - automatically handles for invert, CAN/PWM controls. Give it a value and go.
 	 * @param value A value from -1 to 1.
 	 */

@@ -14,6 +14,24 @@ namespace ADBLib
 	}
 
 	/**
+	 * @brief Constructor; configures this pneumatic as a double solenoid.
+	 * @param newDouble A pointer to a DoubleSolenoid object.
+	 */
+	SimplePneumatic::SimplePneumatic(DoubleSolenoid* newDouble) : SimplePneumatic()
+	{
+		setDouble(newDouble);
+	}
+
+	/**
+	 * @brief Constructor; configures this pneumatic as a single solenoid.
+	 * @param newSingle A pointer to a solenoid object.
+	 */
+	SimplePneumatic::SimplePneumatic(Solenoid* newSingle) : SimplePneumatic()
+	{
+		setSingle(newSingle);
+	}
+
+	/**
 	 * @brief Sets the value for this pneumatic; if it's a single solenoid, not kStop values are automatically adjusted.
 	 * @param value A DoubleSolenoid::Value as defined by DoubleSolenoid
 	 */

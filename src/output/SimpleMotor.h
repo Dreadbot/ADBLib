@@ -12,6 +12,8 @@ namespace ADBLib
 		enum MotorType {CAN, PWM};
 
 		SimpleMotor();
+		SimpleMotor(Talon* newTalon);
+		SimpleMotor(CANTalon* newCANTalon);
 		virtual ~SimpleMotor() {};
 		virtual void set(float value);
 		virtual void setPWMMotor(Talon* motor);
