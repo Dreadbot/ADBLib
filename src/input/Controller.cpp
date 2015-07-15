@@ -13,6 +13,7 @@ namespace ADBLib
 			cooldownTimes[i] = 0.f;
 			axisRanges[i][0] = -1.0;
 			axisRanges[i][1] = 1.0;
+			toggles[i] = false;
 		}
 	}
 
@@ -32,8 +33,8 @@ namespace ADBLib
 	}
 
 	/**
-	 * @brief Returns the state the the button as a boolean. Automatically handels for button cooldown.
-	 * @param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode).
+	 * @brief Returns the state of the button as a boolean. Automatically handles for button cooldown.
+	 * @param ID The ID of the button. Button ID changes depending on controller mode (X-Mode or D-Mode).
 	 * @param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
 	 */
 	bool Controller::getButton(int ID, float cooldown)
@@ -51,6 +52,18 @@ namespace ADBLib
 			return true;
 		}
 		return false;
+	}
+
+	/**
+	* @brief Returns the state of the button as a boolean. Changes state based on input from the button, with cooldown taken into account.
+	* @param ID The ID of the button. Button ID changes depending on controller mode (X_Mode or D-Mode).
+	* @param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
+	*/
+	bool Controller::getButtonToggle(int ID, float cooldown)
+	{
+		if (getButton(ID, cooldown))
+			toggles[ID] = !toggles[ID];
+		return toggles[ID];
 	}
 
 	/**
