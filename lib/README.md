@@ -7,7 +7,7 @@ This software is based on pugixml library (http://pugixml.org).
 pugixml is Copyright (C) 2006-2014 Arseny Kapoulkine.
 
 ##Hydra Engine
-Copyright (c) 2015 Christopher Myers
+Copyright (c) 2015 Sourec
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
