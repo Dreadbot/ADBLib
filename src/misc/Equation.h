@@ -1,3 +1,4 @@
+#pragma once
 #include <string.h>
 #include <math.h>
 #include <stdexcept>
@@ -13,7 +14,7 @@ namespace ADBLib
 	enum tokenType {VALUE, VARIABLE, OPERATOR};
 
 	/**
-	 * Equation class for handeling simple equations (PEMDAS) when the equation is not
+	 * Equation class for handling simple equations (PEMDAS) when the equation is not
 	 * known at compile-time.
 	 *
 	 * @note This class throws the parse_error exception in case issues arise.
