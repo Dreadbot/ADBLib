@@ -19,6 +19,9 @@
 #include "output/SimplePneumatic.h"
 #include "output/PIDMotor.h"
 
+//Misc
+#include "misc/Equation.h"
+
 //External library files
 #include "../lib/hydra/Logger.h"
 #include "../lib/hydra/Matrix.h"
