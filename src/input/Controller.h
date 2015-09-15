@@ -1,5 +1,12 @@
 #include <WPILib.h>
 #include <memory>
+#include <vector>
+#include <unordered_map>
+#include <string>
+#include "../misc/Equation.h"
+using std::unordered_map;
+using std::vector;
+using std::string;
 
 namespace ADBLib
 {
@@ -11,18 +18,38 @@ namespace ADBLib
 	public:
 		Controller();
 		Controller(std::shared_ptr<Joystick> newJoystick);
-		bool getButton(int ID, float cooldown = 0.f);
-		bool getButtonToggle(int ID, float cooldown = 0.f);
 		bool getButtonRaw(int ID);
-		double getAxis(int ID);
-		void setInputRange(int axisID, float max, float min);
+		double getJoystickRaw(int ID);
 		void setJoystick(std::shared_ptr<Joystick> newJoystick);
 		void setRumble(Joystick::RumbleType side, float intensity = 1.f);
+		void parseConfig(string filename);
+		void switchProfile(string profileName);
+		double operator[](const string& name);
 	protected:
+		class ctrlCfg
+		{
+		public:
+			ctrlCfg();
+			enum {BUTTON, JOYSTICK} type;	//!< The type of control this is.
+			unsigned int id;				//!< Control ID, needed regardless of button vs joystick
+			bool inverse;					//!< Inverse - if button, inverts. If joystick, flips the axis... sort of
+			struct btnCfg
+			{
+				bool toggle;
+				double cooldown;
+			} btn;
+			struct jysCfg
+			{
+				double maxVal;				//!< Minimum value for a joystick. Allows control scaling.
+				double minVal;				//!< Maximum value for a joystick. Allows control scaling.
+				double deadzone;			//!< Deadzone to use
+				Equation equ;
+			} jys;
+		};
+
+		unordered_map<string, unordered_map<string, ctrlCfg>> profiles;
+		string currentProfile;
 		std::shared_ptr<Joystick> joystick;
-		double axisRanges[15][2];	// [x][0] is lower, [x][1] is upper
-		float cooldownTimes[15]; 	// For buttons only
 		Timer cooldownTimers[15];	// For buttons only
-		bool toggles[15];					// For buttons only
 	};
 }

@@ -8,6 +8,7 @@
 using std::string;
 using std::stack;
 using std::queue;
+
 namespace ADBLib
 {
 	enum operations {EXPON, MULTI, DIVIS, ADDIT, SUBTRA, LPAREN, RPAREN};
