@@ -2,114 +2,58 @@
 
 namespace ADBLib
 {
-	/**
-	 * @brief Initializes the Controller object with no joystick; you will need to use setJoystick to set the joystick if you use this constructor.
-	 */
-	Controller::Controller()
+	ctrlCfg::ctrlCfg()
 	{
-		joystick = nullptr;
-		for (int i = 0; i < 15; ++i)
-		{
-			cooldownTimes[i] = 0.f;
-			axisRanges[i][0] = -1.0;
-			axisRanges[i][1] = 1.0;
-			toggles[i] = false;
-		}
+		id = 0;
+		type = JOYSTICK;
+		inverse = false;
+		btn.toggle = false;
+		btn.cooldown = 0.250; //Seconds
+		btn.cooldownTimer = new Timer;
+		jys.maxVal = 1.0;
+		jys.minVal = -1.0;
+		jys.deadzone = 0.1;
+		jys.equ.parse("x"); //Start off with no alterations to the joystick equation
 	}
 
-	/**
-	 * @brief Initializes the controller object with a pre-set Joystick.
-	 * @param newJoystick A shared_ptr for a joystick object. If this joystick is only in use here, use std::make_shared
-	 */
-	Controller::Controller(std::shared_ptr<Joystick> newJoystick)
+	Controller::~Controller()
 	{
-		joystick = newJoystick;
-		for (int i = 0; i < 15; ++i)
-		{
-			cooldownTimes[i] = 0.f;
-			axisRanges[i][0] = -1.0;
-			axisRanges[i][1] = 1.0;
-		}
+		delete joystick;
 	}
 
-	/**
-	 * @brief Returns the state of the button as a boolean. Automatically handles for button cooldown.
-	 * @param ID The ID of the button. Button ID changes depending on controller mode (X-Mode or D-Mode).
-	 * @param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
-	 */
-	bool Controller::getButton(int ID, float cooldown)
+	ctrlCfg::btnCfg::~btnCfg()
 	{
-		if (ID >= 15 || ID <= 0)
-			return false; //Out-of-bounds IDs not accepted.
-		if (cooldownTimers[ID].Get() < cooldownTimes[ID])
-			return false; //Actual cooldown handling
-
-		if (joystick->GetRawButton(ID) == true)
-		{
-			cooldownTimes[ID] = cooldown;
-			cooldownTimers[ID].Reset();
-			cooldownTimers[ID].Start();
-			return true;
-		}
-		return false;
-	}
-
-	/**
-	* @brief Returns the state of the button as a boolean. Changes state based on input from the button, with cooldown taken into account.
-	* @param ID The ID of the button. Button ID changes depending on controller mode (X_Mode or D-Mode).
-	* @param cooldown The desired cooldown, in seconds. The cooldown will not be changed if a previous cooldown is still active.
-	*/
-	bool Controller::getButtonToggle(int ID, float cooldown)
-	{
-		if (getButton(ID, cooldown))
-			toggles[ID] = !toggles[ID];
-		return toggles[ID];
+		delete cooldownTimer;
 	}
 
 	/**
 	 * @brief Gets the raw button setting as true or false, disregarding any active cooldowns.
-	 * @param ID The ID of the button. Button changes depending on controller mode (X-Mode or D-Mode)
+	 * @param ID The ID of the button. ID changes depending on controller mode (X-Mode or D-Mode)
 	 */
 	bool Controller::getButtonRaw(int ID)
 	{
-		if (ID >= 15 || ID <= 0)
+		if ((ID >= 15 || ID <= 0) && joystick != nullptr)
 			return false; //Out-of-bounds IDs not accepted.
 		return joystick->GetRawButton(ID);
 	}
 
 	/**
-	 * @brief Get the state of the joystick axis. Returns values that depend on your set max/min output settings.
-	 * @param ID The ID of the axis.
+	 * @brief Gets the raw axis value.
+	 * @param ID The ID of the joystick. ID changes depending on controller mode (X-Mode or D-Mode)
 	 */
-	double Controller::getAxis(int ID)
+	double Controller::getJoystickRaw(int ID)
 	{
-		if (ID > 15 || ID < 0)
+		if (ID >= 0 && ID <= 15 && joystick != nullptr)
+			return joystick->GetRawAxis(ID);
+		else
 			return 0;
-
-		double delta = axisRanges[ID][1] - axisRanges[ID][0]; //max - min
-		double input = joystick->GetRawAxis(ID) + 1.0; //Now on a scale from 0-2.
-		return (input * delta) + axisRanges[ID][0];
-	}
-
-	/**
-	 * @brief Sets the input range for a specific axis.
-	 * @param axisID The ID of the axis whose range is being modified.
-	 * @param max The new maximum input.
-	 * @param min The new minimum input.
-	 */
-	void Controller::setInputRange(int axisID, float max, float min)
-	{
-		if (axisID >= 15 || axisID <= 0)
-			return;
-		axisRanges[axisID][0] = min;
-		axisRanges[axisID][1] = max;
 	}
 
 	/**
 	 * @brief Sets the joystick to get data from.
 	 * @param newJoystick A shared pointer to the joystick to use.
 	 */
-	void Controller::setJoystick(std::shared_ptr<Joystick> newJoystick)
+	void Controller::setJoystick(Joystick* newJoystick)
 	{
 		joystick = newJoystick;
 	}
@@ -121,6 +65,7 @@ namespace ADBLib
 	 */
 	void Controller::setRumble(Joystick::RumbleType side, float intensity)
 	{
+		if (joystick != nullptr)
 		joystick->SetRumble(side, intensity);
 	}
 
@@ -167,7 +112,7 @@ namespace ADBLib
 	{
 		pugi::xml_document doc;
 		pugi::xml_parse_result result = doc.load(filename.c_str());
-		//Logger::getInstance()->log("sysLog", result.status, hydsys);
+		//Hydra::Logger::getInstance()->log(result.status, Hydra::hydsys, "sysLog");
 
 		for (auto profile = doc.child("ControlConfig").child("profile"); profile; profile = profile.next_sibling())
 		{ //Loop through all profiles
@@ -192,26 +137,61 @@ namespace ADBLib
 					newCtrl.jys.deadzone = control.child("deadzone").attribute("value").as_double();
 					newCtrl.jys.equ.parse(control.child("equation").attribute("value").as_string());
 				}
-				profileSet[control.attribute("name").as_string()] = newCtrl;
+				//profileSet[control.attribute("name").as_string()] = newCtrl;
 			}
 			profiles[profile.attribute("name").as_string()] = profileSet;
+
+			if (profile.attribute("active").as_bool()) //Automatically switch to default active profiles
+				switchProfile(profile.attribute("name").as_string());
 		}
 	}
 
 	/**
-	 * @brief Sets default control values.
-	 * No inverse, id = 0, standard joystick ranges, no toggle, a cooldown of 250 ms, and a deadzone of 0.1
+	 * @brief Switches out the current control profile for another profile, specified by name.
+	 * @param profileName The name of the profile to switch to as a string.
 	 */
-	Controller::ctrlCfg::ctrlCfg()
+	void Controller::switchProfile(string profileName)
 	{
-		id = 0;
-		type = JOYSTICK;
-		inverse = false;
-		btn.toggle = false;
-		btn.cooldown = 0.250; //Seconds
-		jys.maxVal = 1.0;
-		jys.minVal = -1.0;
-		jys.deadzone = 0.1;
-		jys.equ.parse("x"); //Start off with no alterations to the joystick equation
+		if (profiles.count(profileName) != 0)
+			currentProfile = profileName;
+	}
+
+	/**
+	 * @brief Get the value of a set control, referenced by name
+	 * @param name The name of the control. Referenced in the XML configuration file.
+	 * @return If the control is a button, nonzero for true and zero for false (duh). Else, a double.
+	 */
+	double Controller::operator[](const string& name)
+	{
+		ctrlCfg control;// = profiles[currentProfile][name]; //NOT a 2D array!
+		if (control.type == ctrlCfg::BUTTON)
+		{
+			if (!control.btn.toggle)
+				return control.inverse ? !joystick->GetRawButton(control.id) : joystick->GetRawButton(control.id);
+			else if (joystick->GetRawButton(control.id) || (!joystick->GetRawButton(control.id) && control.inverse))
+			{
+				if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
+				{ //The cooldown expired
+					control.btn.cooldownTimer->Reset();
+					control.btn.cooldownTimer->Start();
+					return !control.inverse;
+				}
+				return control.inverse;
+			}
+		}
+		else
+		{ //It's a joystick
+			double value = joystick->GetRawAxis(control.id);
+			double temp = value;
+			value = control.jys.equ.evaluate(fabs(value));
+			value = std::copysign(temp, value); //Copysign from temp to value?
+
+			//scale values... should work
+			temp = value;
+			value = fabs(value) * ((control.jys.maxVal - control.jys.minVal) * 0.5f);
+			return std::copysign(temp, value) + control.jys.minVal; //TODO: Verify
+
+		}
+		return 0; //STOP YELLING AT ME, ECLIPSE
 	}
 }
