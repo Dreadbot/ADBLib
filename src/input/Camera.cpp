@@ -26,14 +26,14 @@ namespace ADBLib
 		IMAQdxError imaqError = IMAQdxOpenCamera(name.c_str(), IMAQdxCameraControlModeController, &camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::getInstance()->log(name + " IMAQdxOpenCamera error - " + std::to_string((long)imaqError), Hydra::error);
+			Hydra::Logger::log(name + " IMAQdxOpenCamera error - " + std::to_string((long)imaqError), "sysLog", Hydra::error);
 			return false;
 		}
 
 		imaqError = IMAQdxConfigureGrab(camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::getInstance()->log(name + " IMAQdxConfigureGrab error - " + std::to_string((long)imaqError), Hydra::error);
+			Hydra::Logger::log(name + " IMAQdxConfigureGrab error - " + std::to_string((long)imaqError), "sysLog", Hydra::error);
 			return false;
 		}
 		IMAQdxStartAcquisition(camSession);
@@ -55,7 +55,7 @@ namespace ADBLib
 		IMAQdxError imaqError = IMAQdxCloseCamera(camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::getInstance()->log(name + " IMAQdxCloseCamera error - " + std::to_string((long)imaqError), Hydra::error);
+			Hydra::Logger::log(name + " IMAQdxCloseCamera error - " + std::to_string((long)imaqError), "sysLog", Hydra::error);
 			return false;
 		}
 		enabled = false;

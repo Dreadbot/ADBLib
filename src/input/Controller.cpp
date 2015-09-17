@@ -112,7 +112,7 @@ namespace ADBLib
 	{
 		pugi::xml_document doc;
 		pugi::xml_parse_result result = doc.load(filename.c_str());
-		//Hydra::Logger::getInstance()->log(result.status, Hydra::hydsys, "sysLog");
+		Hydra::Logger::log(result.description(), "sysLog", Hydra::hydsys);
 
 		for (auto profile = doc.child("ControlConfig").child("profile"); profile; profile = profile.next_sibling())
 		{ //Loop through all profiles

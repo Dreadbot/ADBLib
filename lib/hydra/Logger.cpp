@@ -1,4 +1,12 @@
 #include "Logger.h"
+//Not sure why these should be here, they're also in Logger.h... but it won't compile without them.
+using std::endl;
+using std::string;
+using std::vector;
+using std::unordered_map;
+using std::ofstream;
+using std::stringstream;
+
 
 namespace Hydra
 {
@@ -69,13 +77,7 @@ namespace Hydra
             file << *iter << endl;
     }
 
-    Logger* Logger::instance = nullptr;
-    Logger* Logger::getInstance()
-    {
-        if (instance == nullptr)
-            instance = new Logger;
-        return instance;
-    }
+    unordered_map<string, Log> Logger::logFiles;
 
     /**
      * @brief Automatically creates its own system log, named "sysLog"
@@ -84,30 +86,22 @@ namespace Hydra
     {
         newLog("sysLog", "/sysLog");
     }
-    Logger::~Logger() {}
-
     /**
      * @brief Logs a message to the log designated log.
      * @param message The message to log.
      * @param flag The flag of the message.
      * @param name The name of the log to log to.
      */
-    void Logger::log(string message, logFlag flag, string name)
+    void Logger::log(string message, string name, logFlag flag)
     {
-        //Find the correct log, then log the message with it
-        for (auto iter = logFiles.begin(); iter != logFiles.end(); iter++)
-        {
-            if (iter->name == name)
-            {
-                iter->log(message, flag);
-                return;
-            }
-        }
-        //At this point, it is confirmed that no log file exists.
-        log("Cannot find log " + name + ", creating new one at." + name + ".txt", info);
-        Log newLog(name, name);
-        newLog.log(message, flag);
-        logFiles.push_back(newLog);
+    	if (logFiles.count(name) == 0)
+    	{
+    		//At this point, it is confirmed that no log file exists.
+    		log("Cannot find log " + name + ", creating new one at." + name + ".txt", "sysLog", info);
+    		Log newLog(name, name);
+    		logFiles[name] = newLog;
+    	}
+    	logFiles[name].log(message, flag);
     }
 
     /**
@@ -117,14 +111,10 @@ namespace Hydra
      */
     void Logger::newLog(string name, string filename)
     {
-        //Check for duplicate logs
-        for (auto iter = logFiles.begin(); iter != logFiles.end(); iter++)
-        {
-            if (iter->name == name)
-                return; //Duplicate log found.
-        }
+    	if (logFiles.count(name) > 0)
+    		return; //Duplicate logfile found
         Log _newLog(name, filename);
-        logFiles.push_back(_newLog);
+        logFiles[name] = _newLog;
     }
 
     /**
@@ -134,12 +124,9 @@ namespace Hydra
      */
     Log* Logger::getLog(string name)
     {
-        for (auto iter = logFiles.begin(); iter != logFiles.end(); iter++)
-        {
-            if (iter->name == name)
-                return &(*iter);
-        }
-        return nullptr;
+        if (logFiles.count(name) == 0)
+        	return nullptr;
+        return &logFiles[name];
     }
 
     /**
@@ -147,7 +134,7 @@ namespace Hydra
      */
     void Logger::flushLogBuffers()
     {
-        for (auto iter = logFiles.begin(); iter != logFiles.end(); iter++)
-            iter->flushBuffer();
+    	for (auto iter = logFiles.begin(); iter != logFiles.end(); iter++)
+    		iter->second.flushBuffer(); //unordered_map iteration gives you an std::pair object
     }
 };

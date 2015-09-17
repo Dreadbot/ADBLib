@@ -1,15 +1,16 @@
 #pragma once
 
-#include <iostream>
 #include <string>
 #include <fstream>
 #include <vector>
 #include <stdlib.h>
 #include <ctime>
 #include <sstream>
+#include <unordered_map>
 using std::endl;
 using std::string;
 using std::vector;
+using std::unordered_map;
 using std::ofstream;
 using std::stringstream;
 
@@ -28,6 +29,7 @@ namespace Hydra
 	{
 	public:
 		Log(string newName, string newFilename);
+		Log() {} //!< This is never used. It has something to do with tuples. DO NOT USE THIS CONSTRUCTOR.
 		void log(string message, logFlag flag = hydsys);
 		void flushBuffer();
 	private:
@@ -43,16 +45,12 @@ namespace Hydra
 	class Logger
 	{
 	public:
-		void log(string message = "Default log output", logFlag flag = hydsys, string name = "sysLog");
-		void newLog(string name = "sysLog", string filename = "/sysLog");
-		Log* getLog(string name);
-		void flushLogBuffers();
-		static Logger* getInstance();
-	private:
-		friend class Log;
-		static Logger* instance;
-		vector<Log> logFiles;
 		Logger();
-		~Logger();
+		static void log(string message, string name, logFlag flag = hydsys);
+		static void newLog(string name, string filename);
+		static Log* getLog(string name);
+		static void flushLogBuffers();
+	private:
+		static unordered_map<string, Log> logFiles;
 	};
 };
