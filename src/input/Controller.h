@@ -48,7 +48,6 @@ namespace ADBLib
 	class Controller
 	{
 	public:
-		Controller();
 		~Controller(); //WARNING - DELETES THE JOYSTICK!
 		bool getButtonRaw(int ID);
 		double getJoystickRaw(int ID);
