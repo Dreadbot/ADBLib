@@ -2,6 +2,17 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Constructor; sets up all motors and pneumatics. Do NOT give it invalid pointers!
+	 * @param mFrontLeft The front-left motor.
+	 * @param mFrontRight The front-right motor.
+	 * @param mBackRight The back-right motor.
+	 * @param mBackLeft The back left motor.
+	 * @param pFrontLeft The front-left pneumatic, corresponding to the front-left motor.
+	 * @param pFrontRight The front-right pneumatic, corresponding to the front-right motor.
+	 * @param pBackRight The back-right pneumatic, correpsonding to the back-right motor.
+	 * @param pBackLeft The back-left pneumatic, corresponding to the back-left motor.
+	 */
 	OctocanumDrive::OctocanumDrive(SpeedController* mFrontLeft,
 			SpeedController* mFrontRight,
 			SpeedController* mBackRight,
@@ -19,6 +30,9 @@ namespace ADBLib
 		solenoids[backRight]	= pBackRight;
 	}
 
+	/**
+	 * @brief Destructor, deletes all the motors and pneumatics.
+	 */
 	OctocanumDrive::~OctocanumDrive()
 	{
 		for (int i = 0; i < 4; i++)

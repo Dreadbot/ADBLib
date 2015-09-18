@@ -3,7 +3,12 @@
 namespace ADBLib
 {
 	/**
-	 * @brief Constructor; sets the translational motor to nullptr.
+	 * @brief Constructor; sets all motors, including the translation motor.
+	 * @param mFrontLeft The front left motor.
+	 * @param mFrontRight The front right motor.
+	 * @param mBackRight The back right motor.
+	 * @param mBackLeft The back left motor.
+	 * @param newTransMotor The translation motor.
 	 */
 	OmniDrive::OmniDrive(SpeedController* mFrontLeft,
 			SpeedController* mFrontRight,
@@ -15,6 +20,9 @@ namespace ADBLib
 		transMotor = newTransMotor;
 	}
 
+	/**
+	 * @brief Deletes all motors, including the translation motor.
+	 */
 	OmniDrive::~OmniDrive()
 	{
 		for (int i = 0; i < 4; i++)

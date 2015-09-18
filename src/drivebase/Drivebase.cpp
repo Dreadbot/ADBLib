@@ -3,7 +3,12 @@
 namespace ADBLib
 {
 	/**
-	 * @brief Generic constructor; sets all motors to nullptr and sets the status as enabled.
+	 * @brief Constructor; sets all motors.
+	 * @param mFrontLeft The front left motor.
+	 * @param mFrontRight The front right motor.
+	 * @param mBackRight The back right motor.
+	 * @param mBackLeft The back left motor.
+	 * @note Accepts anything that inherits a SpeedController, so go wild.
 	 */
 	Drivebase::Drivebase(SpeedController* mFrontLeft,
 			SpeedController* mFrontRight,
@@ -20,6 +25,9 @@ namespace ADBLib
 			speeds[i] = 0.0;
 	}
 
+	/**
+	 * @brief Deletes all motors.
+	 */
 	Drivebase::~Drivebase()
 	{
 		for (int i = 0; i < 4; i++)
