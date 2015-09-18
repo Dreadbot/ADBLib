@@ -5,68 +5,34 @@ namespace ADBLib
 	/**
 	 * @brief Generic constructor; sets all motors to nullptr and sets the status as enabled.
 	 */
-	Drivebase::Drivebase()
+	Drivebase::Drivebase(SpeedController* mFrontLeft,
+			SpeedController* mFrontRight,
+			SpeedController* mBackRight,
+			SpeedController* mBackLeft)
 	{
 		enabled = true;
+		motors[frontLeft] = mFrontLeft;
+		motors[frontRight] = mFrontRight;
+		motors[backRight] = mBackRight;
+		motors[backLeft] = mBackLeft;
+
 		for (int i = 0; i < 4; ++i)
-		{
-			motors[i] = nullptr;
 			speeds[i] = 0.0;
-		}
 	}
 
-	/**
-	 * @brief Enables the drivebase.
-	 */
-	void Drivebase::enable()
+	Drivebase::~Drivebase()
 	{
-		enabled = true;
-		for (int i = 0; i < 4; ++i)
-		{
-			if (motors[i] != nullptr)
-				motors[i]->enable();
-		}
+		for (int i = 0; i < 4; i++)
+			delete motors[i];
 	}
 
 	/**
 	 * @brief Disables the drivebase and sets the command to zero the motor.
 	 */
-	void Drivebase::disable()
+	void Drivebase::stop()
 	{
-		enabled = false;
 		for (int i = 0; i < 4; ++i)
-		{
-			if (motors[i] == nullptr)
-				continue;
-			motors[i]->disable();
-			motors[i]->set(0);
-		}
-	}
-
-	/**
-	 * @brief Sets the motor at the designated position.
-	 * @param motor A SimpleMotor object. Can be practically any kind of motor.
-	 * @param position The position, as defined in MotorPos.
-	 * @see MotorPos
-	 */
-	void Drivebase::setMotor(SimpleMotor* motor, MotorPos position)
-	{
-		motors[position] = motor;
-	}
-
-	/**
-	 * @brief Sets all motors.
-	 * @param mFrontLeft The front left motor.
-	 * @param mFrontRight The front right motor.
-	 * @param mBackRight The back right motor.
-	 * @param mBackLeft The back left motor.
-	 */
-	void Drivebase::setMotors(SimpleMotor* mFrontLeft, SimpleMotor* mFrontRight, SimpleMotor* mBackRight, SimpleMotor* mBackLeft)
-	{
-		motors[frontLeft] = mFrontLeft;
-		motors[frontRight] = mFrontRight;
-		motors[backRight] = mBackRight;
-		motors[backLeft] = mBackLeft;
+			motors[i]->Set(0);
 	}
 
 	/**

@@ -2,14 +2,30 @@
 
 namespace ADBLib
 {
-	/**
-	 * @brief Constructor. Sets all solenoids and motors to nullptr.
-	 */
-	OctocanumDrive::OctocanumDrive() : Drivebase()
+	OctocanumDrive::OctocanumDrive(SpeedController* mFrontLeft,
+			SpeedController* mFrontRight,
+			SpeedController* mBackRight,
+			SpeedController* mBackLeft,
+			SimplePneumatic* pFrontLeft,
+			SimplePneumatic* pFrontRight,
+			SimplePneumatic* pBackRight,
+			SimplePneumatic* pBackLeft) : Drivebase(
+					mFrontLeft, mFrontRight,mBackRight,mBackLeft)
 	{
 		mode = mecanum;
-		for (int i = 0; i < 4; ++i)
-			solenoids[i] = nullptr;
+		solenoids[frontLeft]	= pFrontLeft;
+		solenoids[frontRight] 	= pFrontRight;
+		solenoids[backLeft]		= pBackLeft;
+		solenoids[backRight]	= pBackRight;
+	}
+
+	OctocanumDrive::~OctocanumDrive()
+	{
+		for (int i = 0; i < 4; i++)
+		{
+			delete solenoids[i];
+			delete motors[i];
+		}
 	}
 
 	/**
@@ -22,22 +38,17 @@ namespace ADBLib
 	{
 		if (mode == mecanum)
 		{
-			motors[frontRight]->setInvert(true);
-			motors[backLeft]->setInvert(true);
-			motors[backRight]->setInvert(false);
-			motors[frontLeft]->setInvert(false);
-
-			speeds[frontLeft] = x + y + r;
+			speeds[frontLeft] = -(x + y + r);
 			speeds[frontRight] = x + y - r;
 			speeds[backRight] = x + y - r;
-			speeds[backLeft] = x + y + r;
+			speeds[backLeft] = -(x + y + r);
 
 			normSpeeds();
 
 			for (int i = 0; i < 4; i++)
 			{
 				if (motors[i] != nullptr)
-					motors[i]->set(speeds[i]);
+					motors[i]->Set(speeds[i]);
 				if (solenoids[i] != nullptr)
 					solenoids[i]->set(0); //Pull traction wheels UP
 			}
@@ -45,22 +56,18 @@ namespace ADBLib
 		}
 		if (mode == traction)
 		{
-			motors[backLeft]->setInvert(true); //Experimental
-			motors[backRight]->setInvert(true);
-			motors[frontLeft]->setInvert(false);
-			motors[frontRight]->setInvert(false);
 
 			speeds[frontLeft] = y + r;
 			speeds[frontRight] = y - r;
-			speeds[backRight] = y - r;
-			speeds[backLeft] = y + r;
+			speeds[backRight] = -(y - r);
+			speeds[backLeft] = -(y + r);
 
 			normSpeeds();
 
 			for (int i = 0; i < 4; ++i)
 			{
 				if (motors[i] != nullptr)
-					motors[i]->set(speeds[i]);
+					motors[i]->Set(speeds[i]);
 				if (solenoids[i] != nullptr)
 					solenoids[i]->set(1); //Push traction wheels DOWN
 			}
@@ -74,16 +81,6 @@ namespace ADBLib
 	void OctocanumDrive::switchMode(driveMode newMode)
 	{
 		mode = newMode;
-	}
-
-	/**
-	 * @brief Sets the pneumatic at a given position. Uses wheel-based positioning.
-	 * @param newPneumatic The pneumatic to use.
-	 * @param pos The position of the pneumatic.
-	 */
-	void OctocanumDrive::setPneumatic(SimplePneumatic* newPneumatic, MotorPos pos)
-	{
-		solenoids[pos] = newPneumatic;
 	}
 
 	/**

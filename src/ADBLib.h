@@ -15,7 +15,6 @@
 #include "input/MPU6050.h"
 
 //Output
-#include "output/SimpleMotor.h"
 #include "output/SimplePneumatic.h"
 #include "output/PIDMotor.h"
 

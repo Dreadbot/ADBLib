@@ -5,16 +5,28 @@ namespace ADBLib
 	/**
 	 * @brief Constructor; sets the translational motor to nullptr.
 	 */
-	OmniDrive::OmniDrive() : Drivebase()
+	OmniDrive::OmniDrive(SpeedController* mFrontLeft,
+			SpeedController* mFrontRight,
+			SpeedController* mBackRight,
+			SpeedController* mBackLeft,
+			SpeedController* newTransMotor) : Drivebase(mFrontLeft,
+					mFrontRight, mBackRight, mBackLeft)
 	{
-		transMotor = nullptr;
+		transMotor = newTransMotor;
+	}
+
+	OmniDrive::~OmniDrive()
+	{
+		for (int i = 0; i < 4; i++)
+			delete motors[i];
+		delete transMotor;
 	}
 
 	/**
 	 * @brief Set the translation motor.
 	 * @param newMotor The translational motor. Should be set perendicular to the set of regular omni wheels.
 	 */
-	void OmniDrive::setTransMotor(SimpleMotor* newMotor)
+	void OmniDrive::setTransMotor(SpeedController* newMotor)
 	{
 		transMotor = newMotor;
 	}
@@ -27,21 +39,29 @@ namespace ADBLib
 	*/
 	void OmniDrive::drive(float x, float y, float r)
 	{
-		motors[backLeft]->setInvert(true); //Experimental
-		motors[backRight]->setInvert(true);
 
 		speeds[frontLeft] = y + r;
 		speeds[frontRight] = y - r;
-		speeds[backRight] = y - r;
-		speeds[backLeft] = y + r;
+		speeds[backRight] = -(y - r);
+		speeds[backLeft] = -(y + r);
 
 		normSpeeds();
 
 		for (int i = 0; i < 4; ++i)
 			if (motors[i] != nullptr)
-				motors[i]->set(speeds[i]);
+				motors[i]->Set(speeds[i]);
 
 		if (transMotor != nullptr)
-			transMotor->set(x);
+			transMotor->Set(x);
+	}
+
+	void OmniDrive::stop()
+	{
+		for (int i = 0; i < 4; ++i)
+		{
+			if (motors[i] == nullptr)
+				continue;
+			motors[i]->Set(0);
+		}
 	}
 }

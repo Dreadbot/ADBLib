@@ -1,21 +1,20 @@
 #pragma once
 
 #include <WPILib.h>
-#include "SimpleMotor.h"
 
 namespace ADBLib
 {
-	class PIDMotor : public SimpleMotor
+	class PIDMotor : public SpeedController
 	{
 	public:
 		enum PIDK {Kp, Ki, Kd};
 
 		PIDMotor(SpeedController* newMotor, PIDSource* newSrc);
-		PIDMotor(double P, double I, double D, PIDOutput* newMotor, PIDSource* newSrc);
+		PIDMotor(double P, double I, double D, SpeedController* newMotor, PIDSource* newSrc);
 		~PIDMotor();
 
-		//SimpleMotor overrides
-		void set(float value);
+		//SpeedController overrides
+		void Set(float speed, uint8_t syncGroup = 0);
 
 		//Useful PID things from the PIDController class
 		float getError();
@@ -37,6 +36,6 @@ namespace ADBLib
 		float period;
 		PIDController* pidctrl;
 		PIDSource* source;
-		PIDOutput* motor;
+		SpeedController* motor;
 	};
 }

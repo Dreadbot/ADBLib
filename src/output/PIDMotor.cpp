@@ -27,7 +27,7 @@ namespace ADBLib
 	 * @param newMotor A motor as a speed control.
 	 * @param newSource Practically any given sensor.
 	 */
-	PIDMotor::PIDMotor(double P, double I, double D, PIDOutput* newMotor, PIDSource* newSrc)
+	PIDMotor::PIDMotor(double P, double I, double D, SpeedController* newMotor, PIDSource* newSrc)
 	{
 		pidctrl = nullptr;
 		source = newSrc;
@@ -56,19 +56,12 @@ namespace ADBLib
 	 * @param value The speed as a float, range from -1 to 1.
 	 * @todo Needs testing, especially for position
 	 */
-	void PIDMotor::set(float value)
+	void PIDMotor::Set(float speed, uint8_t syncGroup)
 	{
 		if (pidctrl == nullptr)
 			setupCtrl();
 
-		if (!enabled)
-			return;
-
-		//Standard invert
-		if (invert)
-			value = -value;
-
-		pidctrl->SetSetpoint(value * 1023.f); //This should work. Should.
+		pidctrl->SetSetpoint(speed * 1023.f); //This should work. Should.
 	}
 
 	/**

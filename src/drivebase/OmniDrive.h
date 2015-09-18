@@ -10,10 +10,16 @@ namespace ADBLib
 	class OmniDrive : public Drivebase
 	{
 	public:
-		OmniDrive();
+		OmniDrive(SpeedController* mFrontLeft,
+				SpeedController* mFrontRight,
+				SpeedController* mBackRight,
+				SpeedController* mBackLeft,
+				SpeedController* newTransMotor);
+		~OmniDrive();
 		void drive(float x = 0.0, float y = 0.0, float r = 0.0);
-		void setTransMotor(SimpleMotor* newMotor);
+		void setTransMotor(SpeedController* newMotor);
+		void stop();
 	protected:
-		SimpleMotor* transMotor;
+		SpeedController* transMotor;
 	};
 }
