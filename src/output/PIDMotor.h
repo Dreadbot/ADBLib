@@ -10,39 +10,33 @@ namespace ADBLib
 	public:
 		enum PIDK {Kp, Ki, Kd};
 
-		PIDMotor();
-		PIDMotor(double P, double I, double D, PIDSource* newSource);
+		PIDMotor(SpeedController* newMotor, PIDSource* newSrc);
+		PIDMotor(double P, double I, double D, PIDOutput* newMotor, PIDSource* newSrc);
 		~PIDMotor();
 
 		//SimpleMotor overrides
-		void set(float value); //!< PID-enabled set function. Does NOT work without PID stuff being properly set up!
-		void setPWMMotor(Talon* motor); //!< Sets this PIDMotor's output as a non-CAN talon.
-		void setCANMotor(CANTalon* motor); //!< Sets this PIDMotor's output as a CAN talon.
+		void set(float value);
 
 		//Useful PID things from the PIDController class
-		float getError(); //!< Returns the current error.
-		bool isOnTarget(); //!< Is the motor on target?
+		float getError();
+		bool isOnTarget();
 		void setAbsToler(float tolerance); //!< Sets the absolute value tolerance.
 		void setContinuous(bool newCont); //!< Sets whether this PID motor is continuous or no. See documentation for PIDController in WPILib
 		void setInputRange(float newMax, float newMin); //!< Sets the input range expected from the sensor.
 		void setOutputRange(float newMax, float newMin); //!< Sets the output range that the output expects
 		void setPercentTolerance(float newPToler); //!< Sets the percent tolerance of the PID controller.
-		void setControlType(CANTalon::ControlMode type); //!< Sets the control mode. Only affects CANTalons.
 
 		//PIDMotor-specific stuff
-		void setK(double newVal, PIDK slot); //!< Sets a PID constant.
 		void setPID(double newP, double newI, double newD); //!< Sets ALL the PID constants!
 		void setPeriod(float newPeriod); //!< Sets the update period (?)
 		void setSource(PIDSource* newSource); //!< Sets the PID input source. This should be a sensor.
-
-		double getK(PIDK slot); //!< Gets a PID constant.
-		float getPeriod(); //!< Gets the sensor update period.
 	protected:
 		void setupCtrl(); //!< Internal function; creates a new PID since the only way to set a bunch of stuff is through the constructor for PIDController
 
-		PIDController* pidctrl;
 		double PIDValues[3];
 		float period;
+		PIDController* pidctrl;
 		PIDSource* source;
+		PIDOutput* motor;
 	};
 }
