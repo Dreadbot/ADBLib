@@ -163,7 +163,10 @@ namespace ADBLib
 	 */
 	double Controller::operator[](const string& name)
 	{
-		ctrlCfg control;// = profiles[currentProfile][name]; //NOT a 2D array!
+		if (profiles[currentProfile].count(name) == 0)
+			return 0; //There IS no control by this name!
+			
+		ctrlCfg control = profiles[currentProfile][name];
 		if (control.type == ctrlCfg::BUTTON)
 		{
 			if (!control.btn.toggle)
