@@ -6,6 +6,7 @@ using std::vector;
 using std::unordered_map;
 using std::ofstream;
 using std::stringstream;
+#include <WPILib.h>
 
 
 namespace Hydra
@@ -19,7 +20,7 @@ namespace Hydra
     Log::Log(string newName, string newFilename)
     {
         name = newName;
-        filename = newFilename + ".txt";
+        filename = newFilename;
         log("Init creation of logfile " + filename);
     }
 
@@ -79,13 +80,10 @@ namespace Hydra
 
     unordered_map<string, Log> Logger::logFiles;
 
-    /**
-     * @brief Automatically creates its own system log, named "sysLog"
-     */
     Logger::Logger()
     {
-        newLog("sysLog", "/sysLog");
     }
+
     /**
      * @brief Logs a message to the log designated log.
      * @param message The message to log.
@@ -112,7 +110,10 @@ namespace Hydra
     void Logger::newLog(string name, string filename)
     {
     	if (logFiles.count(name) > 0)
+    	{
+    		SmartDashboard::PutBoolean("duplicate log found", true);
     		return; //Duplicate logfile found
+    	}
         Log _newLog(name, filename);
         logFiles[name] = _newLog;
     }
