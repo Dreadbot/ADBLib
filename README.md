@@ -1,5 +1,3 @@
-ADBLib - Advanced Dreadbot Library
+ADBLib - (Somewhat) Advanced Dreadbot Library
 
-A special library for advanced robot development with an eye toward rapid robot code development.
-
-Current Status: Planning/Tier I
+A libray for simple FRC robot code with the aim of simplifying/speeding up development.
