@@ -2,7 +2,7 @@
 
 #include "FSMState.h"
 
-#define END_STATE_TABLE {nullptr, 0, nullptr, false}
+#define END_STATE_TABLE {nullptr, 0, false}
 
 namespace ADBLib
 {
