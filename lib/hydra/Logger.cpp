@@ -6,7 +6,6 @@ using std::vector;
 using std::unordered_map;
 using std::ofstream;
 using std::stringstream;
-#include <WPILib.h>
 
 
 namespace Hydra
@@ -110,10 +109,7 @@ namespace Hydra
     void Logger::newLog(string name, string filename)
     {
     	if (logFiles.count(name) > 0)
-    	{
-    		SmartDashboard::PutBoolean("duplicate log found", true);
     		return; //Duplicate logfile found
-    	}
         Log _newLog(name, filename);
         logFiles[name] = _newLog;
     }
