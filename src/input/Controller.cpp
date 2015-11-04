@@ -1,4 +1,5 @@
 #include "Controller.h"
+using Hydra::Logger;
 
 namespace ADBLib
 {
@@ -95,7 +96,7 @@ namespace ADBLib
 	 *		  <toggle value="false"/>
 	 *		  <cooldown value="0.250"/>
 	 *		</control>
-	 *		<control type="joystick" name="intakeWheels">
+	 *		<control type="joystick" name="intakeWheels" id="5">
 	 *		  <maxInput value="1.0"/>
 	 *		  <minInput value="-1.0"/>
 	 *	  	  <deadzone value="0.1"/>
@@ -112,18 +113,22 @@ namespace ADBLib
 	{
 		pugi::xml_document doc;
 		pugi::xml_parse_result result = doc.load_file(filename.c_str());
-		Hydra::Logger::log(string("XML Load Result: ") + result.description(), "sysLog", Hydra::hydsys);
+		Logger::log(string("XML Load Result: ") + result.description(), "sysLog");
 
-		for (auto profile = doc.child("ControlConfig").child("profile"); profile; profile = profile.next_sibling())
+		for (pugi::xml_node profile: doc.child("ControlConfig").children("profile"))
 		{ //Loop through all profiles
 			unordered_map<string, ctrlCfg> profileSet;
+			Logger::log(string("Found profile ") + profile.attribute("name").as_string(), "sysLog");
 
 			for (auto control = profile.child("control"); control; control = control.next_sibling())
 			{ //Loop through all controls
 				ctrlCfg newCtrl;
 				newCtrl.id = control.attribute("id").as_int();
+				Logger::log(string("Found control ") + control.attribute("name").as_string(), "sysLog");
+
 				if (control.attribute("type").as_string() == string("button"))
 				{
+					Logger::log("Control is of type button", "sysLog");
 					newCtrl.type = ctrlCfg::BUTTON;
 					newCtrl.inverse = control.child("inverse").attribute("value").as_bool();
 					newCtrl.btn.cooldown = control.child("cooldown").attribute("cooldown").as_double();
@@ -131,19 +136,26 @@ namespace ADBLib
 				}
 				else
 				{
+					Logger::log("Control is of type joystick", "sysLog");
 					newCtrl.type = ctrlCfg::JOYSTICK;
 					newCtrl.jys.maxVal = control.child("maxInput").attribute("value").as_double();
 					newCtrl.jys.minVal = control.child("minInput").attribute("value").as_double();
 					newCtrl.jys.deadzone = control.child("deadzone").attribute("value").as_double();
 					newCtrl.jys.equ.parse(control.child("equation").attribute("value").as_string());
 				}
-				//profileSet[control.attribute("name").as_string()] = newCtrl;
+				profileSet[control.attribute("name").as_string()] = newCtrl;
+				Logger::log("Succeeded in adding control!", "sysLog");
 			}
 			profiles[profile.attribute("name").as_string()] = profileSet;
 
 			if (profile.attribute("active").as_bool()) //Automatically switch to default active profiles
+			{
+				Logger::log(string("Switching to active profile ") + profile.attribute("name").as_string(), "sysLog");
 				switchProfile(profile.attribute("name").as_string());
+			}
+
 		}
+		Logger::log("Finished parsing config file", "sysLog");
 	}
 
 	/**
@@ -154,6 +166,8 @@ namespace ADBLib
 	{
 		if (profiles.count(profileName) != 0)
 			currentProfile = profileName;
+		else
+			Logger::log("Couldn't switch to profile - it doesn't exist!", "sysLog", Hydra::error);
 	}
 
 	/**
