@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joystick',['JOYSTICK',['../class_a_d_b_lib_1_1ctrl_cfg.html#af2ffd50d3ed6481243e136a2aed443daab0b86d0fccaaca5045eb23ab66aa494e',1,'ADBLib::ctrlCfg']]]
+  ['hydsys',['hydsys',['../namespace_hydra.html#a5d181f2e8a018a6bdaf0ef1003b1f55ba7ffea63a290b0d5920b2f1c3ca35598b',1,'Hydra']]]
 ];

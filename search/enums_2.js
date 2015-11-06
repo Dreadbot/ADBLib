@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operations',['operations',['../namespace_a_d_b_lib.html#a225f1f480dbdcc527ff6e81f37e5a6f5',1,'ADBLib']]]
+  ['motorpos',['MotorPos',['../class_a_d_b_lib_1_1_drivebase.html#ab33722176bd9e8dc072fd277d3db93d7',1,'ADBLib::Drivebase']]]
 ];

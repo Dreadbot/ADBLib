@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tokentype',['tokenType',['../namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3e',1,'ADBLib']]]
+  ['srmode',['srMode',['../struct_a_d_b_lib_1_1waypoint.html#acada081f8735b56a3ca4a9cec4398f03',1,'ADBLib::waypoint']]]
 ];

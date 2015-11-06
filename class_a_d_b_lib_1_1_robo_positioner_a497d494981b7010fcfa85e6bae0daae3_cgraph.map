@@ -1,5 +1,8 @@
 <map id="ADBLib::RoboPositioner::RoboPositioner" name="ADBLib::RoboPositioner::RoboPositioner">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#abbf6fa0f6271e9869557293b896ad9df" title="ADBLib::MPU6050::initialize" alt="" coords="217,111,405,138"/>
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#abbf6fa0f6271e9869557293b896ad9df" title="ADBLib::MPU6050::initialize" alt="" coords="217,110,405,137"/>
+<area shape="rect" id="node7" href="$class_hydra_1_1_vector3_d.html#a50015e08f3c114c05bf09946577a88ba" title="Hydra::Vector3D::setX" alt="" coords="234,161,389,187"/>
+<area shape="rect" id="node8" href="$class_hydra_1_1_vector3_d.html#aae3112a64c958b992cd5af73870c4e2f" title="Hydra::Vector3D::setY" alt="" coords="234,211,389,238"/>
+<area shape="rect" id="node9" href="$class_hydra_1_1_vector3_d.html#a223cfdf691c33871f8c6e31d82855c3b" title="Hydra::Vector3D::setZ" alt="" coords="234,262,389,289"/>
 <area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a365c9f740b240bb4368aa87e192c4cc0" title="ADBLib::MPU6050::setClock\lSource" alt="" coords="453,5,647,47"/>
 <area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_m_p_u6050.html#af279c9808e9b2949afe028f3387de7fd" title="ADBLib::MPU6050::setFull\lScaleGyroRange" alt="" coords="460,71,640,112"/>
 <area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ad96465cb644655b5fec4cf7b69fbb2ae" title="ADBLib::MPU6050::setFull\lScaleAccelRange" alt="" coords="460,136,640,177"/>

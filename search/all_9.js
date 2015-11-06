@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kd',['Kd',['../class_a_d_b_lib_1_1_p_i_d_motor.html#a2c88d8e4ae2f1bf400b393e1ed855639a6f7b27bf5c79c0f3c91a1abc8d0ee838',1,'ADBLib::PIDMotor']]],
-  ['ki',['Ki',['../class_a_d_b_lib_1_1_p_i_d_motor.html#a2c88d8e4ae2f1bf400b393e1ed855639a12443c2b2724cdcd028fa68f5789e64e',1,'ADBLib::PIDMotor']]],
-  ['kp',['Kp',['../class_a_d_b_lib_1_1_p_i_d_motor.html#a2c88d8e4ae2f1bf400b393e1ed855639a7e708296569e7cc509c5dfb832b09430',1,'ADBLib::PIDMotor']]]
+  ['joystick',['JOYSTICK',['../class_a_d_b_lib_1_1ctrl_cfg.html#af2ffd50d3ed6481243e136a2aed443daab0b86d0fccaaca5045eb23ab66aa494e',1,'ADBLib::ctrlCfg::JOYSTICK()'],['../class_a_d_b_lib_1_1_controller.html#a59a6998c7d4ba05da35d424bdc3f8f83',1,'ADBLib::Controller::joystick()']]],
+  ['jys',['jys',['../class_a_d_b_lib_1_1ctrl_cfg.html#add5ef03f8dccc395b8fe8905af7492a9',1,'ADBLib::ctrlCfg']]],
+  ['jyscfg',['jysCfg',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html',1,'ADBLib::ctrlCfg']]]
 ];

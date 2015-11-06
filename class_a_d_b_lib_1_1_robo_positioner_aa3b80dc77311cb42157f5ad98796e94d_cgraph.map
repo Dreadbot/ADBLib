@@ -1,3 +1,7 @@
 <map id="ADBLib::RoboPositioner::resetInertFrame" name="ADBLib::RoboPositioner::resetInertFrame">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ac518f592c610c6147b55cdc67ce38d3d" title="ADBLib::MPU6050::getRotation" alt="" coords="217,13,425,39"/>
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ac518f592c610c6147b55cdc67ce38d3d" title="ADBLib::MPU6050::getRotation" alt="" coords="217,5,425,32"/>
+<area shape="rect" id="node3" href="$class_hydra_1_1_vector3_d.html#a81f839920319b1c501815173a1c7fb56" title="Hydra::Vector3D::rotateX" alt="" coords="236,56,407,83"/>
+<area shape="rect" id="node5" href="$class_hydra_1_1_vector3_d.html#a24a098941e008d97c4ed07a46088de55" title="Hydra::Vector3D::rotateY" alt="" coords="236,107,407,133"/>
+<area shape="rect" id="node6" href="$class_hydra_1_1_vector3_d.html#ad80c58d96304b6d54438f453ec73c142" title="Hydra::Vector3D::rotateZ" alt="" coords="237,157,406,184"/>
+<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="473,107,633,133"/>
 </map>

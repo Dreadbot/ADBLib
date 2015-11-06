@@ -1,5 +1,7 @@
 <map id="/home/sourec/Documents/Git Repositories/ADBLib&#45;EGIT/src/control/Path.h" name="/home/sourec/Documents/Git Repositories/ADBLib&#45;EGIT/src/control/Path.h">
-<area shape="rect" id="node4" href="$_robo_positioner_8h.html" title="RoboPositioner.h" alt="" coords="339,109,462,136"/>
-<area shape="rect" id="node9" href="$_drivebase_8h.html" title="../drivebase/Drivebase.h" alt="" coords="620,109,784,136"/>
-<area shape="rect" id="node6" href="$_m_p_u6050_8h.html" title="../input/MPU6050.h" alt="" coords="5,184,140,211"/>
+<area shape="rect" id="node4" href="$_robo_positioner_8h.html" title="RoboPositioner.h" alt="" coords="379,109,501,136"/>
+<area shape="rect" id="node11" href="$_drivebase_8h.html" title="../drivebase/Drivebase.h" alt="" coords="702,109,866,136"/>
+<area shape="rect" id="node5" href="$_vector3_d_8h.html" title="../../lib/hydra/Vector3D.h" alt="" coords="5,184,171,211"/>
+<area shape="rect" id="node8" href="$_m_p_u6050_8h.html" title="../input/MPU6050.h" alt="" coords="195,184,330,211"/>
+<area shape="rect" id="node7" href="$_matrix_8h.html" title="Matrix.h" alt="" coords="119,259,188,285"/>
 </map>

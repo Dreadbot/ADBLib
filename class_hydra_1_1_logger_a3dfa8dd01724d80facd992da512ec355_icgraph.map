@@ -1,0 +1,6 @@
+<map id="Hydra::Logger::newLog" name="Hydra::Logger::newLog">
+<area shape="rect" id="node2" href="$class_hydra_1_1_logger.html#a6d2ffea8cc432d15f70d9abd5f398e72" title="Logs a message to the log designated log. " alt="" coords="211,31,340,57"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd" title="Starts the camera. " alt="" coords="388,5,543,32"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9" title="Stops the camera. " alt="" coords="388,56,543,83"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_multi_vision.html#a76d24a5a3203763cd295e925be913822" title="Switches to the new camera, automatically stopping the previous camera and starting the new one..." alt="" coords="591,23,729,65"/>
+</map>

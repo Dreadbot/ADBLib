@@ -1,6 +1,7 @@
 var searchData=
 [
   ['magfactor',['magFactor',['../namespace_a_d_b_lib.html#a30d5adf3979dd232d59534a4fb67b025',1,'ADBLib']]],
+  ['mat',['mat',['../class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6',1,'Hydra::Matrix']]],
   ['maxval',['maxVal',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html#a32c8d9b477123ab60eca1ac439430fd0',1,'ADBLib::ctrlCfg::jysCfg']]],
   ['mdgw',['mdgw',['../class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14',1,'ADBLib::RoboPositioner']]],
   ['minval',['minVal',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html#adce522d363b8ddb1c54122979473e67d',1,'ADBLib::ctrlCfg::jysCfg']]],

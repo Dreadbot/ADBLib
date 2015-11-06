@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['octocanumdrive',['OctocanumDrive',['../class_a_d_b_lib_1_1_octocanum_drive.html#aa86b249b06381752f31843945bd0cf3d',1,'ADBLib::OctocanumDrive']]],
-  ['omnidrive',['OmniDrive',['../class_a_d_b_lib_1_1_omni_drive.html#abae04d63bb839fca28433fe791e736be',1,'ADBLib::OmniDrive']]],
-  ['operator_5b_5d',['operator[]',['../class_a_d_b_lib_1_1_controller.html#a1c7f74e2b194265dbad081719e2610df',1,'ADBLib::Controller']]]
+  ['newlog',['newLog',['../class_hydra_1_1_logger.html#a3dfa8dd01724d80facd992da512ec355',1,'Hydra::Logger']]],
+  ['normalize',['normalize',['../class_hydra_1_1_vector3_d.html#ae858d75c4cbabe443f4936d401bfc531',1,'Hydra::Vector3D']]],
+  ['normspeeds',['normSpeeds',['../class_a_d_b_lib_1_1_drivebase.html#a93f18a077a28e78ff1003202cf26b095',1,'ADBLib::Drivebase']]]
 ];
