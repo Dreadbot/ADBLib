@@ -22,11 +22,6 @@ namespace ADBLib
 		delete joystick;
 	}
 
-	ctrlCfg::btnCfg::~btnCfg()
-	{
-		delete cooldownTimer;
-	}
-
 	/**
 	 * @brief Gets the raw button setting as true or false, disregarding any active cooldowns.
 	 * @param ID The ID of the button. ID changes depending on controller mode (X-Mode or D-Mode)
@@ -144,7 +139,6 @@ namespace ADBLib
 					newCtrl.jys.equ.parse(control.child("equation").attribute("value").as_string());
 				}
 				profileSet[control.attribute("name").as_string()] = newCtrl;
-				Logger::log("Succeeded in adding control!", "sysLog");
 			}
 			profiles[profile.attribute("name").as_string()] = profileSet;
 

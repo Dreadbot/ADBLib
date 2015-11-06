@@ -21,6 +21,7 @@ namespace ADBLib
 	{
 	public:
 		ctrlCfg();
+		void free() {delete btn.cooldownTimer;}
 		enum {BUTTON, JOYSTICK} type;	//!< The type of control this is.
 		unsigned int id;				//!< Control ID, needed regardless of button vs joystick
 		bool inverse;					//!< Inverse - if button, inverts. If joystick, flips the axis... sort of
