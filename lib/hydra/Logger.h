@@ -30,7 +30,7 @@ namespace Hydra
 	public:
 		Log(string newName, string newFilename);
 		Log() {} //!< This is never used. It has something to do with tuples. DO NOT USE THIS CONSTRUCTOR.
-		void log(string message, logFlag flag = hydsys);
+		void log(string message, logFlag flag = info);
 		void flushBuffer();
 	private:
 		vector<string> logBuffer;
@@ -46,7 +46,7 @@ namespace Hydra
 	{
 	public:
 		Logger();
-		static void log(string message, string name, logFlag flag = hydsys);
+		static void log(string message, string name, logFlag flag = info);
 		static void newLog(string name, string filename);
 		static Log* getLog(string name);
 		static void flushLogBuffers();

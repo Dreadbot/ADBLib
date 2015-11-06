@@ -25,18 +25,17 @@ namespace ADBLib
 		enum {BUTTON, JOYSTICK} type;	//!< The type of control this is.
 		unsigned int id;				//!< Control ID, needed regardless of button vs joystick
 		bool inverse;					//!< Inverse - if button, inverts. If joystick, flips the axis... sort of
-		struct btnCfg
+		struct btnCfg					//!< For internal use by Controller
 		{
-			~btnCfg();
 			bool toggle;
 			double cooldown;
-			Timer* cooldownTimer; //TIMERS ARE COPY/ASSIGN PROTECTED! GAAAAHHHHH!
+			Timer* cooldownTimer; 		//!< Timers are copy/assign protected.
 		} btn;
-		struct jysCfg
+		struct jysCfg					//!< For internal use by Controller.
 		{
 			double maxVal;				//!< Minimum value for a joystick. Allows control scaling.
 			double minVal;				//!< Maximum value for a joystick. Allows control scaling.
-			double deadzone;			//!< Deadzone to use
+			double deadzone;			//!< Deadzone to use.
 			Equation equ;
 		} jys;
 	};
