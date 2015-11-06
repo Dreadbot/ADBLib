@@ -1,0 +1,4 @@
+<map id="ADBLib::SimplePneumatic::set" name="ADBLib::SimplePneumatic::set">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_octocanum_drive.html#a9cd47195dfa34447f872d8fc4eb06d15" title="Drives with full translational and rotational capability. " alt="" coords="271,5,444,47"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_simple_pneumatic.html#ab8a0c89ae034130554bb709966f76f6d" title="Smart set – automatically converts from an integer to a DoubleSolenoid::Value. " alt="" coords="256,71,459,98"/>
+</map>

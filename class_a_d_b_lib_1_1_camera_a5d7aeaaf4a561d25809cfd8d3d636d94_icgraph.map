@@ -1,0 +1,4 @@
+<map id="ADBLib::Camera::getImage" name="ADBLib::Camera::getImage">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_multi_vision.html#a9337f3703af5b6d2fce209a9419c246b" title="Post an image from the current camera to the Camera Server (i.e. to the dashboard) ..." alt="" coords="236,5,375,47"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_multi_vision.html#a4a8e4e44af4efca3dc3182170f2f2eb2" title="Gets an image from the current camera. " alt="" coords="236,71,375,112"/>
+</map>

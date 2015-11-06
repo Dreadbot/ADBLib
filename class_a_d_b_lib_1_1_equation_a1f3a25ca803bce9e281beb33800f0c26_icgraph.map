@@ -1,0 +1,6 @@
+<map id="ADBLib::Equation::getValue" name="ADBLib::Equation::getValue">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_equation.html#a586cac0b370cf8eef6551d8011324061" title="Parses an equation into more easily processable form (RPN). Write equations like you would in C++..." alt="" coords="239,64,405,91"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1ctrl_cfg.html#aaf420f8cc9c626f78115cc7cf389167d" title="ADBLib::ctrlCfg::ctrlCfg" alt="" coords="465,5,627,32"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_controller.html#a053d1ea07804659bac4ca135fcadae9c" title="Loads control settings from a config file, because hard&#45;coded controls are awful. ..." alt="" coords="481,57,611,98"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_equation.html#a1ea196eaf7e88187265f3418b25d2316" title="Constructor. Lets you parse a new equation upon construction. " alt="" coords="453,123,639,149"/>
+</map>

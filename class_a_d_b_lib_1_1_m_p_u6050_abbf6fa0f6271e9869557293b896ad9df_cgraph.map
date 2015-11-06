@@ -1,0 +1,6 @@
+<map id="ADBLib::MPU6050::initialize" name="ADBLib::MPU6050::initialize">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a365c9f740b240bb4368aa87e192c4cc0" title="ADBLib::MPU6050::setClock\lSource" alt="" coords="241,5,435,47"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_m_p_u6050.html#af279c9808e9b2949afe028f3387de7fd" title="ADBLib::MPU6050::setFull\lScaleGyroRange" alt="" coords="248,71,428,112"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ad96465cb644655b5fec4cf7b69fbb2ae" title="ADBLib::MPU6050::setFull\lScaleAccelRange" alt="" coords="248,136,428,177"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a862feed1141e09fbbcd50ff49be35743" title="ADBLib::MPU6050::setSleep\lEnabled" alt="" coords="242,201,434,243"/>
+</map>

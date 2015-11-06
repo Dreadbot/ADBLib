@@ -1,0 +1,4 @@
+<map id="ADBLib::MultiVision::getCurrentImage" name="ADBLib::MultiVision::getCurrentImage">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81" title="Gets the status of the camera. " alt="" coords="192,5,387,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_camera.html#a5d7aeaaf4a561d25809cfd8d3d636d94" title="Gets an image from the camera. " alt="" coords="198,56,381,83"/>
+</map>

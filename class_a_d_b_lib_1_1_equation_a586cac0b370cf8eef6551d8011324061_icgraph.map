@@ -1,0 +1,5 @@
+<map id="ADBLib::Equation::parse" name="ADBLib::Equation::parse">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1ctrl_cfg.html#aaf420f8cc9c626f78115cc7cf389167d" title="ADBLib::ctrlCfg::ctrlCfg" alt="" coords="232,5,393,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_controller.html#a053d1ea07804659bac4ca135fcadae9c" title="Loads control settings from a config file, because hard&#45;coded controls are awful. ..." alt="" coords="247,57,378,98"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_equation.html#a1ea196eaf7e88187265f3418b25d2316" title="Constructor. Lets you parse a new equation upon construction. " alt="" coords="220,123,405,149"/>
+</map>

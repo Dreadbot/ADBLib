@@ -1,0 +1,4 @@
+<map id="ADBLib::Token::evaluate" name="ADBLib::Token::evaluate">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_equation.html#ac9cc78a8dbac3916bd636bfe5722a2bf" title="Evaluate the parsed equation, replacing &quot;x&quot; with the given value. " alt="" coords="221,13,404,39"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_controller.html#a1c7f74e2b194265dbad081719e2610df" title="Get the value of a set control, referenced by name. " alt="" coords="452,5,583,47"/>
+</map>

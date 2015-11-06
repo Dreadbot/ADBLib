@@ -1,0 +1,6 @@
+<map id="ADBLib::Equation::getOType" name="ADBLib::Equation::getOType">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_equation.html#a586cac0b370cf8eef6551d8011324061" title="Parses an equation into more easily processable form (RPN). Write equations like you would in C++..." alt="" coords="244,64,411,91"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1ctrl_cfg.html#aaf420f8cc9c626f78115cc7cf389167d" title="ADBLib::ctrlCfg::ctrlCfg" alt="" coords="471,5,632,32"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_controller.html#a053d1ea07804659bac4ca135fcadae9c" title="Loads control settings from a config file, because hard&#45;coded controls are awful. ..." alt="" coords="486,57,617,98"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_equation.html#a1ea196eaf7e88187265f3418b25d2316" title="Constructor. Lets you parse a new equation upon construction. " alt="" coords="459,123,644,149"/>
+</map>

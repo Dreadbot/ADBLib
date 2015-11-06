@@ -1,0 +1,6 @@
+<map id="ADBLib::PIDMotor::setupCtrl" name="ADBLib::PIDMotor::setupCtrl">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_p_i_d_motor.html#a52552b49e2e78e6e27b4ff4316bc10c7" title="Sets up a PID motor with a given speed controller and an input source. " alt="" coords="247,5,442,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_p_i_d_motor.html#a35543380212d8f9e972c1a6ea7c58b8f" title="ADBLib::PIDMotor::Set" alt="" coords="265,56,424,83"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_p_i_d_motor.html#af35072afe40bd5f40e6b08617da701b8" title="Sets the update period (?) " alt="" coords="247,107,442,133"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_p_i_d_motor.html#a156a93827aa2f97c1dba6f91d058cdbc" title="Sets the PID input source. This should be a sensor. " alt="" coords="245,157,444,184"/>
+</map>

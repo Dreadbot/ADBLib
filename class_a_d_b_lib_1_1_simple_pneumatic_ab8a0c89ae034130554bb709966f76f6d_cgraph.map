@@ -1,0 +1,3 @@
+<map id="ADBLib::SimplePneumatic::set" name="ADBLib::SimplePneumatic::set">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_simple_pneumatic.html#a000a279535a9c551bb28df89ad6531f7" title="Sets the value for this pneumatic; if it&#39;s a single solenoid, not kStop values are automatically adju..." alt="" coords="256,5,459,32"/>
+</map>
