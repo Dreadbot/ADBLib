@@ -40,7 +40,7 @@ namespace Hydra
 	};
 
 	/**
-	 * @brief Singleton logging class allowing for global access to logging capabilities without a whole lot of annoyances.
+	 * @brief Static logging class allowing for global access to logging capabilities without a whole lot of annoyances.
 	 */
 	class Logger
 	{
