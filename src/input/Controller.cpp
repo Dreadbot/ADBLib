@@ -20,6 +20,11 @@ namespace ADBLib
 	Controller::~Controller()
 	{
 		delete joystick;
+		for (auto profile = profiles.begin(); profile != profiles.end(); profile++) //Delete cooldown timers
+		{
+			for (auto control = profile->second.begin(); control != profile->second.end(); control++)
+				delete control->second.btn.cooldownTimer;
+		}
 	}
 
 	/**
