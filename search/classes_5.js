@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jyscfg',['jysCfg',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html',1,'ADBLib::ctrlCfg']]]
+  ['i2cdev',['I2Cdev',['../class_a_d_b_lib_1_1_i2_cdev.html',1,'ADBLib']]]
 ];

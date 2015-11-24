@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logger_2ecpp',['Logger.cpp',['../_logger_8cpp.html',1,'']]],
-  ['logger_2eh',['Logger.h',['../_logger_8h.html',1,'']]]
+  ['i2cdev_2ecpp',['I2Cdev.cpp',['../_i2_cdev_8cpp.html',1,'']]],
+  ['i2cdev_2eh',['I2Cdev.h',['../_i2_cdev_8h.html',1,'']]]
 ];

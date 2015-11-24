@@ -6,6 +6,7 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -28,6 +29,7 @@ var NAVTREE =
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
@@ -37,10 +39,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_d_b_lib_8h.html",
-"_m_p_u6050_8h.html#a985445c35a0fe1be18020ad3a635beb7",
-"class_a_d_b_lib_1_1_m_p_u6050.html#a1b5afc601e92e5477f95bdbda4a8c022",
-"class_a_d_b_lib_1_1_octocanum_drive.html#a5a0d47a9977b99c66643a3dd26cdf8c0",
-"struct_a_d_b_lib_1_1ctrl_cfg_1_1btn_cfg.html#a9dc9c0489f928a6d3ee4b97ca4ebad0d"
+"_m_p_u6050_8h.html#a95960b2c82d00341b6174272e2fb3e07",
+"class_a_d_b_lib_1_1_m_p_u6050.html#a0e78bd31af92945eb46f898d00bfa2f4",
+"class_a_d_b_lib_1_1_m_p_u6050.html#afcdeed45477eb9cae0983f1677f79164",
+"functions_w.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

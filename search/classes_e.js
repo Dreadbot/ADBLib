@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['waypoint',['waypoint',['../struct_a_d_b_lib_1_1waypoint.html',1,'ADBLib']]]
+  ['vector3d',['Vector3D',['../class_hydra_1_1_vector3_d.html',1,'Hydra']]]
 ];

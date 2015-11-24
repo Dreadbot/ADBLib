@@ -1,0 +1,5 @@
+<map id="ADBLib::MPU6050::getSlave0FIFOEnabled" name="ADBLib::MPU6050::getSlave0FIFOEnabled">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#a0996c4082954694e2150a27ad49b8a29" title="ADBLib::I2Cdev::readBit" alt="" coords="252,13,419,39"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4" title="ADBLib::I2Cdev::readByte" alt="" coords="467,13,644,39"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628" title="ADBLib::I2Cdev::readBytes" alt="" coords="692,13,876,39"/>
+</map>

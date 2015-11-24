@@ -1,6 +1,6 @@
-<map id="/home/sourec/Documents/Git Repositories/ADBLib&#45;EGIT/src/input/Camera.h" name="/home/sourec/Documents/Git Repositories/ADBLib&#45;EGIT/src/input/Camera.h">
-<area shape="rect" id="node2" href="$_multi_vision_8h.html" title="/home/sourec/Documents\l/Git Repositories/ADBLib\l&#45;EGIT/src/input/MultiVision.h" alt="" coords="129,109,320,165"/>
-<area shape="rect" id="node3" href="$_a_d_b_lib_8h.html" title="/home/sourec/Documents\l/Git Repositories/ADBLib\l&#45;EGIT/src/ADBLib.h" alt="" coords="5,213,177,269"/>
-<area shape="rect" id="node5" href="$_camera_8cpp.html" title="/home/sourec/Documents\l/Git Repositories/ADBLib\l&#45;EGIT/src/input/Camera.cpp" alt="" coords="345,109,531,165"/>
-<area shape="rect" id="node4" href="$_multi_vision_8cpp.html" title="/home/sourec/Documents\l/Git Repositories/ADBLib\l&#45;EGIT/src/input/MultiVision.cpp" alt="" coords="201,213,405,269"/>
+<map id="src/input/Camera.h" name="src/input/Camera.h">
+<area shape="rect" id="node2" href="$_multi_vision_8h.html" title="src/input/MultiVision.h" alt="" coords="93,80,244,107"/>
+<area shape="rect" id="node3" href="$_a_d_b_lib_8h.html" title="src/ADBLib.h" alt="" coords="5,155,105,181"/>
+<area shape="rect" id="node5" href="$_camera_8cpp.html" title="src/input/Camera.cpp" alt="" coords="269,80,415,107"/>
+<area shape="rect" id="node4" href="$_multi_vision_8cpp.html" title="src/input/MultiVision.cpp" alt="" coords="129,155,294,181"/>
 </map>

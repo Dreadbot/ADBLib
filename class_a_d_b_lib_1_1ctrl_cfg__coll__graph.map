@@ -1,5 +1,5 @@
 <map id="ADBLib::ctrlCfg" name="ADBLib::ctrlCfg">
-<area shape="rect" id="node2" href="$struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html" title="ADBLib::ctrlCfg::jysCfg" alt="" coords="5,199,165,225"/>
+<area shape="rect" id="node2" href="$struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html" title="&lt; For internal use by Controller. " alt="" coords="5,199,165,225"/>
 <area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_equation.html" title="ADBLib::Equation" alt="" coords="22,109,149,136"/>
-<area shape="rect" id="node5" href="$struct_a_d_b_lib_1_1ctrl_cfg_1_1btn_cfg.html" title="ADBLib::ctrlCfg::btnCfg" alt="" coords="190,199,351,225"/>
+<area shape="rect" id="node5" href="$struct_a_d_b_lib_1_1ctrl_cfg_1_1btn_cfg.html" title="&lt; For internal use by Controller " alt="" coords="190,199,351,225"/>
 </map>

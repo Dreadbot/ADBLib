@@ -1,0 +1,51 @@
+<map id="ADBLib::I2Cdev::readBytes" name="ADBLib::I2Cdev::readBytes">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4" title="ADBLib::I2Cdev::readByte" alt="" coords="269,945,446,972"/>
+<area shape="rect" id="node35" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a80aa2e52474c25a43a2ef10a9d511396" title="ADBLib::MPU6050::getMotion9" alt="" coords="533,1564,739,1591"/>
+<area shape="rect" id="node37" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a505d4dedfc557c7a6f49ae30ca6585b9" title="ADBLib::MPU6050::getMag" alt="" coords="265,1513,449,1540"/>
+<area shape="rect" id="node38" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a75f40d373e4526e38a4e5e41d9afc739" title="ADBLib::MPU6050::getMotion6" alt="" coords="255,1564,460,1591"/>
+<area shape="rect" id="node39" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a1b5afc601e92e5477f95bdbda4a8c022" title="ADBLib::MPU6050::getAcceleration" alt="" coords="242,1615,473,1641"/>
+<area shape="rect" id="node40" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a6211f65c65d880090edaa586d5d4527c" title="ADBLib::MPU6050::getAccelerationX" alt="" coords="237,1665,477,1692"/>
+<area shape="rect" id="node41" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a16917c606b84a2b006cbe392689f882a" title="ADBLib::MPU6050::getAccelerationY" alt="" coords="237,1716,477,1743"/>
+<area shape="rect" id="node42" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a495bbcfd3190e599c298b1f273458afa" title="ADBLib::MPU6050::getAccelerationZ" alt="" coords="238,1767,477,1793"/>
+<area shape="rect" id="node43" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a847be0f9e5143b6fdc13699d757080e7" title="ADBLib::MPU6050::getTemperature" alt="" coords="241,1817,473,1844"/>
+<area shape="rect" id="node44" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ac518f592c610c6147b55cdc67ce38d3d" title="ADBLib::MPU6050::getRotation" alt="" coords="253,1868,461,1895"/>
+<area shape="rect" id="node46" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a5e3b471fdbd8a29cc4a2a499b0892036" title="ADBLib::MPU6050::getRotationX" alt="" coords="249,1919,466,1945"/>
+<area shape="rect" id="node47" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a2f63cd9d8d98855d1d9eec1c9ff707a4" title="ADBLib::MPU6050::getRotationY" alt="" coords="249,1969,466,1996"/>
+<area shape="rect" id="node48" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aa7798953984e7953b0993d9d5efe1958" title="ADBLib::MPU6050::getRotationZ" alt="" coords="249,2020,465,2047"/>
+<area shape="rect" id="node49" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a210b677bd806ae7e2202990beb892feb" title="ADBLib::MPU6050::getExternal\lSensorWord" alt="" coords="254,2071,461,2113"/>
+<area shape="rect" id="node50" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ad5635b56e8ceac6e1a054a9cb6c9a0b3" title="ADBLib::MPU6050::getExternal\lSensorDWord" alt="" coords="254,2137,461,2178"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#a0996c4082954694e2150a27ad49b8a29" title="ADBLib::I2Cdev::readBit" alt="" coords="553,357,719,384"/>
+<area shape="rect" id="node16" href="$class_a_d_b_lib_1_1_i2_cdev.html#a9802c2119bf41d0cee62456eaae8adc3" title="ADBLib::I2Cdev::readBits" alt="" coords="549,408,723,435"/>
+<area shape="rect" id="node17" href="$class_a_d_b_lib_1_1_i2_cdev.html#a3530717d0fbec98599d199ba8bd5bebc" title="ADBLib::I2Cdev::writeBit" alt="" coords="551,459,721,485"/>
+<area shape="rect" id="node18" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac369238346fc7b686dd53107f0f1f777" title="ADBLib::I2Cdev::writeBits" alt="" coords="548,509,724,536"/>
+<area shape="rect" id="node19" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a3e4aed3595d1a96fa2868eebf5259495" title="ADBLib::MPU6050::getRate" alt="" coords="543,560,729,587"/>
+<area shape="rect" id="node20" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ac3111bcec17cd1ca7f4cd3c82782ef7d" title="ADBLib::MPU6050::checkMag\lStatus" alt="" coords="535,611,737,653"/>
+<area shape="rect" id="node21" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aee86b7a54c80116dbcea134c0483e374" title="ADBLib::MPU6050::getFreefall\lDetectionThreshold" alt="" coords="535,677,737,718"/>
+<area shape="rect" id="node22" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aeeb3604c2cdfa071071a2e69ca1242d8" title="ADBLib::MPU6050::getFreefall\lDetectionDuration" alt="" coords="535,742,737,783"/>
+<area shape="rect" id="node23" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ae31039d1b0b1a2867c6520bc0bfcd412" title="ADBLib::MPU6050::getMotion\lDetectionThreshold" alt="" coords="537,807,735,849"/>
+<area shape="rect" id="node24" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a78e0eae1a54ef604982517299df6f7e5" title="ADBLib::MPU6050::getMotion\lDetectionDuration" alt="" coords="537,873,735,914"/>
+<area shape="rect" id="node25" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a60c2a56ab3d5bf85f93d5365ac6c8003" title="ADBLib::MPU6050::getZero\lMotionDetectionThreshold" alt="" coords="543,938,729,979"/>
+<area shape="rect" id="node26" href="$class_a_d_b_lib_1_1_m_p_u6050.html#af2ce3a0682fedc983f24c22443d2b9ab" title="ADBLib::MPU6050::getZero\lMotionDetectionDuration" alt="" coords="543,1003,729,1045"/>
+<area shape="rect" id="node27" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a9821d7acb56c5e00f4a27d2df9a29512" title="ADBLib::MPU6050::getSlave\lAddress" alt="" coords="540,1069,732,1110"/>
+<area shape="rect" id="node28" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a7ba4e5c7308839f079dbf0540736c5a4" title="ADBLib::MPU6050::getSlave\lRegister" alt="" coords="540,1134,732,1175"/>
+<area shape="rect" id="node29" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aa01b5a5f591482f5f0184082d95c8342" title="ADBLib::MPU6050::getSlave4\lAddress" alt="" coords="537,1199,735,1241"/>
+<area shape="rect" id="node30" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a17e39c25f92677d1492b989db7cd6261" title="ADBLib::MPU6050::getSlave4\lRegister" alt="" coords="537,1265,735,1306"/>
+<area shape="rect" id="node31" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a25f2c9835b88a962e0a2b83a6e057579" title="ADBLib::MPU6050::getSlate4\lInputByte" alt="" coords="538,1330,734,1371"/>
+<area shape="rect" id="node32" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aa2b888addfdac7f4e6949923752160a4" title="ADBLib::MPU6050::getIntEnabled" alt="" coords="525,1396,747,1423"/>
+<area shape="rect" id="node33" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0c9711dfd976dc931c8eab5cb1dd5586" title="ADBLib::MPU6050::getIntStatus" alt="" coords="530,1447,742,1473"/>
+<area shape="rect" id="node34" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a6824c41bd34c8b738f8292f627b4349d" title="ADBLib::MPU6050::getExternal\lSensorByte" alt="" coords="533,1498,739,1539"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a42077c3323d2e78dfd00a5ad4bb48026" title="ADBLib::MPU6050::getAuxVDDIOLevel" alt="" coords="795,5,1051,32"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_m_p_u6050.html#accb70db5db1d9ba68731eda4869f566b" title="ADBLib::MPU6050::getAccel\lXSelfTest" alt="" coords="827,57,1019,98"/>
+<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_m_p_u6050.html#afe0ebb865753b9bee02ad73f3b72c64a" title="ADBLib::MPU6050::getAccel\lYSelfTest" alt="" coords="827,122,1019,163"/>
+<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_m_p_u6050.html#afdf15ebbca5ecad8bcf130c0bd88682f" title="ADBLib::MPU6050::getAccel\lZSelfTest" alt="" coords="827,187,1019,229"/>
+<area shape="rect" id="node8" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a35c8eeb0244da0414269358a4c2b696c" title="ADBLib::MPU6050::getTemp\lFIFOEnabled" alt="" coords="827,253,1019,294"/>
+<area shape="rect" id="node9" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a2fadbcbbc2d4664ad500d6d0561dd887" title="ADBLib::MPU6050::getXGyro\lFIFOEnabled" alt="" coords="825,318,1021,359"/>
+<area shape="rect" id="node10" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ade1909cc72930bf7a977e975ca448e3e" title="ADBLib::MPU6050::getYGyro\lFIFOEnabled" alt="" coords="825,383,1021,425"/>
+<area shape="rect" id="node11" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a983cfdf7e3cae82d87af8ddcdde82210" title="ADBLib::MPU6050::getZGyro\lFIFOEnabled" alt="" coords="825,449,1020,490"/>
+<area shape="rect" id="node12" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0e75c577614a4b7abb478e55f164c4ed" title="ADBLib::MPU6050::getAccel\lFIFOEnabled" alt="" coords="827,514,1019,555"/>
+<area shape="rect" id="node13" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a83da386f3f59c39683d25350d933adb1" title="ADBLib::MPU6050::getSlave2\lFIFOEnabled" alt="" coords="823,579,1022,621"/>
+<area shape="rect" id="node14" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a40c1be6422e810d6ee377c08f5d67a08" title="ADBLib::MPU6050::getSlave1\lFIFOEnabled" alt="" coords="823,645,1022,686"/>
+<area shape="rect" id="node15" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a26f4f582145a9f1b87dfb2d0445a86b8" title="ADBLib::MPU6050::getSlave0\lFIFOEnabled" alt="" coords="823,710,1022,751"/>
+<area shape="rect" id="node36" href="$class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="841,1557,1005,1598"/>
+<area shape="rect" id="node45" href="$class_a_d_b_lib_1_1_robo_positioner.html#aa3b80dc77311cb42157f5ad98796e94d" title="Resets positions and rotations and adjusts velocity to compensate. " alt="" coords="554,1861,718,1902"/>
+</map>

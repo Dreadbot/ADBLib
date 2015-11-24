@@ -30,8 +30,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
+   &#160;<span id="projectnumber">0.5</span>
    </div>
-   <div id="projectbrief">A small library for FRC robots.</div>
+   <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
  </tr>
  </tbody>
@@ -157,7 +158,12 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_d_b_lib_1_1_equation.html">Equation</a> class for handling simple equations (PEMDAS) when the equation is not known at compile-time.</p>
-<dl class="section note"><dt>Note</dt><dd>This class throws the <a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a> exception in case issues arise. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4654973d7d12c81c5c0b114467ca91fd"></a>
 <div class="memitem">
@@ -238,6 +244,12 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the evaluated equation </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -289,6 +301,12 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of operator this is. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -331,6 +349,12 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The type of token this is (variable, value, operator). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -417,6 +441,12 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_a_d_b_lib_1_1parse__error.html">parse_error</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section note"><dt>Note</dt><dd>You MUST load an equation with this function before using <a class="el" href="class_a_d_b_lib_1_1_equation.html#ac9cc78a8dbac3916bd636bfe5722a2bf" title="Evaluate the parsed equation, replacing &quot;x&quot; with the given value. ">evaluate()</a>! </dd></dl>
 
 <p><div class="dynheader">
@@ -461,8 +491,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/sourec/Documents/Git Repositories/ADBLib-EGIT/src/misc/<a class="el" href="_equation_8h_source.html">Equation.h</a></li>
-<li>/home/sourec/Documents/Git Repositories/ADBLib-EGIT/src/misc/<a class="el" href="_equation_8cpp.html">Equation.cpp</a></li>
+<li>src/misc/<a class="el" href="_equation_8h_source.html">Equation.h</a></li>
+<li>src/misc/<a class="el" href="_equation_8cpp.html">Equation.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -470,7 +500,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_d_b_lib.html">ADBLib</a></li><li class="navelem"><a class="el" href="class_a_d_b_lib_1_1_equation.html">Equation</a></li>
-    <li class="footer">Generated on Fri Nov 6 2015 14:37:33 for ADBLib by
+    <li class="footer">Generated on Tue Nov 24 2015 16:06:44 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

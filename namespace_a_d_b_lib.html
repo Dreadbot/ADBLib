@@ -30,8 +30,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
+   &#160;<span id="projectnumber">0.5</span>
    </div>
-   <div id="projectbrief">A small library for FRC robots.</div>
+   <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +107,7 @@ $(document).ready(function(){initNavTree('namespace_a_d_b_lib.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">ADBLib Namespace Reference</div>  </div>
@@ -131,6 +133,10 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_i2_cdev.html">I2Cdev</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_madgwick_a_h_r_s.html">MadgwickAHRS</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_mecanum_drive.html">MecanumDrive</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mecanum drive class that uses mecanum wheels for full translation and rotation.  <a href="class_a_d_b_lib_1_1_mecanum_drive.html#details">More...</a><br /></td></tr>
@@ -188,6 +194,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3ea2438d77eaf16a1454e574cd049b80ea5">OPERATOR</a>
  }</td></tr>
 <tr class="separator:a727f7b8feaebbd4309e01d3e9dea4f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae68bcf4f49c631dc1f94f946520d5b6d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae68bcf4f49c631dc1f94f946520d5b6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_a_d_b_lib.html#ae68bcf4f49c631dc1f94f946520d5b6d">assert</a> (T toassert, std::string msg)</td></tr>
+<tr class="separator:ae68bcf4f49c631dc1f94f946520d5b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -267,6 +279,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ae68bcf4f49c631dc1f94f946520d5b6d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ADBLib::assert </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>toassert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>msg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a288f110d77f7f80b9e5d228c7e3ba6b0"></a>
 <div class="memitem">
@@ -322,7 +363,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_d_b_lib.html">ADBLib</a></li>
-    <li class="footer">Generated on Fri Nov 6 2015 14:37:33 for ADBLib by
+    <li class="footer">Generated on Tue Nov 24 2015 16:06:44 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

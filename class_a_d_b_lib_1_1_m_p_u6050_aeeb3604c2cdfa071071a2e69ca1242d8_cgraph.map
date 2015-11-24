@@ -1,0 +1,4 @@
+<map id="ADBLib::MPU6050::getFreefallDetectionDuration" name="ADBLib::MPU6050::getFreefallDetectionDuration">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4" title="ADBLib::I2Cdev::readByte" alt="" coords="256,13,433,39"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628" title="ADBLib::I2Cdev::readBytes" alt="" coords="481,13,665,39"/>
+</map>

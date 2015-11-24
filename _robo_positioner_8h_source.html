@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>ADBLib: /home/sourec/Documents/Git Repositories/ADBLib-EGIT/src/control/RoboPositioner.h Source File</title>
+<title>ADBLib: src/control/RoboPositioner.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,8 +30,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
+   &#160;<span id="projectnumber">0.5</span>
    </div>
-   <div id="projectbrief">A small library for FRC robots.</div>
+   <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
  </tr>
  </tbody>
@@ -158,7 +159,7 @@ $(document).ready(function(){initNavTree('_robo_positioner_8h_source.html','');}
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_robo_positioner.html#a7fe02c05fce989c524139bfc713ee29d">   50</a></span>&#160;        Timer <a class="code" href="class_a_d_b_lib_1_1_robo_positioner.html#a7fe02c05fce989c524139bfc713ee29d">interval</a>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_robo_positioner.html#a303ac9a888d4d67e7fd7816dbb92a90d">   51</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_m_p_u6050.html">MPU6050</a>* <a class="code" href="class_a_d_b_lib_1_1_robo_positioner.html#a303ac9a888d4d67e7fd7816dbb92a90d">gyro</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14">   52</a></span>&#160;        MadgwickAHRS <a class="code" href="class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14">mdgw</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14">   52</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_madgwick_a_h_r_s.html">MadgwickAHRS</a> <a class="code" href="class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14">mdgw</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    };</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="ttc" id="namespace_a_d_b_lib_html_a0680924398448c969b7401454f4ac106a1f59d636d68c97ce8d3bc658c270afc9"><div class="ttname"><a href="namespace_a_d_b_lib.html#a0680924398448c969b7401454f4ac106a1f59d636d68c97ce8d3bc658c270afc9">ADBLib::Y</a></div><div class="ttdef"><b>Definition:</b> RoboPositioner.h:28</div></div>
@@ -189,6 +190,7 @@ $(document).ready(function(){initNavTree('_robo_positioner_8h_source.html','');}
 <div class="ttc" id="class_a_d_b_lib_1_1_robo_positioner_html_acf5d1ed88381741007032794eda025f3"><div class="ttname"><a href="class_a_d_b_lib_1_1_robo_positioner.html#acf5d1ed88381741007032794eda025f3">ADBLib::RoboPositioner::getPosition</a></div><div class="ttdeci">double getPosition(rpsDir dir)</div><div class="ttdoc">Gets the position relative to the position of the most resent reset. </div><div class="ttdef"><b>Definition:</b> RoboPositioner.cpp:61</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_robo_positioner_html_a2e8bedc68eb88ee7d3e92887bc51c0ce"><div class="ttname"><a href="class_a_d_b_lib_1_1_robo_positioner.html#a2e8bedc68eb88ee7d3e92887bc51c0ce">ADBLib::RoboPositioner::vel</a></div><div class="ttdeci">Vector3D vel</div><div class="ttdef"><b>Definition:</b> RoboPositioner.h:48</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_robo_positioner_html_a497d494981b7010fcfa85e6bae0daae3"><div class="ttname"><a href="class_a_d_b_lib_1_1_robo_positioner.html#a497d494981b7010fcfa85e6bae0daae3">ADBLib::RoboPositioner::RoboPositioner</a></div><div class="ttdeci">RoboPositioner(MPU6050 *newGyro)</div><div class="ttdoc">Constructor; accepts an MPU9150. </div><div class="ttdef"><b>Definition:</b> RoboPositioner.cpp:9</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_madgwick_a_h_r_s_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_madgwick_a_h_r_s.html">ADBLib::MadgwickAHRS</a></div><div class="ttdef"><b>Definition:</b> MadgwickAHRS.h:18</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_robo_positioner_html_a06aa517683256eef5476392e2772ea14"><div class="ttname"><a href="class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14">ADBLib::RoboPositioner::mdgw</a></div><div class="ttdeci">MadgwickAHRS mdgw</div><div class="ttdef"><b>Definition:</b> RoboPositioner.h:52</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_m_p_u6050_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_m_p_u6050.html">ADBLib::MPU6050</a></div><div class="ttdef"><b>Definition:</b> MPU6050.h:408</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_robo_positioner_html_a7fe02c05fce989c524139bfc713ee29d"><div class="ttname"><a href="class_a_d_b_lib_1_1_robo_positioner.html#a7fe02c05fce989c524139bfc713ee29d">ADBLib::RoboPositioner::interval</a></div><div class="ttdeci">Timer interval</div><div class="ttdef"><b>Definition:</b> RoboPositioner.h:50</div></div>
@@ -201,7 +203,7 @@ $(document).ready(function(){initNavTree('_robo_positioner_8h_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b81b067251166617f9d0a8c0cfc3a4a9.html">control</a></li><li class="navelem"><a class="el" href="_robo_positioner_8h.html">RoboPositioner.h</a></li>
-    <li class="footer">Generated on Fri Nov 6 2015 14:37:33 for ADBLib by
+    <li class="footer">Generated on Tue Nov 24 2015 16:06:44 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

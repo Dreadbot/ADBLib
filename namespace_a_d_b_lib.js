@@ -8,6 +8,8 @@ var namespace_a_d_b_lib =
     [ "FiniteStateMachine", "class_a_d_b_lib_1_1_finite_state_machine.html", "class_a_d_b_lib_1_1_finite_state_machine" ],
     [ "FSMState", "class_a_d_b_lib_1_1_f_s_m_state.html", "class_a_d_b_lib_1_1_f_s_m_state" ],
     [ "FSMTransition", "class_a_d_b_lib_1_1_f_s_m_transition.html", "class_a_d_b_lib_1_1_f_s_m_transition" ],
+    [ "I2Cdev", "class_a_d_b_lib_1_1_i2_cdev.html", "class_a_d_b_lib_1_1_i2_cdev" ],
+    [ "MadgwickAHRS", "class_a_d_b_lib_1_1_madgwick_a_h_r_s.html", "class_a_d_b_lib_1_1_madgwick_a_h_r_s" ],
     [ "MecanumDrive", "class_a_d_b_lib_1_1_mecanum_drive.html", "class_a_d_b_lib_1_1_mecanum_drive" ],
     [ "MPU6050", "class_a_d_b_lib_1_1_m_p_u6050.html", "class_a_d_b_lib_1_1_m_p_u6050" ],
     [ "MultiVision", "class_a_d_b_lib_1_1_multi_vision.html", "class_a_d_b_lib_1_1_multi_vision" ],
