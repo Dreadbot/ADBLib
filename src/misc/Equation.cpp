@@ -14,6 +14,7 @@ namespace ADBLib
 	/**
 	 * @brief Parses an equation into more easily processable form (RPN). Write equations like you would in C++, but with ^ for exponents and forward slashes ONLY for division.
 	 * @param newEqu An equation as a string.
+	 * @throw parse_error
 	 * @note You MUST load an equation with this function before using evaluate()!
 	 */
 	void Equation::parse(string newEqu)
@@ -101,6 +102,7 @@ namespace ADBLib
 	 * @brief Evaluate the parsed equation, replacing "x" with the given value.
 	 * @param value The value to substitue "x" for.
 	 * @return The value of the evaluated equation
+	 * @throw parse_error
 	 */
 	long double Equation::evaluate(long double value)
 	{
@@ -143,6 +145,7 @@ namespace ADBLib
 	 * @brief Determines what type of token a given character is.
 	 * @param iter An iterator to a character in an equation.
 	 * @return The type of token this is (variable, value, operator).
+	 * @throw parse_error
 	 */
 	tokenType Equation::getTType(string::iterator iter) const
 	{
@@ -173,6 +176,7 @@ namespace ADBLib
 	 * @brief Converts a character as an operator to one of the enumerated operations
 	 * @param iter An iterator to a character in an equation.
 	 * @return The type of operator this is.
+	 * @throw parse_error
 	 */
 	operations Equation::getOType(string::iterator iter) const
 	{
@@ -244,6 +248,7 @@ namespace ADBLib
 	 * @param arg2 A token of type value or variable.
 	 * @param variable The value of the variable to use in case either argument is a variable.
 	 * @return A token of type value containing the results of the operation.
+	 * @throw parse_error
 	 */
 	Token Token::evaluate(Token arg1, Token arg2, long double variable)
 	{

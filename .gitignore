@@ -6,3 +6,6 @@ docs/
 /build.xml
 /.project
 sysProps.xml
+/ControlConfig.xml
+*.gch
+/.imdone/config.json

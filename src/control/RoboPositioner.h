@@ -28,7 +28,7 @@ namespace ADBLib
 	enum rpsDir {X, Y, Z}; //!< For usage by stuff outside of RoboPositioner.
 
 	/*
-	 * \brief Robot positioning class that uses rotation and inertial measurements to determine location and velocity. All measurements in meters and related units.
+	 * \brief Robot positioning class that uses rotation and inertial measurements to determine location and velocity. All measurements in SI units.
 	 */
 	class RoboPositioner
 	{

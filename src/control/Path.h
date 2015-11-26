@@ -10,8 +10,8 @@ namespace ADBLib
 {
 	struct waypoint
 	{
-		enum rlMode {RLMODE_START_RELATIVE, RLMODE_WP_RELATIVE};
-		enum srMode {SRMODE_STRAFE_ONLY, SRMODE_STRAFE_ROTATE, SRMODE_ROTATE_ONLY};
+		enum rlMode {RLMODE_START_RELATIVE, RLMODE_WP_RELATIVE};					//!< @see Path::pushWaypoint()
+		enum srMode {SRMODE_STRAFE_ONLY, SRMODE_STRAFE_ROTATE, SRMODE_ROTATE_ONLY}; //!< @see Path::pushWaypoint()
 
 		double xLoc; 		//!< The X position to transition to. Computed in meters.
 		double yLoc; 		//!< The Y position to transition to. Computer in meters.

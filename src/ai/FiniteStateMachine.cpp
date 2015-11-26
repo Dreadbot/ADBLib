@@ -40,7 +40,6 @@ namespace ADBLib
 			//Iterate through the list of elements under this key, which is a pointer to the current state
 			if (iter->second.input == input)
 			{
-				//Regular non-blip transitioning.
 				currentState->exit();
 				currentState = iter->second.nextState;
 				currentState->enter();

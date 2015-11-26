@@ -45,6 +45,7 @@ namespace ADBLib
 	{
 		waypoints.push_back(nwp);
 	}
+
 	void Path::setTolerance(double meters)
 	{
 		tolerance = meters;
@@ -52,6 +53,7 @@ namespace ADBLib
 
 	/** Updates the RPS and uses data from it to compute the proper path to go to the waypoints in series.
 	 * @return True if the path is completed, false if the path is incomplete.
+	 * @todo Graphically simulate
 	 */
 	bool Path::executePath()
 	{

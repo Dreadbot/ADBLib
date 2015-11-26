@@ -18,7 +18,7 @@ namespace ADBLib
 	 * Equation class for handling simple equations (PEMDAS) when the equation is not
 	 * known at compile-time.
 	 *
-	 * @note This class throws the parse_error exception in case issues arise.
+	 * @throw parse_error
 	 */
 	class Equation
 	{

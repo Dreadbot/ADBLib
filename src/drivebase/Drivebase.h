@@ -13,7 +13,7 @@ namespace ADBLib
 	{
 	public:
 		enum MotorPos {frontLeft, frontRight, backRight, backLeft};
-		const string MotorNames[4] = {"Front-left", "Front-Right", "Back-Right", "Back-Left"};
+		const string MotorNames[4] = {"Front-left", "Front-Right", "Back-Right", "Back-Left"}; //!< Motor names that correspond to the MotorPos array; can be used for debug purposes.
 
 		Drivebase(SpeedController* mFrontLeft,
 				SpeedController* mFrontRight,
