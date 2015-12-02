@@ -198,14 +198,8 @@ namespace ADBLib
 		else
 		{ //It's a joystick
 			double value = joystick->GetRawAxis(control.id);
-			double temp = value;
-			value = control.jys.equ.evaluate(fabs(value));
-			value = std::copysign(temp, value); //Copysign from temp to value?
-
-			//scale values... should work
-			temp = value;
-			value = fabs(value) * ((control.jys.maxVal - control.jys.minVal) * 0.5f);
-			return std::copysign(temp, value) + control.jys.minVal; //TODO: Verify
+			double slope = (control.jys.maxVal - control.jys.minVal) / 2.0;
+			return (slope * value) - slope + control.jys.maxVal;
 
 		}
 		return 0; //STOP YELLING AT ME, ECLIPSE
