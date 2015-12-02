@@ -12,8 +12,6 @@ using std::string;
 
 namespace ADBLib
 {
-
-
 	/**
 	 * @brief Internal use only. Stores control information.
 	 */
@@ -21,13 +19,14 @@ namespace ADBLib
 	{
 	public:
 		ctrlCfg();
-		void free() {delete btn.cooldownTimer;}
+		void free() {delete btn.cooldownTimer; delete btn.on;}
 		enum {BUTTON, JOYSTICK} type;	//!< The type of control this is.
 		unsigned int id;				//!< Control ID, needed regardless of button vs joystick
 		bool inverse;					//!< Inverse - if button, inverts. If joystick, flips the axis... sort of
 		struct btnCfg					//!< For internal use by Controller
 		{
 			bool toggle;
+			bool* on; //!< Never loaded directly, ONLY used internally
 			double cooldown;
 			Timer* cooldownTimer; 		//!< Timers are copy/assign protected.
 		} btn;

@@ -132,7 +132,9 @@ namespace ADBLib
 					newCtrl.type = ctrlCfg::BUTTON;
 					newCtrl.inverse = control.child("inverse").attribute("value").as_bool();
 					newCtrl.btn.cooldown = control.child("cooldown").attribute("cooldown").as_double();
+					newCtrl.btn.cooldownTimer->Start();
 					newCtrl.btn.toggle = control.child("toggle").attribute("value").as_bool();
+					newCtrl.btn.on = new bool(false); //Can't do this in a constructor...
 				}
 				else
 				{
@@ -186,13 +188,14 @@ namespace ADBLib
 				return control.inverse ? !joystick->GetRawButton(control.id) : joystick->GetRawButton(control.id);
 			else if (joystick->GetRawButton(control.id) || (!joystick->GetRawButton(control.id) && control.inverse))
 			{
+				//Toggles
 				if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
-				{ //The cooldown expired
-					control.btn.cooldownTimer->Reset();
-					control.btn.cooldownTimer->Start();
-					return !control.inverse;
+				{
+					Logger::log("Cooldown expired during button press!", "sysLog");
+					*control.btn.on = !*control.btn.on;
+					control.btn.cooldownTimer->Reset(); //Just makes all timer calls relative to NOW.
 				}
-				return control.inverse;
+				return control.inverse ? !*control.btn.on : *control.btn.on;
 			}
 		}
 		else
