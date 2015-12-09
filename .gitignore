@@ -1,11 +1,2 @@
+ControlConfig.xml
 src/Robot.cpp
-docs/
-/Debug/
-/.cproject
-/build.properties
-/build.xml
-/.project
-sysProps.xml
-/ControlConfig.xml
-*.gch
-/.imdone/config.json

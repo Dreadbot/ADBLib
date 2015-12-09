@@ -131,7 +131,7 @@ namespace ADBLib
 					Logger::log("Control is of type button", "sysLog");
 					newCtrl.type = ctrlCfg::BUTTON;
 					newCtrl.inverse = control.child("inverse").attribute("value").as_bool();
-					newCtrl.btn.cooldown = control.child("cooldown").attribute("cooldown").as_double();
+					newCtrl.btn.cooldown = control.child("cooldown").attribute("value").as_double();
 					newCtrl.btn.cooldownTimer->Start();
 					newCtrl.btn.toggle = control.child("toggle").attribute("value").as_bool();
 					newCtrl.btn.on = new bool(false); //Can't do this in a constructor...
@@ -191,12 +191,13 @@ namespace ADBLib
 				//Toggles
 				if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
 				{
-					Logger::log("Cooldown expired during button press!", "sysLog");
 					*control.btn.on = !*control.btn.on;
+					control.btn.cooldownTimer->Stop();
 					control.btn.cooldownTimer->Reset(); //Just makes all timer calls relative to NOW.
+					control.btn.cooldownTimer->Start(); //These function calls may or may not be needed
 				}
-				return control.inverse ? !*control.btn.on : *control.btn.on;
 			}
+			return control.inverse ? !*control.btn.on : *control.btn.on;
 		}
 		else
 		{ //It's a joystick
