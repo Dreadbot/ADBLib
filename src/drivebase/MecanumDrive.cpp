@@ -12,10 +12,13 @@ namespace ADBLib
 	void MecanumDrive::drive(float x, float y, float r)
 	{
 
-		speeds[frontLeft] = -(x + y + r);
-		speeds[frontRight] = x + y - r;
+		speeds[frontLeft] = x + y + r;
+		speeds[frontRight] = -x + y - r;
 		speeds[backRight] = x + y - r;
-		speeds[backLeft] = -(x + y + r);
+		speeds[backLeft] = -x + y + r;
+
+		speeds[frontLeft] = -speeds[frontLeft];
+		speeds[backLeft] = -speeds[backLeft];
 
 		normSpeeds();
 
@@ -24,7 +27,7 @@ namespace ADBLib
 			{
 				SmartDashboard::PutNumber(MotorNames[i] + ".set", speeds[i]);
 				SmartDashboard::PutNumber(MotorNames[i] + ".pointer", (long)motors[i]);
-				motors[i]->Set(speeds[i]);
+				motors[i]->Set(speeds[i] * 1000.f);
 			}
 	}
 }

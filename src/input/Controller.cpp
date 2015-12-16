@@ -175,11 +175,15 @@ namespace ADBLib
 	 * @brief Get the value of a set control, referenced by name
 	 * @param name The name of the control. Referenced in the XML configuration file.
 	 * @return If the control is a button, nonzero for true and zero for false (duh). Else, a double.
+	 * @note If you get inexplicable crashes originating from this class, check to make sure you gave it a joystick.
 	 */
 	double Controller::operator[](const string& name)
 	{
 		if (profiles[currentProfile].count(name) == 0)
+		{
+			Logger::log("Could not find control " + name, "sysLog", Hydra::error);
 			return 0; //There IS no control by this name!
+		}
 			
 		ctrlCfg control = profiles[currentProfile][name];
 		if (control.type == ctrlCfg::BUTTON)

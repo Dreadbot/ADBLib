@@ -93,7 +93,7 @@ namespace Hydra
     {
     	if (logFiles.count(name) == 0)
     	{
-    		//At this point, it is confirmed that no log file exists.
+    		//No log file exists
     		log("Cannot find log " + name + ", creating new one at." + name + ".txt", "sysLog", info);
     		Log newLog(name, name);
     		logFiles[name] = newLog;
