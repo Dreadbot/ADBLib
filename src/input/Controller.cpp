@@ -188,20 +188,28 @@ namespace ADBLib
 		ctrlCfg control = profiles[currentProfile][name];
 		if (control.type == ctrlCfg::BUTTON)
 		{
-			if (!control.btn.toggle)
-				return control.inverse ? !joystick->GetRawButton(control.id) : joystick->GetRawButton(control.id);
-			else if (joystick->GetRawButton(control.id) || (!joystick->GetRawButton(control.id) && control.inverse))
+			bool ret = false;
+			if (control.btn.toggle)
 			{
 				//Toggles
-				if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
-				{
+				if (joystick->GetRawButton(control.id) && control.btn.cooldownTimer->Get() >= control.btn.cooldown)
 					*control.btn.on = !*control.btn.on;
-					control.btn.cooldownTimer->Stop();
-					control.btn.cooldownTimer->Reset(); //Just makes all timer calls relative to NOW.
-					control.btn.cooldownTimer->Start(); //These function calls may or may not be needed
-				}
+				ret = *control.btn.on;
 			}
-			return control.inverse ? !*control.btn.on : *control.btn.on;
+			else
+			{
+				//Non-toggle, still needs cooldown
+				if (joystick->GetRawButton(control.id) && control.btn.cooldownTimer->Get() >= control.btn.cooldown)
+					ret = true;
+			}
+
+			if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
+			{ //Reset cooldown timer if its time is too high.
+				control.btn.cooldownTimer->Stop();
+				control.btn.cooldownTimer->Reset(); //All of these function calls may not be needed, but screw timers.
+				control.btn.cooldownTimer->Start();
+			}
+			return control.inverse ? !ret : ret;
 		}
 		else
 		{ //It's a joystick
