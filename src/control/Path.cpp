@@ -74,7 +74,7 @@ namespace ADBLib
 			dir.setZ(startPos[rpsDir::Z] - rps->getPosition(rpsDir::Z));
 		}
 
-		if (dir.getMag() <= tolerance)
+		if (dir.mag() <= tolerance)
 		{
 			currentWP++;
 			return false; //Distance within tolerance; advance waypoints.

@@ -16,18 +16,18 @@ namespace Hydra
         Vector3D(double newX, double newY, double newZ);
 
         void normalize();
-        double getMag() const;
+        double mag() const;
         void setMag(double newMag);
-        double getADelt(Vector3D vec) const;  //!< Returns the angle between two vectors, in radians (?)
+        double getADelt(Vector3D vec) const;
 
         void rotateX(double rad);
         void rotateY(double rad);
         void rotateZ(double rad);
 
-        Vector3D operator+(const Vector3D& vec) const;  //!< Standard addition
-        Vector3D operator-(const Vector3D& vec) const;  //!< Standard subtraction
-        double operator*(const Vector3D& vec) const;    //!< Dot product
-        Vector3D operator%(const Vector3D& vec) const;  //!< Cross product
+        Vector3D operator+(const Vector3D& vec) const;
+        Vector3D operator-(const Vector3D& vec) const;
+        double operator*(const Vector3D& vec) const;
+        Vector3D operator%(const Vector3D& vec) const;
 
         void setX(double newX);
         void setY(double newY);
