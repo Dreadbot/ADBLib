@@ -2,30 +2,66 @@
 
 namespace Hydra
 {
+	/**
+	 * @brief Constructor; sets dimensions of matrix.
+	 * @param x X size of matrix.
+	 * @param y Y size of matrix.
+	 */
     Matrix::Matrix(unsigned short int x, unsigned short int y)
     {
         setSize(x, y);
     }
+
+    /**
+     * @return X size of the matrix
+     */
     unsigned short int Matrix::getXSize() const
     {
         return xSize;
     }
+
+    /**
+     * @return Y size of the matrix.
+     * @note Avoid EMP usage when using this class.
+     */
     unsigned short int Matrix::getYSize() const
     {
         return ySize;
     }
+
+    /**
+     * @brief Gets the value at a point in the matrix.
+     * @param x X position of value.
+     * @param y Y position of value.
+     * @return Value at point.
+     * @note The Y axis is inverted and both X and Y are zero ordered.
+     */
     double Matrix::getValue(unsigned short int x, unsigned short int y) const
     {
         if (x >= xSize || y >= ySize)
             return 0;
         return (mat[x])[y]; //Does this work?
     }
+
+    /**
+     * @brief Sets the value at a point in the matrix.
+     * @param value The new value.
+     * @param x X position of value.
+     * @param y Y position of value.
+     * @note The Y axis is inverted and both X and Y are zero-ordered.
+     */
     void Matrix::setValue(double value, unsigned short int x, unsigned short int y)
     {
         if (x >= xSize || y >= ySize)
             return;
         (mat[x])[y] = value;
     }
+
+    /**
+     * @brief Changes the size of this matrix, setting all elements to zero in the process.
+     * @param newXSize The new X size of the matrix.
+     * @param newYSize The new Y size of the matrix.
+     */
     void Matrix::setSize(unsigned short int newXSize, unsigned short int newYSize)
     {
         if (newXSize < 1 || newYSize < 1)
@@ -45,6 +81,12 @@ namespace Hydra
             mat.push_back(vec);
         }
     }
+
+    /**
+     * @brief Standard matrix addition.
+     * @param matr Second matrix of same dimensions as this matrix.
+     * @return Resultant matrix.
+     */
     Matrix Matrix::operator+(const Matrix &matr)
     {
         Matrix result;
@@ -62,6 +104,12 @@ namespace Hydra
                 }
         return result;
     }
+
+    /**
+     * @brief Standard matrix subtraction.
+     * @param matr Second matrix of same dimensions as this matrix.
+     * @return Resultant matrix.
+     */
     Matrix Matrix::operator-(const Matrix &matr)
     {
         Matrix result;
@@ -79,6 +127,12 @@ namespace Hydra
                 }
         return result;
     }
+
+    /**
+     * @brief Standard matrix multiplication.
+     * @param matr Second matrix with same Y size as this matrix's X size.
+     * @return Resultant matrix with X of the second matrix and Y of the first matrix.
+     */
     Matrix Matrix::operator*(const Matrix& matr)
     {
         //Note: this algorithm assumes that this matrix is the matrix on the LEFT.
@@ -103,6 +157,12 @@ namespace Hydra
 
         return result;
     }
+
+    /**
+     * @brief Standard scalar multiplication.
+     * @param num Scalar.
+     * @return Resultant matrix with same dimensions as this matrix.
+     */
     Matrix Matrix::operator*(const double num)
     {
         Matrix result;
@@ -117,5 +177,19 @@ namespace Hydra
             }
         }
         return result;
+    }
+
+    /**
+     * @brief Debugging overload for output to console.
+     */
+    ostream& operator<<(ostream& output, Matrix& matr)
+    {
+        for (int iY = 0; iY < matr.getYSize(); iY++)
+        {
+            for (int iX = 0; iX < matr.getXSize(); iX++)
+                output << matr.getValue(iX, iY) << ", ";
+            output << endl;
+        }
+         return output;
     }
 }
