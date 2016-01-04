@@ -3,7 +3,6 @@
 #include <math.h>
 #include <vector>
 #include <iostream>
-#include "mathdefs.h"
 using namespace std; //Ugh
 
 namespace Hydra
