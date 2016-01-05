@@ -2,48 +2,59 @@
 
 namespace ADBLib
 {
-	Drivebase::Drivebase()
+	/**
+	 * @brief Constructor; sets all motors.
+	 * @param mFrontLeft The front left motor.
+	 * @param mFrontRight The front right motor.
+	 * @param mBackRight The back right motor.
+	 * @param mBackLeft The back left motor.
+	 * @note Accepts anything that inherits a SpeedController, so go wild.
+	 */
+	Drivebase::Drivebase(SpeedController* mFrontLeft,
+			SpeedController* mFrontRight,
+			SpeedController* mBackRight,
+			SpeedController* mBackLeft)
 	{
 		enabled = true;
-		for (int i = 0; i < 4; ++i)
-		{
-			motors[i] = nullptr;
-			speeds[i] = 0.0;
-		}
-	}
-	void Drivebase::enable()
-	{
-		enabled = true;
-		for (int i = 0; i < 4; ++i)
-		{
-			if (motors[i] != nullptr)
-				motors[i]->enable();
-		}
-	}
-	void Drivebase::disable()
-	{
-		enabled = false;
-		for (int i = 0; i < 4; ++i)
-		{
-			if (motors[i] != nullptr)
-				motors[i]->disable();
-		}
-	}
-	void Drivebase::setMotor(SimpleMotor* motor, MotorPos position)
-	{
-		motors[position] = motor;
-	}
-	void Drivebase::setMotors(SimpleMotor* mFrontLeft, SimpleMotor* mFrontRight, SimpleMotor* mBackRight, SimpleMotor* mBackLeft)
-	{
 		motors[frontLeft] = mFrontLeft;
 		motors[frontRight] = mFrontRight;
 		motors[backRight] = mBackRight;
 		motors[backLeft] = mBackLeft;
+
+		for (int i = 0; i < 4; ++i)
+			speeds[i] = 0.0;
 	}
+
+	/**
+	 * @brief Deletes all motors.
+	 */
+	Drivebase::~Drivebase()
+	{
+		for (int i = 0; i < 4; i++)
+			delete motors[i];
+	}
+
+	/**
+	 * @brief Disables the drivebase and sets the command to zero the motor.
+	 */
+	void Drivebase::stop()
+	{
+		for (int i = 0; i < 4; ++i)
+			motors[i]->Set(0);
+	}
+
+	/**
+	 * @brief Gets the status of the drivebase.
+	 * @return True if enabled, false if disabled.
+	 */
 	bool Drivebase::getEnabled()
 	{
 		return enabled;
 	}
+
+	/**
+	 * @brief Internal function; normalizes wheel speeds to be between -1 and 1
+	 */
 	void Drivebase::normSpeeds()
 	{
 		float absSpeeds[4];

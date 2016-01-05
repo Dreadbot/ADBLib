@@ -2,6 +2,9 @@
 
 namespace ADBLib
 {
+	/**
+	 * @brief Constructor.
+	 */
 	SimplePneumatic::SimplePneumatic()
 	{
 		type = single;
@@ -9,6 +12,29 @@ namespace ADBLib
 		dPneumatic = nullptr;
 		sPneumatic = nullptr;
 	}
+
+	/**
+	 * @brief Constructor; configures this pneumatic as a double solenoid.
+	 * @param newDouble A pointer to a DoubleSolenoid object.
+	 */
+	SimplePneumatic::SimplePneumatic(DoubleSolenoid* newDouble) : SimplePneumatic()
+	{
+		setDouble(newDouble);
+	}
+
+	/**
+	 * @brief Constructor; configures this pneumatic as a single solenoid.
+	 * @param newSingle A pointer to a solenoid object.
+	 */
+	SimplePneumatic::SimplePneumatic(Solenoid* newSingle) : SimplePneumatic()
+	{
+		setSingle(newSingle);
+	}
+
+	/**
+	 * @brief Sets the value for this pneumatic; if it's a single solenoid, not kStop values are automatically adjusted.
+	 * @param value A DoubleSolenoid::Value as defined by DoubleSolenoid
+	 */
 	void SimplePneumatic::set(DoubleSolenoid::Value value)
 	{
 		if (type == dual)
@@ -32,6 +58,11 @@ namespace ADBLib
 				sPneumatic->Set(input);
 		}
 	}
+
+	/**
+	 * @brief Smart set -- automatically converts from an integer to a DoubleSolenoid::Value.
+	 * @param dir The direction. Negative is reverse, 0 is off, and positive is forward.
+	 */
 	void SimplePneumatic::set(int dir)
 	{
 		if (dir < 0)
@@ -41,6 +72,11 @@ namespace ADBLib
 		else
 			set(DoubleSolenoid::kOff);
 	}
+
+	/**
+	 * @brief Sets the solenoid as a double solenoid.
+	 * @param newDouble A pointer to a DoubleSolenoid.
+	 */
 	void SimplePneumatic::setDouble(DoubleSolenoid* newDouble)
 	{
 		if (newDouble == nullptr)
@@ -50,6 +86,11 @@ namespace ADBLib
 		sPneumatic = nullptr;
 		dPneumatic = newDouble;
 	}
+
+	/**
+	 * @brief Sets the solenoid as a single solenoid.
+	 * @param newSingle A pointer to a Solenoid.
+	 */
 	void SimplePneumatic::setSingle(Solenoid* newSingle)
 	{
 		if (newSingle == nullptr)
@@ -58,9 +99,5 @@ namespace ADBLib
 		type = single;
 		sPneumatic = newSingle;
 		dPneumatic = nullptr;
-	}
-	SimplePneumatic::PneumaticType SimplePneumatic::getType()
-	{
-		return type;
 	}
 }
