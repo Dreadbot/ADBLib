@@ -1,6 +1,0 @@
-<map id="Hydra::Matrix::getValue" name="Hydra::Matrix::getValue">
-<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a7f277220e42bc6754a3119cdf01b7ebb" title="Standard addition. " alt="" coords="223,5,387,32"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#aeec2d245e68b91bb6ecceebf98865706" title="Standard subtraction. " alt="" coords="225,56,385,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#ac9cd36fe6fdd970fa6638f001ea40717" title="Standard multiplication. " alt="" coords="224,107,385,133"/>
-<area shape="rect" id="node5" href="$class_hydra_1_1_vector3_d.html#af2bd85e6c7aad7980d3cbf14a819fbfc" title="Hydra::Vector3D::setMatrix" alt="" coords="213,157,396,184"/>
-</map>

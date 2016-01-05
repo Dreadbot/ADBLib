@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['accfactors',['accFactors',['../namespace_a_d_b_lib.html#a288f110d77f7f80b9e5d228c7e3ba6b0',1,'ADBLib']]],
-  ['active',['active',['../class_a_d_b_lib_1_1_path.html#a00c36b3a0c7efe6a60797075d1fabd05',1,'ADBLib::Path']]]
+  ['btn',['btn',['../class_a_d_b_lib_1_1ctrl_cfg.html#a0f5bf33c8d19e5e8620212e1f287f539',1,'ADBLib::ctrlCfg']]],
+  ['buffer',['buffer',['../class_a_d_b_lib_1_1_m_p_u6050.html#af2e1330b6f19794f6c6da49eeb8e50d1',1,'ADBLib::MPU6050']]]
 ];

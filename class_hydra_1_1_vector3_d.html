@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -120,57 +120,76 @@ $(document).ready(function(){initNavTree('class_hydra_1_1_vector3_d.html','');})
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f1af4dabac052479f852cebb965e1fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a7f1af4dabac052479f852cebb965e1fc">Vector3D</a> ()</td></tr>
+<tr class="memdesc:a7f1af4dabac052479f852cebb965e1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Sets y and z to 0, and x to 1.  <a href="#a7f1af4dabac052479f852cebb965e1fc">More...</a><br /></td></tr>
 <tr class="separator:a7f1af4dabac052479f852cebb965e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f9a3d9c6fd8a11325796bd3bee16ad8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a7f9a3d9c6fd8a11325796bd3bee16ad8">Vector3D</a> (double newX, double newY, double newZ)</td></tr>
+<tr class="memdesc:a7f9a3d9c6fd8a11325796bd3bee16ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. Lets you set initial component values.  <a href="#a7f9a3d9c6fd8a11325796bd3bee16ad8">More...</a><br /></td></tr>
 <tr class="separator:a7f9a3d9c6fd8a11325796bd3bee16ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae858d75c4cbabe443f4936d401bfc531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#ae858d75c4cbabe443f4936d401bfc531">normalize</a> ()</td></tr>
+<tr class="memdesc:ae858d75c4cbabe443f4936d401bfc531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalizes the vector, preserving the direction but setting magnitude to 1.  <a href="#ae858d75c4cbabe443f4936d401bfc531">More...</a><br /></td></tr>
 <tr class="separator:ae858d75c4cbabe443f4936d401bfc531"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5da87c7cfd5fcd4596099ebab1269a2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a5da87c7cfd5fcd4596099ebab1269a2b">getMag</a> () const </td></tr>
-<tr class="separator:a5da87c7cfd5fcd4596099ebab1269a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06af38fe691f13d8162adc56d58d718f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a06af38fe691f13d8162adc56d58d718f">mag</a> () const </td></tr>
+<tr class="memdesc:a06af38fe691f13d8162adc56d58d718f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the magnitude of the vector.  <a href="#a06af38fe691f13d8162adc56d58d718f">More...</a><br /></td></tr>
+<tr class="separator:a06af38fe691f13d8162adc56d58d718f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c078531f61901f2577e390132993f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a3c078531f61901f2577e390132993f3c">setMag</a> (double newMag)</td></tr>
+<tr class="memdesc:a3c078531f61901f2577e390132993f3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the magnitude of the vector.  <a href="#a3c078531f61901f2577e390132993f3c">More...</a><br /></td></tr>
 <tr class="separator:a3c078531f61901f2577e390132993f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc892f5c93261ff9cf048d7716efe244"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#abc892f5c93261ff9cf048d7716efe244">getADelt</a> (<a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a> vec) const </td></tr>
-<tr class="memdesc:abc892f5c93261ff9cf048d7716efe244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle between two vectors, in radians (?)  <a href="#abc892f5c93261ff9cf048d7716efe244">More...</a><br /></td></tr>
+<tr class="memdesc:abc892f5c93261ff9cf048d7716efe244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the angle between two vectors.  <a href="#abc892f5c93261ff9cf048d7716efe244">More...</a><br /></td></tr>
 <tr class="separator:abc892f5c93261ff9cf048d7716efe244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81f839920319b1c501815173a1c7fb56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a81f839920319b1c501815173a1c7fb56">rotateX</a> (double rad)</td></tr>
+<tr class="memdesc:a81f839920319b1c501815173a1c7fb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector about the X axis.  <a href="#a81f839920319b1c501815173a1c7fb56">More...</a><br /></td></tr>
 <tr class="separator:a81f839920319b1c501815173a1c7fb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24a098941e008d97c4ed07a46088de55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a24a098941e008d97c4ed07a46088de55">rotateY</a> (double rad)</td></tr>
+<tr class="memdesc:a24a098941e008d97c4ed07a46088de55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector about the Y axis.  <a href="#a24a098941e008d97c4ed07a46088de55">More...</a><br /></td></tr>
 <tr class="separator:a24a098941e008d97c4ed07a46088de55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad80c58d96304b6d54438f453ec73c142"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#ad80c58d96304b6d54438f453ec73c142">rotateZ</a> (double rad)</td></tr>
+<tr class="memdesc:ad80c58d96304b6d54438f453ec73c142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the vector about the Z axis.  <a href="#ad80c58d96304b6d54438f453ec73c142">More...</a><br /></td></tr>
 <tr class="separator:ad80c58d96304b6d54438f453ec73c142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac66b6ddc039132ab7f5ef20eef976db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#ac66b6ddc039132ab7f5ef20eef976db6">operator+</a> (const <a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a> &amp;vec) const </td></tr>
-<tr class="memdesc:ac66b6ddc039132ab7f5ef20eef976db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard addition.  <a href="#ac66b6ddc039132ab7f5ef20eef976db6">More...</a><br /></td></tr>
+<tr class="memdesc:ac66b6ddc039132ab7f5ef20eef976db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard vector addition.  <a href="#ac66b6ddc039132ab7f5ef20eef976db6">More...</a><br /></td></tr>
 <tr class="separator:ac66b6ddc039132ab7f5ef20eef976db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ad108df09bc4cb8b1c644f4536f12c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a59ad108df09bc4cb8b1c644f4536f12c">operator-</a> (const <a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a> &amp;vec) const </td></tr>
-<tr class="memdesc:a59ad108df09bc4cb8b1c644f4536f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard subtraction.  <a href="#a59ad108df09bc4cb8b1c644f4536f12c">More...</a><br /></td></tr>
+<tr class="memdesc:a59ad108df09bc4cb8b1c644f4536f12c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard vector subtraction.  <a href="#a59ad108df09bc4cb8b1c644f4536f12c">More...</a><br /></td></tr>
 <tr class="separator:a59ad108df09bc4cb8b1c644f4536f12c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad49b857307a6c9a8a19b0b98b3e59a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#adad49b857307a6c9a8a19b0b98b3e59a">operator*</a> (const <a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a> &amp;vec) const </td></tr>
-<tr class="memdesc:adad49b857307a6c9a8a19b0b98b3e59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dot product.  <a href="#adad49b857307a6c9a8a19b0b98b3e59a">More...</a><br /></td></tr>
+<tr class="memdesc:adad49b857307a6c9a8a19b0b98b3e59a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector dot product.  <a href="#adad49b857307a6c9a8a19b0b98b3e59a">More...</a><br /></td></tr>
 <tr class="separator:adad49b857307a6c9a8a19b0b98b3e59a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86fffbfab7ea0f40a1683b8e8c86df8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a86fffbfab7ea0f40a1683b8e8c86df8f">operator%</a> (const <a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a> &amp;vec) const </td></tr>
-<tr class="memdesc:a86fffbfab7ea0f40a1683b8e8c86df8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cross product.  <a href="#a86fffbfab7ea0f40a1683b8e8c86df8f">More...</a><br /></td></tr>
+<tr class="memdesc:a86fffbfab7ea0f40a1683b8e8c86df8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vector cross product.  <a href="#a86fffbfab7ea0f40a1683b8e8c86df8f">More...</a><br /></td></tr>
 <tr class="separator:a86fffbfab7ea0f40a1683b8e8c86df8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50015e08f3c114c05bf09946577a88ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a50015e08f3c114c05bf09946577a88ba">setX</a> (double newX)</td></tr>
+<tr class="memdesc:a50015e08f3c114c05bf09946577a88ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets X component.  <a href="#a50015e08f3c114c05bf09946577a88ba">More...</a><br /></td></tr>
 <tr class="separator:a50015e08f3c114c05bf09946577a88ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae3112a64c958b992cd5af73870c4e2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#aae3112a64c958b992cd5af73870c4e2f">setY</a> (double newY)</td></tr>
+<tr class="memdesc:aae3112a64c958b992cd5af73870c4e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets Y component.  <a href="#aae3112a64c958b992cd5af73870c4e2f">More...</a><br /></td></tr>
 <tr class="separator:aae3112a64c958b992cd5af73870c4e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a223cfdf691c33871f8c6e31d82855c3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a223cfdf691c33871f8c6e31d82855c3b">setZ</a> (double newZ)</td></tr>
+<tr class="memdesc:a223cfdf691c33871f8c6e31d82855c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets new Z component.  <a href="#a223cfdf691c33871f8c6e31d82855c3b">More...</a><br /></td></tr>
 <tr class="separator:a223cfdf691c33871f8c6e31d82855c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0e3da5b89960f260ad3c504c9203e1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a7a0e3da5b89960f260ad3c504c9203e1">getX</a> () const </td></tr>
+<tr class="memdesc:a7a0e3da5b89960f260ad3c504c9203e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the X component.  <a href="#a7a0e3da5b89960f260ad3c504c9203e1">More...</a><br /></td></tr>
 <tr class="separator:a7a0e3da5b89960f260ad3c504c9203e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c3cba2826631ddc1f0ad21bcb99629"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a70c3cba2826631ddc1f0ad21bcb99629">getY</a> () const </td></tr>
+<tr class="memdesc:a70c3cba2826631ddc1f0ad21bcb99629"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Y component.  <a href="#a70c3cba2826631ddc1f0ad21bcb99629">More...</a><br /></td></tr>
 <tr class="separator:a70c3cba2826631ddc1f0ad21bcb99629"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0130d7118da3f705a9865cf509a272"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a3b0130d7118da3f705a9865cf509a272">getZ</a> () const </td></tr>
+<tr class="memdesc:a3b0130d7118da3f705a9865cf509a272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retusn the Z component.  <a href="#a3b0130d7118da3f705a9865cf509a272">More...</a><br /></td></tr>
 <tr class="separator:a3b0130d7118da3f705a9865cf509a272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af55c92b964ea9ce8d0cae1286e8f1550"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#af55c92b964ea9ce8d0cae1286e8f1550">getAngleX</a> () const </td></tr>
+<tr class="memdesc:af55c92b964ea9ce8d0cae1286e8f1550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle to the X axis.  <a href="#af55c92b964ea9ce8d0cae1286e8f1550">More...</a><br /></td></tr>
 <tr class="separator:af55c92b964ea9ce8d0cae1286e8f1550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c099b1bcbca50f04d11a4204be96aa4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a1c099b1bcbca50f04d11a4204be96aa4">getAngleY</a> () const </td></tr>
+<tr class="memdesc:a1c099b1bcbca50f04d11a4204be96aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle to the Y axis.  <a href="#a1c099b1bcbca50f04d11a4204be96aa4">More...</a><br /></td></tr>
 <tr class="separator:a1c099b1bcbca50f04d11a4204be96aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b011cf3775cbb32ab9c13bd84cb3558"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#a6b011cf3775cbb32ab9c13bd84cb3558">getAngleZ</a> () const </td></tr>
+<tr class="memdesc:a6b011cf3775cbb32ab9c13bd84cb3558"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the angle to the Z axis.  <a href="#a6b011cf3775cbb32ab9c13bd84cb3558">More...</a><br /></td></tr>
 <tr class="separator:a6b011cf3775cbb32ab9c13bd84cb3558"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed70f06c0445143175f11101ceb0e73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_hydra_1_1_matrix.html">Matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#abed70f06c0445143175f11101ceb0e73">toMatrix</a> () const </td></tr>
+<tr class="memdesc:abed70f06c0445143175f11101ceb0e73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this vector to a 3x1 matrix.  <a href="#abed70f06c0445143175f11101ceb0e73">More...</a><br /></td></tr>
 <tr class="separator:abed70f06c0445143175f11101ceb0e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2bd85e6c7aad7980d3cbf14a819fbfc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html#af2bd85e6c7aad7980d3cbf14a819fbfc">setMatrix</a> (<a class="el" href="class_hydra_1_1_matrix.html">Matrix</a> mat)</td></tr>
+<tr class="memdesc:af2bd85e6c7aad7980d3cbf14a819fbfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the components of this vector based on a 3x1 matrix.  <a href="#af2bd85e6c7aad7980d3cbf14a819fbfc">More...</a><br /></td></tr>
 <tr class="separator:af2bd85e6c7aad7980d3cbf14a819fbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -195,6 +214,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. Sets y and z to 0, and x to 1. </p>
 
 </div>
 </div>
@@ -228,6 +249,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor. Lets you set initial component values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newX</td><td>X component </td></tr>
+    <tr><td class="paramname">newY</td><td>Y component </td></tr>
+    <tr><td class="paramname">newZ</td><td>Z component </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -245,14 +276,21 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the angle between two vectors, in radians (?) </p>
+<p>Gets the angle between two vectors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>The second vector. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Angle in radians. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_abc892f5c93261ff9cf048d7716efe244_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_abc892f5c93261ff9cf048d7716efe244_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_abc892f5c93261ff9cf048d7716efe244_cgraph" id="class_hydra_1_1_vector3_d_abc892f5c93261ff9cf048d7716efe244_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_vector3_d.html#a5da87c7cfd5fcd4596099ebab1269a2b" title="Hydra::Vector3D::getMag" alt="" coords="232,5,403,32"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_vector3_d.html#a06af38fe691f13d8162adc56d58d718f" title="Returns the magnitude of the vector. " alt="" coords="232,5,385,32"/></map>
 </div>
 </p>
 
@@ -271,6 +309,9 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the angle to the X axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>Angle in radians </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a1c099b1bcbca50f04d11a4204be96aa4"></a>
@@ -285,6 +326,9 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the angle to the Y axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>Angle in radians </dd></dl>
 
 </div>
 </div>
@@ -301,38 +345,8 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a6b011cf3775cbb32ab9c13bd84cb3558_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a6b011cf3775cbb32ab9c13bd84cb3558_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a6b011cf3775cbb32ab9c13bd84cb3558_icgraph" id="class_hydra_1_1_vector3_d_a6b011cf3775cbb32ab9c13bd84cb3558_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="240,5,423,32"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5da87c7cfd5fcd4596099ebab1269a2b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double Hydra::Vector3D::getMag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a5da87c7cfd5fcd4596099ebab1269a2b_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a5da87c7cfd5fcd4596099ebab1269a2b_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a5da87c7cfd5fcd4596099ebab1269a2b_icgraph" id="class_hydra_1_1_vector3_d_a5da87c7cfd5fcd4596099ebab1269a2b_icgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_vector3_d.html#abc892f5c93261ff9cf048d7716efe244" title="Returns the angle between two vectors, in radians (?) " alt="" coords="226,5,405,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="224,56,407,83"/></map>
-</div>
-</p>
+<p>Returns the angle to the Z axis. </p>
+<dl class="section return"><dt>Returns</dt><dd>Angle in radians </dd></dl>
 
 </div>
 </div>
@@ -349,14 +363,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a7a0e3da5b89960f260ad3c504c9203e1_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a7a0e3da5b89960f260ad3c504c9203e1_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a7a0e3da5b89960f260ad3c504c9203e1_icgraph" id="class_hydra_1_1_vector3_d_a7a0e3da5b89960f260ad3c504c9203e1_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="208,5,391,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="217,57,381,98"/></map>
-</div>
-</p>
+<p>Returns the X component. </p>
+<dl class="section return"><dt>Returns</dt><dd>X component </dd></dl>
 
 </div>
 </div>
@@ -373,14 +381,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a70c3cba2826631ddc1f0ad21bcb99629_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a70c3cba2826631ddc1f0ad21bcb99629_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a70c3cba2826631ddc1f0ad21bcb99629_icgraph" id="class_hydra_1_1_vector3_d_a70c3cba2826631ddc1f0ad21bcb99629_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="208,5,372,47"/></map>
-</div>
-</p>
+<p>Returns the Y component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Y component </dd></dl>
 
 </div>
 </div>
@@ -397,12 +399,33 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Retusn the Z component. </p>
+<dl class="section return"><dt>Returns</dt><dd>Z component </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a06af38fe691f13d8162adc56d58d718f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Hydra::Vector3D::mag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the magnitude of the vector. </p>
+<dl class="section return"><dt>Returns</dt><dd>Magnitude </dd></dl>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a3b0130d7118da3f705a9865cf509a272_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a3b0130d7118da3f705a9865cf509a272_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a3b0130d7118da3f705a9865cf509a272_icgraph" id="class_hydra_1_1_vector3_d_a3b0130d7118da3f705a9865cf509a272_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="208,5,391,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="217,57,381,98"/></map>
+<div class="center"><img src="class_hydra_1_1_vector3_d_a06af38fe691f13d8162adc56d58d718f_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a06af38fe691f13d8162adc56d58d718f_icgraph" alt=""/></div>
+<map name="class_hydra_1_1_vector3_d_a06af38fe691f13d8162adc56d58d718f_icgraph" id="class_hydra_1_1_vector3_d_a06af38fe691f13d8162adc56d58d718f_icgraph">
+<area shape="rect" id="node2" href="class_hydra_1_1_vector3_d.html#abc892f5c93261ff9cf048d7716efe244" title="Gets the angle between two vectors. " alt="" coords="207,5,385,32"/></map>
 </div>
 </p>
 
@@ -421,6 +444,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Normalizes the vector, preserving the direction but setting magnitude to 1. </p>
+
 </div>
 </div>
 <a class="anchor" id="a86fffbfab7ea0f40a1683b8e8c86df8f"></a>
@@ -437,7 +462,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Cross product. </p>
+<p>Vector cross product. </p>
+<dl class="section return"><dt>Returns</dt><dd>Resulting vector of vector cross product. </dd></dl>
 
 </div>
 </div>
@@ -455,7 +481,8 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Dot product. </p>
+<p>Vector dot product. </p>
+<dl class="section return"><dt>Returns</dt><dd>Dot product result. </dd></dl>
 
 </div>
 </div>
@@ -473,7 +500,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Standard addition. </p>
+<p>Standard vector addition. </p>
 
 </div>
 </div>
@@ -491,7 +518,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Standard subtraction. </p>
+<p>Standard vector subtraction. </p>
 
 </div>
 </div>
@@ -509,21 +536,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Rotates the vector about the X axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rad</td><td>Angle of rotation in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_cgraph" id="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="224,5,384,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_icgraph" id="class_hydra_1_1_vector3_d_a81f839920319b1c501815173a1c7fb56_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_robo_positioner.html#aa3b80dc77311cb42157f5ad98796e94d" title="Resets positions and rotations and adjusts velocity to compensate. " alt="" coords="224,5,388,47"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="224,71,388,112"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="224,5,384,32"/></map>
 </div>
 </p>
 
@@ -543,21 +569,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Rotates the vector about the Y axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rad</td><td>Angle of rotation in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_cgraph" id="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="224,5,384,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_icgraph" id="class_hydra_1_1_vector3_d_a24a098941e008d97c4ed07a46088de55_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="224,5,407,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#aa3b80dc77311cb42157f5ad98796e94d" title="Resets positions and rotations and adjusts velocity to compensate. " alt="" coords="233,57,397,98"/><area shape="rect" id="node4" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="233,122,397,163"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="224,5,384,32"/></map>
 </div>
 </p>
 
@@ -577,21 +602,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Rotates the vector about the Z axis. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rad</td><td>Angle of rotation in radians. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_cgraph" id="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="223,5,383,32"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_icgraph" id="class_hydra_1_1_vector3_d_ad80c58d96304b6d54438f453ec73c142_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_robo_positioner.html#aa3b80dc77311cb42157f5ad98796e94d" title="Resets positions and rotations and adjusts velocity to compensate. " alt="" coords="223,5,387,47"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#ae814a51f5fceccdf722cf59088bc30dd" title="Updates the robot position, rotation, and velocity. " alt="" coords="223,71,387,112"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="223,5,383,32"/></map>
 </div>
 </p>
 
@@ -611,6 +635,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the magnitude of the vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newMag</td><td>New magnitude. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="af2bd85e6c7aad7980d3cbf14a819fbfc"></a>
@@ -627,12 +659,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Sets the components of this vector based on a 3x1 matrix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>A 3x1 matrix of vector components in order x,y,z </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>Flip matrix to 1x3 (XxY) </dd></dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_af2bd85e6c7aad7980d3cbf14a819fbfc_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_af2bd85e6c7aad7980d3cbf14a819fbfc_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_af2bd85e6c7aad7980d3cbf14a819fbfc_cgraph" id="class_hydra_1_1_vector3_d_af2bd85e6c7aad7980d3cbf14a819fbfc_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a010972cff2aafe559ecc380c4414b985" title="Hydra::Matrix::getXSize" alt="" coords="236,5,399,32"/><area shape="rect" id="node3" href="class_hydra_1_1_matrix.html#a6bed12006cee0dba40fee86e05b4de00" title="Hydra::Matrix::getYSize" alt="" coords="236,56,399,83"/><area shape="rect" id="node4" href="class_hydra_1_1_matrix.html#afa151cd87b28d3c309dd541653cac26c" title="Hydra::Matrix::getValue" alt="" coords="237,107,397,133"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a010972cff2aafe559ecc380c4414b985" title="Hydra::Matrix::getXSize" alt="" coords="236,5,399,32"/><area shape="rect" id="node3" href="class_hydra_1_1_matrix.html#a6bed12006cee0dba40fee86e05b4de00" title="Hydra::Matrix::getYSize" alt="" coords="236,56,399,83"/><area shape="rect" id="node4" href="class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae" title="Gets the value at a point in the matrix. " alt="" coords="237,107,397,133"/></map>
 </div>
 </p>
 
@@ -652,14 +693,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a50015e08f3c114c05bf09946577a88ba_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a50015e08f3c114c05bf09946577a88ba_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a50015e08f3c114c05bf09946577a88ba_icgraph" id="class_hydra_1_1_vector3_d_a50015e08f3c114c05bf09946577a88ba_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="208,5,391,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#a497d494981b7010fcfa85e6bae0daae3" title="Constructor; accepts an MPU9150. " alt="" coords="217,57,381,98"/></map>
-</div>
-</p>
+<p>Sets X component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newX</td><td>New X component </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -677,14 +717,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_aae3112a64c958b992cd5af73870c4e2f_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_aae3112a64c958b992cd5af73870c4e2f_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_aae3112a64c958b992cd5af73870c4e2f_icgraph" id="class_hydra_1_1_vector3_d_aae3112a64c958b992cd5af73870c4e2f_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_robo_positioner.html#a497d494981b7010fcfa85e6bae0daae3" title="Constructor; accepts an MPU9150. " alt="" coords="208,5,372,47"/></map>
-</div>
-</p>
+<p>Sets Y component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newY</td><td>New Y component. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -702,14 +741,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_hydra_1_1_vector3_d_a223cfdf691c33871f8c6e31d82855c3b_icgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_a223cfdf691c33871f8c6e31d82855c3b_icgraph" alt=""/></div>
-<map name="class_hydra_1_1_vector3_d_a223cfdf691c33871f8c6e31d82855c3b_icgraph" id="class_hydra_1_1_vector3_d_a223cfdf691c33871f8c6e31d82855c3b_icgraph">
-<area shape="rect" id="node2" href="class_a_d_b_lib_1_1_path.html#a8e82789f2d45db4a16f18fe226bd8ba4" title="ADBLib::Path::executePath" alt="" coords="208,5,391,32"/><area shape="rect" id="node3" href="class_a_d_b_lib_1_1_robo_positioner.html#a497d494981b7010fcfa85e6bae0daae3" title="Constructor; accepts an MPU9150. " alt="" coords="217,57,381,98"/></map>
-</div>
-</p>
+<p>Sets new Z component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newZ</td><td>New Z component. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -726,12 +764,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Converts this vector to a 3x1 matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>A 3x1 matrix of the vector components in order x,y,z </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Flip matrix to 1x3 (XxY) </dd></dl>
+
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_hydra_1_1_vector3_d_abed70f06c0445143175f11101ceb0e73_cgraph.png" border="0" usemap="#class_hydra_1_1_vector3_d_abed70f06c0445143175f11101ceb0e73_cgraph" alt=""/></div>
 <map name="class_hydra_1_1_vector3_d_abed70f06c0445143175f11101ceb0e73_cgraph" id="class_hydra_1_1_vector3_d_abed70f06c0445143175f11101ceb0e73_cgraph">
-<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="228,5,388,32"/></map>
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="228,5,388,32"/></map>
 </div>
 </p>
 
@@ -808,7 +850,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_hydra.html">Hydra</a></li><li class="navelem"><a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a></li>
-    <li class="footer">Generated on Tue Nov 24 2015 16:06:45 for ADBLib by
+    <li class="footer">Generated on Tue Jan 5 2016 07:04:52 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

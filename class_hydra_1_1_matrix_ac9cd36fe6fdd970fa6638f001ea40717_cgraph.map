@@ -1,7 +1,7 @@
 <map id="Hydra::Matrix::operator*" name="Hydra::Matrix::operator*">
 <area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a010972cff2aafe559ecc380c4414b985" title="Hydra::Matrix::getXSize" alt="" coords="215,5,377,32"/>
 <area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#a6bed12006cee0dba40fee86e05b4de00" title="Hydra::Matrix::getYSize" alt="" coords="215,56,377,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#ae685c3b86f53c164f9133c3a68965a29" title="Sets the matrix to the designated size, completely wiping it in the process. " alt="" coords="219,107,373,133"/>
-<area shape="rect" id="node5" href="$class_hydra_1_1_matrix.html#afa151cd87b28d3c309dd541653cac26c" title="Hydra::Matrix::getValue" alt="" coords="216,157,376,184"/>
-<area shape="rect" id="node6" href="$class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8" title="Hydra::Matrix::setValue" alt="" coords="216,208,376,235"/>
+<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#a9bbc9522ee976fcbfa9b030499354427" title="Changes the size of this matrix, setting all elements to zero in the process. " alt="" coords="219,107,373,133"/>
+<area shape="rect" id="node5" href="$class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae" title="Gets the value at a point in the matrix. " alt="" coords="216,157,376,184"/>
+<area shape="rect" id="node6" href="$class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="216,208,376,235"/>
 </map>

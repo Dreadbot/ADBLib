@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -106,7 +106,8 @@ $(document).ready(function(){initNavTree('namespace_hydra.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Hydra Namespace Reference</div>  </div>
 </div><!--header-->
@@ -121,7 +122,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static logging class allowing for global access to logging capabilities without a whole lot of annoyances.  <a href="class_hydra_1_1_logger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_matrix.html">Matrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic class for matrix math. All matrix slots are zero-ordered. Note that the y axis is inverted.  <a href="class_hydra_1_1_matrix.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for matrix math.  <a href="class_hydra_1_1_matrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_vector3_d.html">Vector3D</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +135,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_hydra.html#a5d181f2e8a018a6bdaf0ef1003b1f55ba169ce2a378bb415d7d701d45b371ef20">resource</a>
  }</td></tr>
 <tr class="separator:a5d181f2e8a018a6bdaf0ef1003b1f55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa04d02f9766098479241abc4c1aded90"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hydra.html#aa04d02f9766098479241abc4c1aded90">operator&lt;&lt;</a> (ostream &amp;output, <a class="el" href="class_hydra_1_1_matrix.html">Matrix</a> &amp;matr)</td></tr>
+<tr class="memdesc:aa04d02f9766098479241abc4c1aded90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debugging overload for output to console.  <a href="#aa04d02f9766098479241abc4c1aded90">More...</a><br /></td></tr>
+<tr class="separator:aa04d02f9766098479241abc4c1aded90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a5d181f2e8a018a6bdaf0ef1003b1f55b"></a>
@@ -158,13 +165,51 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aa04d02f9766098479241abc4c1aded90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream &amp; Hydra::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix &amp;&#160;</td>
+          <td class="paramname"><em>matr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Debugging overload for output to console. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespace_hydra_aa04d02f9766098479241abc4c1aded90_cgraph.png" border="0" usemap="#namespace_hydra_aa04d02f9766098479241abc4c1aded90_cgraph" alt=""/></div>
+<map name="namespace_hydra_aa04d02f9766098479241abc4c1aded90_cgraph" id="namespace_hydra_aa04d02f9766098479241abc4c1aded90_cgraph">
+<area shape="rect" id="node2" href="class_hydra_1_1_matrix.html#a6bed12006cee0dba40fee86e05b4de00" title="Hydra::Matrix::getYSize" alt="" coords="181,5,344,32"/><area shape="rect" id="node3" href="class_hydra_1_1_matrix.html#a010972cff2aafe559ecc380c4414b985" title="Hydra::Matrix::getXSize" alt="" coords="181,56,344,83"/><area shape="rect" id="node4" href="class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae" title="Gets the value at a point in the matrix. " alt="" coords="183,107,343,133"/></map>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_hydra.html">Hydra</a></li>
-    <li class="footer">Generated on Tue Nov 24 2015 16:06:45 for ADBLib by
+    <li class="footer">Generated on Tue Jan 5 2016 07:04:52 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

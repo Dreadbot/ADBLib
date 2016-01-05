@@ -1,18 +1,21 @@
 <map id="src/ADBLib.h" name="src/ADBLib.h">
-<area shape="rect" id="node3" href="$_drivebase_8h.html" title="drivebase/Drivebase.h" alt="" coords="302,184,454,211"/>
-<area shape="rect" id="node6" href="$_mecanum_drive_8h.html" title="drivebase/MecanumDrive.h" alt="" coords="336,95,517,121"/>
-<area shape="rect" id="node7" href="$_omni_drive_8h.html" title="drivebase/OmniDrive.h" alt="" coords="541,95,696,121"/>
-<area shape="rect" id="node8" href="$_traction_drive_8h.html" title="drivebase/TractionDrive.h" alt="" coords="90,95,261,121"/>
-<area shape="rect" id="node9" href="$_octocanum_drive_8h.html" title="drivebase/OctocanumDrive.h" alt="" coords="771,95,962,121"/>
-<area shape="rect" id="node10" href="$_simple_pneumatic_8h.html" title="../output/SimplePneumatic.h" alt="" coords="785,184,972,211"/>
-<area shape="rect" id="node11" href="$_controller_8h.html" title="input/Controller.h" alt="" coords="1443,184,1564,211"/>
-<area shape="rect" id="node15" href="$_equation_8h.html" title="../misc/Equation.h" alt="" coords="1837,259,1965,285"/>
-<area shape="rect" id="node23" href="$_logger_8h.html" title="../../lib/hydra/Logger.h" alt="" coords="1210,259,1360,285"/>
-<area shape="rect" id="node33" href="$_multi_vision_8h.html" title="input/MultiVision.h" alt="" coords="1286,95,1415,121"/>
-<area shape="rect" id="node34" href="$_camera_8h.html" title="Camera.h" alt="" coords="1238,184,1316,211"/>
-<area shape="rect" id="node35" href="$_m_p_u6050_8h.html" title="input/MPU6050.h" alt="" coords="1088,95,1210,121"/>
-<area shape="rect" id="node37" href="$_p_i_d_motor_8h.html" title="output/PIDMotor.h" alt="" coords="580,184,710,211"/>
-<area shape="rect" id="node38" href="$_matrix_8h.html" title="../lib/hydra/Matrix.h" alt="" coords="1990,259,2124,285"/>
-<area shape="rect" id="node39" href="$_vector3_d_8h.html" title="../lib/hydra/Vector3D.h" alt="" coords="1980,184,2134,211"/>
-<area shape="rect" id="node36" href="$_i2_cdev_8h.html" title="../../lib/I2Cdev.h" alt="" coords="1098,184,1214,211"/>
+<area shape="rect" id="node3" href="$_finite_state_machine_8h.html" title="ai/FiniteStateMachine.h" alt="" coords="5,95,164,121"/>
+<area shape="rect" id="node5" href="$_f_s_m_state_8h.html" title="FSMState.h" alt="" coords="136,259,228,285"/>
+<area shape="rect" id="node6" href="$_f_s_m_transition_8h.html" title="FSMTransition.h" alt="" coords="123,184,241,211"/>
+<area shape="rect" id="node7" href="$_drivebase_8h.html" title="drivebase/Drivebase.h" alt="" coords="673,184,825,211"/>
+<area shape="rect" id="node10" href="$_mecanum_drive_8h.html" title="drivebase/MecanumDrive.h" alt="" coords="367,95,549,121"/>
+<area shape="rect" id="node11" href="$_octocanum_drive_8h.html" title="drivebase/OctocanumDrive.h" alt="" coords="997,95,1188,121"/>
+<area shape="rect" id="node12" href="$_simple_pneumatic_8h.html" title="../output/SimplePneumatic.h" alt="" coords="1001,184,1187,211"/>
+<area shape="rect" id="node13" href="$_omni_drive_8h.html" title="drivebase/OmniDrive.h" alt="" coords="623,95,778,121"/>
+<area shape="rect" id="node14" href="$_traction_drive_8h.html" title="drivebase/TractionDrive.h" alt="" coords="802,95,973,121"/>
+<area shape="rect" id="node15" href="$_camera_8h.html" title="input/Camera.h" alt="" coords="1468,184,1579,211"/>
+<area shape="rect" id="node16" href="$_logger_8h.html" title="../../lib/hydra/Logger.h" alt="" coords="1895,259,2045,285"/>
+<area shape="rect" id="node23" href="$_controller_8h.html" title="input/Controller.h" alt="" coords="2259,184,2380,211"/>
+<area shape="rect" id="node25" href="$_equation_8h.html" title="../misc/Equation.h" alt="" coords="2421,259,2549,285"/>
+<area shape="rect" id="node38" href="$_multi_vision_8h.html" title="input/MultiVision.h" alt="" coords="1365,95,1495,121"/>
+<area shape="rect" id="node39" href="$_m_p_u6050_8h.html" title="input/MPU6050.h" alt="" coords="1570,95,1693,121"/>
+<area shape="rect" id="node41" href="$_p_i_d_motor_8h.html" title="output/PIDMotor.h" alt="" coords="1263,184,1392,211"/>
+<area shape="rect" id="node42" href="$_matrix_8h.html" title="../lib/hydra/Matrix.h" alt="" coords="2573,259,2708,285"/>
+<area shape="rect" id="node44" href="$_vector3_d_8h.html" title="../lib/hydra/Vector3D.h" alt="" coords="2564,184,2717,211"/>
+<area shape="rect" id="node40" href="$_i2_cdev_8h.html" title="../../lib/I2Cdev.h" alt="" coords="1603,184,1719,211"/>
 </map>

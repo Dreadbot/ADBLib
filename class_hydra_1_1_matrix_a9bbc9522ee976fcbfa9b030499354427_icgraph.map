@@ -1,0 +1,6 @@
+<map id="Hydra::Matrix::setSize" name="Hydra::Matrix::setSize">
+<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a77a588c4a0124e9ae19f5cf596fa711a" title="Constructor; sets dimensions of matrix. " alt="" coords="216,5,361,32"/>
+<area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#a7f277220e42bc6754a3119cdf01b7ebb" title="Standard matrix addition. " alt="" coords="207,56,371,83"/>
+<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#aeec2d245e68b91bb6ecceebf98865706" title="Standard matrix subtraction. " alt="" coords="209,107,369,133"/>
+<area shape="rect" id="node5" href="$class_hydra_1_1_matrix.html#ac9cd36fe6fdd970fa6638f001ea40717" title="Standard matrix multiplication. " alt="" coords="208,157,369,184"/>
+</map>

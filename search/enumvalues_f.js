@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['traction',['traction',['../class_a_d_b_lib_1_1_octocanum_drive.html#a5ea3c8478ba7ed61eac3e44ed6088081a314b3d93b06ae3a3363830e080797a07',1,'ADBLib::OctocanumDrive']]]
+  ['value',['VALUE',['../namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3ea96162fe30a91a570c382de887bd78d9b',1,'ADBLib']]],
+  ['variable',['VARIABLE',['../namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3eaefb72920e81e73a4b0fcc6d9dca26f93',1,'ADBLib']]]
 ];

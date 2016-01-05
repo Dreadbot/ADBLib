@@ -1,7 +1,0 @@
-<map id="src/control/RoboPositioner.h" name="src/control/RoboPositioner.h">
-<area shape="rect" id="node3" href="$_vector3_d_8h.html" title="../../lib/hydra/Vector3D.h" alt="" coords="237,80,402,107"/>
-<area shape="rect" id="node7" href="$_m_p_u6050_8h.html" title="../input/MPU6050.h" alt="" coords="77,80,212,107"/>
-<area shape="rect" id="node10" href="$_madgwick_a_h_r_s_8h.html" title="../../lib/MadgwickAHRS.h" alt="" coords="362,155,533,181"/>
-<area shape="rect" id="node5" href="$_matrix_8h.html" title="Matrix.h" alt="" coords="218,155,287,181"/>
-<area shape="rect" id="node8" href="$_i2_cdev_8h.html" title="../../lib/I2Cdev.h" alt="" coords="77,155,193,181"/>
-</map>

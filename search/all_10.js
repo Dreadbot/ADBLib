@@ -1,7 +1,23 @@
 var searchData=
 [
-  ['q0',['q0',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#afcabe39fd90329eea989367aa30edef2',1,'ADBLib::MadgwickAHRS']]],
-  ['q1',['q1',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#a992fd0e59eaae610ccbc53e025ef8673',1,'ADBLib::MadgwickAHRS']]],
-  ['q2',['q2',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#a704662d2f6e2707f82788adbce08439e',1,'ADBLib::MadgwickAHRS']]],
-  ['q3',['q3',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#a76d07e604f761c9a5863b35af23de6d0',1,'ADBLib::MadgwickAHRS']]]
+  ['readbit',['readBit',['../class_a_d_b_lib_1_1_i2_cdev.html#a0996c4082954694e2150a27ad49b8a29',1,'ADBLib::I2Cdev']]],
+  ['readbits',['readBits',['../class_a_d_b_lib_1_1_i2_cdev.html#a9802c2119bf41d0cee62456eaae8adc3',1,'ADBLib::I2Cdev']]],
+  ['readbyte',['readByte',['../class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4',1,'ADBLib::I2Cdev']]],
+  ['readbytes',['readBytes',['../class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628',1,'ADBLib::I2Cdev']]],
+  ['readmemoryblock',['readMemoryBlock',['../class_a_d_b_lib_1_1_m_p_u6050.html#a86ed8a2208d0142a52979403180f12da',1,'ADBLib::MPU6050']]],
+  ['readmemorybyte',['readMemoryByte',['../class_a_d_b_lib_1_1_m_p_u6050.html#ab2fd598709434ca57c4cf0b8ca7c7260',1,'ADBLib::MPU6050']]],
+  ['readtimeout',['readTimeout',['../class_a_d_b_lib_1_1_i2_cdev.html#a4a414b47927a92c7df677bcfa1b73703',1,'ADBLib::I2Cdev']]],
+  ['reset',['reset',['../class_a_d_b_lib_1_1_m_p_u6050.html#af673843317ef5bb18dca2d989e0ebb88',1,'ADBLib::MPU6050']]],
+  ['resetaccelerometerpath',['resetAccelerometerPath',['../class_a_d_b_lib_1_1_m_p_u6050.html#a86a32ae890cf7848ad0a4f3f5aa28d09',1,'ADBLib::MPU6050']]],
+  ['resetdmp',['resetDMP',['../class_a_d_b_lib_1_1_m_p_u6050.html#adf6eaa7f6f4800d55f1204b0b303e5b7',1,'ADBLib::MPU6050']]],
+  ['resetfifo',['resetFIFO',['../class_a_d_b_lib_1_1_m_p_u6050.html#aa1732bdf1768e570fb07669739f3d233',1,'ADBLib::MPU6050']]],
+  ['resetgyroscopepath',['resetGyroscopePath',['../class_a_d_b_lib_1_1_m_p_u6050.html#a8bfaaf83e5f96e4526db13bd8c2d80cd',1,'ADBLib::MPU6050']]],
+  ['reseti2cmaster',['resetI2CMaster',['../class_a_d_b_lib_1_1_m_p_u6050.html#a6a9f1ce2f8ba1988229fd1337fe6f40f',1,'ADBLib::MPU6050']]],
+  ['resetsensors',['resetSensors',['../class_a_d_b_lib_1_1_m_p_u6050.html#ac1cb3a0faedce3c48c38a8888d6f80b4',1,'ADBLib::MPU6050']]],
+  ['resettemperaturepath',['resetTemperaturePath',['../class_a_d_b_lib_1_1_m_p_u6050.html#ae3b6a1b3e7ab9c4f55ca9d58b83aa63d',1,'ADBLib::MPU6050']]],
+  ['resource',['resource',['../namespace_hydra.html#a5d181f2e8a018a6bdaf0ef1003b1f55ba169ce2a378bb415d7d701d45b371ef20',1,'Hydra']]],
+  ['rotatex',['rotateX',['../class_hydra_1_1_vector3_d.html#a81f839920319b1c501815173a1c7fb56',1,'Hydra::Vector3D']]],
+  ['rotatey',['rotateY',['../class_hydra_1_1_vector3_d.html#a24a098941e008d97c4ed07a46088de55',1,'Hydra::Vector3D']]],
+  ['rotatez',['rotateZ',['../class_hydra_1_1_vector3_d.html#ad80c58d96304b6d54438f453ec73c142',1,'Hydra::Vector3D']]],
+  ['rparen',['RPAREN',['../namespace_a_d_b_lib.html#a225f1f480dbdcc527ff6e81f37e5a6f5a52b51cc5bd6dc9635fe098e69ca95d81',1,'ADBLib']]]
 ];

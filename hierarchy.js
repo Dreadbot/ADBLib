@@ -18,12 +18,9 @@ var hierarchy =
     [ "ADBLib::ctrlCfg::jysCfg", "struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html", null ],
     [ "Hydra::Log", "class_hydra_1_1_log.html", null ],
     [ "Hydra::Logger", "class_hydra_1_1_logger.html", null ],
-    [ "ADBLib::MadgwickAHRS", "class_a_d_b_lib_1_1_madgwick_a_h_r_s.html", null ],
     [ "Hydra::Matrix", "class_hydra_1_1_matrix.html", null ],
     [ "ADBLib::MPU6050", "class_a_d_b_lib_1_1_m_p_u6050.html", null ],
     [ "ADBLib::MultiVision", "class_a_d_b_lib_1_1_multi_vision.html", null ],
-    [ "ADBLib::Path", "class_a_d_b_lib_1_1_path.html", null ],
-    [ "ADBLib::RoboPositioner", "class_a_d_b_lib_1_1_robo_positioner.html", null ],
     [ "runtime_error", null, [
       [ "ADBLib::parse_error", "class_a_d_b_lib_1_1parse__error.html", null ]
     ] ],
@@ -32,6 +29,5 @@ var hierarchy =
       [ "ADBLib::PIDMotor", "class_a_d_b_lib_1_1_p_i_d_motor.html", null ]
     ] ],
     [ "ADBLib::Token", "class_a_d_b_lib_1_1_token.html", null ],
-    [ "Hydra::Vector3D", "class_hydra_1_1_vector3_d.html", null ],
-    [ "ADBLib::waypoint", "struct_a_d_b_lib_1_1waypoint.html", null ]
+    [ "Hydra::Vector3D", "class_hydra_1_1_vector3_d.html", null ]
 ];

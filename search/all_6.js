@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gconv',['gConv',['../_robo_positioner_8h.html#af7d6c5f35a8b3444c2bd57831c51cb55',1,'RoboPositioner.h']]],
   ['getacceleration',['getAcceleration',['../class_a_d_b_lib_1_1_m_p_u6050.html#a1b5afc601e92e5477f95bdbda4a8c022',1,'ADBLib::MPU6050']]],
   ['getaccelerationx',['getAccelerationX',['../class_a_d_b_lib_1_1_m_p_u6050.html#a6211f65c65d880090edaa586d5d4527c',1,'ADBLib::MPU6050']]],
   ['getaccelerationy',['getAccelerationY',['../class_a_d_b_lib_1_1_m_p_u6050.html#a16917c606b84a2b006cbe392689f882a',1,'ADBLib::MPU6050']]],
@@ -78,7 +77,7 @@ var searchData=
   ['getjoystickraw',['getJoystickRaw',['../class_a_d_b_lib_1_1_controller.html#aefda0d8eadba47376aa1cf31de10cd43',1,'ADBLib::Controller']]],
   ['getlog',['getLog',['../class_hydra_1_1_logger.html#a623ba1253a9c33ea798321e759edfd5b',1,'Hydra::Logger']]],
   ['getlostarbitration',['getLostArbitration',['../class_a_d_b_lib_1_1_m_p_u6050.html#aed1c401b9deb6ebe201ce54c4b79e851',1,'ADBLib::MPU6050']]],
-  ['getmag',['getMag',['../class_a_d_b_lib_1_1_m_p_u6050.html#a505d4dedfc557c7a6f49ae30ca6585b9',1,'ADBLib::MPU6050::getMag()'],['../class_hydra_1_1_vector3_d.html#a5da87c7cfd5fcd4596099ebab1269a2b',1,'Hydra::Vector3D::getMag()']]],
+  ['getmag',['getMag',['../class_a_d_b_lib_1_1_m_p_u6050.html#a505d4dedfc557c7a6f49ae30ca6585b9',1,'ADBLib::MPU6050']]],
   ['getmasterclockspeed',['getMasterClockSpeed',['../class_a_d_b_lib_1_1_m_p_u6050.html#af7c0eb35bb6af59b9b0b619ab511fa2b',1,'ADBLib::MPU6050']]],
   ['getmode',['getMode',['../class_a_d_b_lib_1_1_octocanum_drive.html#ace4bb848eeb8625254c4a652975f1035',1,'ADBLib::OctocanumDrive']]],
   ['getmotion6',['getMotion6',['../class_a_d_b_lib_1_1_m_p_u6050.html#a75f40d373e4526e38a4e5e41d9afc739',1,'ADBLib::MPU6050']]],
@@ -90,9 +89,8 @@ var searchData=
   ['getotpbankvalid',['getOTPBankValid',['../class_a_d_b_lib_1_1_m_p_u6050.html#a7e6590c800b6c3fba17dba07a3bb6810',1,'ADBLib::MPU6050']]],
   ['getotype',['getOType',['../class_a_d_b_lib_1_1_equation.html#a4bb08706643a74f70bdc66d6c515c380',1,'ADBLib::Equation']]],
   ['getpassthroughstatus',['getPassthroughStatus',['../class_a_d_b_lib_1_1_m_p_u6050.html#a6b2a7ca8e2c1a48b3bdead944e3729fd',1,'ADBLib::MPU6050']]],
-  ['getposition',['getPosition',['../class_a_d_b_lib_1_1_robo_positioner.html#acf5d1ed88381741007032794eda025f3',1,'ADBLib::RoboPositioner']]],
   ['getrate',['getRate',['../class_a_d_b_lib_1_1_m_p_u6050.html#a3e4aed3595d1a96fa2868eebf5259495',1,'ADBLib::MPU6050']]],
-  ['getrotation',['getRotation',['../class_a_d_b_lib_1_1_robo_positioner.html#a921ef02ce3ab30c7c2fbcf088e21a170',1,'ADBLib::RoboPositioner::getRotation()'],['../class_a_d_b_lib_1_1_m_p_u6050.html#ac518f592c610c6147b55cdc67ce38d3d',1,'ADBLib::MPU6050::getRotation()']]],
+  ['getrotation',['getRotation',['../class_a_d_b_lib_1_1_m_p_u6050.html#ac518f592c610c6147b55cdc67ce38d3d',1,'ADBLib::MPU6050']]],
   ['getrotationx',['getRotationX',['../class_a_d_b_lib_1_1_m_p_u6050.html#a5e3b471fdbd8a29cc4a2a499b0892036',1,'ADBLib::MPU6050']]],
   ['getrotationy',['getRotationY',['../class_a_d_b_lib_1_1_m_p_u6050.html#a2f63cd9d8d98855d1d9eec1c9ff707a4',1,'ADBLib::MPU6050']]],
   ['getrotationz',['getRotationZ',['../class_a_d_b_lib_1_1_m_p_u6050.html#aa7798953984e7953b0993d9d5efe1958',1,'ADBLib::MPU6050']]],
@@ -133,8 +131,7 @@ var searchData=
   ['gettempfifoenabled',['getTempFIFOEnabled',['../class_a_d_b_lib_1_1_m_p_u6050.html#a35c8eeb0244da0414269358a4c2b696c',1,'ADBLib::MPU6050']]],
   ['gettempsensorenabled',['getTempSensorEnabled',['../class_a_d_b_lib_1_1_m_p_u6050.html#ad0366cb287cac90fec3228a2ece1f997',1,'ADBLib::MPU6050']]],
   ['getttype',['getTType',['../class_a_d_b_lib_1_1_equation.html#a0bdf3810dcc6eba66a98ad54c5b58509',1,'ADBLib::Equation']]],
-  ['getvalue',['getValue',['../class_a_d_b_lib_1_1_equation.html#a1f3a25ca803bce9e281beb33800f0c26',1,'ADBLib::Equation::getValue()'],['../class_hydra_1_1_matrix.html#afa151cd87b28d3c309dd541653cac26c',1,'Hydra::Matrix::getValue()']]],
-  ['getvelocity',['getVelocity',['../class_a_d_b_lib_1_1_robo_positioner.html#ae61b1ae3e6b7bc7a3149b3145f91b4b8',1,'ADBLib::RoboPositioner']]],
+  ['getvalue',['getValue',['../class_a_d_b_lib_1_1_equation.html#a1f3a25ca803bce9e281beb33800f0c26',1,'ADBLib::Equation::getValue()'],['../class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae',1,'Hydra::Matrix::getValue()']]],
   ['getwaitforexternalsensorenabled',['getWaitForExternalSensorEnabled',['../class_a_d_b_lib_1_1_m_p_u6050.html#a9fb2ad95d2d28cfa58b4e35c301b9baa',1,'ADBLib::MPU6050']]],
   ['getwakecycleenabled',['getWakeCycleEnabled',['../class_a_d_b_lib_1_1_m_p_u6050.html#ac321a99fac8daf22a199dedfd3500f4f',1,'ADBLib::MPU6050']]],
   ['getwakefrequency',['getWakeFrequency',['../class_a_d_b_lib_1_1_m_p_u6050.html#a5e019b82250f9f6dd11f1df0d06253ba',1,'ADBLib::MPU6050']]],
@@ -166,10 +163,5 @@ var searchData=
   ['getzgyrooffset',['getZGyroOffset',['../class_a_d_b_lib_1_1_m_p_u6050.html#a68849a53f4ecc53dfa0d716b4f4d6693',1,'ADBLib::MPU6050']]],
   ['getzgyrooffsetuser',['getZGyroOffsetUser',['../class_a_d_b_lib_1_1_m_p_u6050.html#ac6ba67d5ec3fc93cddafa22943f522ff',1,'ADBLib::MPU6050']]],
   ['getznegmotiondetected',['getZNegMotionDetected',['../class_a_d_b_lib_1_1_m_p_u6050.html#affdcaf9ad9c2f6d8211f806d3db0d2f6',1,'ADBLib::MPU6050']]],
-  ['getzposmotiondetected',['getZPosMotionDetected',['../class_a_d_b_lib_1_1_m_p_u6050.html#a15b6be7a154148765829e42ca553e088',1,'ADBLib::MPU6050']]],
-  ['gx',['gx',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a907e17e6b4a3db73ad8de4ae35c7d955',1,'ADBLib::RoboPositioner']]],
-  ['gy',['gy',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a99bcc066c1ae650a193fe8d698d56f8b',1,'ADBLib::RoboPositioner']]],
-  ['gyrfactors',['gyrFactors',['../namespace_a_d_b_lib.html#ad2bdda854bc769e7cd640507fb96437d',1,'ADBLib']]],
-  ['gyro',['gyro',['../class_a_d_b_lib_1_1_robo_positioner.html#a303ac9a888d4d67e7fd7816dbb92a90d',1,'ADBLib::RoboPositioner']]],
-  ['gz',['gz',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a9ff0539479f5f46eaf9128a82e9b0991',1,'ADBLib::RoboPositioner']]]
+  ['getzposmotiondetected',['getZPosMotionDetected',['../class_a_d_b_lib_1_1_m_p_u6050.html#a15b6be7a154148765829e42ca553e088',1,'ADBLib::MPU6050']]]
 ];

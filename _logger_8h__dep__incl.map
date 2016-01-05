@@ -1,10 +1,10 @@
 <map id="lib/hydra/Logger.h" name="lib/hydra/Logger.h">
-<area shape="rect" id="node2" href="$_controller_8h.html" title="src/input/Controller.h" alt="" coords="31,80,173,107"/>
-<area shape="rect" id="node3" href="$_a_d_b_lib_8h.html" title="src/ADBLib.h" alt="" coords="172,229,272,256"/>
-<area shape="rect" id="node5" href="$_camera_8h.html" title="src/input/Camera.h" alt="" coords="255,80,389,107"/>
-<area shape="rect" id="node9" href="$_logger_8cpp.html" title="lib/hydra/Logger.cpp" alt="" coords="413,80,551,107"/>
-<area shape="rect" id="node4" href="$_controller_8cpp.html" title="src/input/Controller.cpp" alt="" coords="23,155,181,181"/>
-<area shape="rect" id="node6" href="$_multi_vision_8h.html" title="src/input/MultiVision.h" alt="" coords="307,155,457,181"/>
-<area shape="rect" id="node8" href="$_camera_8cpp.html" title="src/input/Camera.cpp" alt="" coords="482,155,629,181"/>
-<area shape="rect" id="node7" href="$_multi_vision_8cpp.html" title="src/input/MultiVision.cpp" alt="" coords="299,229,465,256"/>
+<area shape="rect" id="node2" href="$_camera_8h.html" title="src/input/Camera.h" alt="" coords="191,80,324,107"/>
+<area shape="rect" id="node3" href="$_a_d_b_lib_8h.html" title="src/ADBLib.h" alt="" coords="283,229,383,256"/>
+<area shape="rect" id="node7" href="$_controller_8h.html" title="src/input/Controller.h" alt="" coords="461,80,603,107"/>
+<area shape="rect" id="node9" href="$_logger_8cpp.html" title="lib/hydra/Logger.cpp" alt="" coords="628,80,767,107"/>
+<area shape="rect" id="node4" href="$_multi_vision_8h.html" title="src/input/MultiVision.h" alt="" coords="13,155,163,181"/>
+<area shape="rect" id="node6" href="$_camera_8cpp.html" title="src/input/Camera.cpp" alt="" coords="239,155,385,181"/>
+<area shape="rect" id="node5" href="$_multi_vision_8cpp.html" title="src/input/MultiVision.cpp" alt="" coords="5,229,171,256"/>
+<area shape="rect" id="node8" href="$_controller_8cpp.html" title="src/input/Controller.cpp" alt="" coords="511,155,668,181"/>
 </map>

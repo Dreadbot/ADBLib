@@ -7,7 +7,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
@@ -29,7 +28,6 @@ var NAVTREE =
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
@@ -40,9 +38,8 @@ var NAVTREEINDEX =
 [
 "_a_d_b_lib_8h.html",
 "_m_p_u6050_8h.html#a95960b2c82d00341b6174272e2fb3e07",
-"class_a_d_b_lib_1_1_m_p_u6050.html#a0e78bd31af92945eb46f898d00bfa2f4",
-"class_a_d_b_lib_1_1_m_p_u6050.html#afcdeed45477eb9cae0983f1677f79164",
-"functions_w.html"
+"class_a_d_b_lib_1_1_m_p_u6050.html#a1cb8f9502c4f107ed13b588104e82b31",
+"class_a_d_b_lib_1_1_octocanum_drive.html#a5ac6cf5dc0491335f6126540f8d73b51"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

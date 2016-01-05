@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['madgwickahrs',['MadgwickAHRS',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html',1,'ADBLib']]],
-  ['madgwickahrs',['MadgwickAHRS',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#a06711f47d4a40decaf50af5114df0b83',1,'ADBLib::MadgwickAHRS']]],
-  ['madgwickahrs_2ecpp',['MadgwickAHRS.cpp',['../_madgwick_a_h_r_s_8cpp.html',1,'']]],
-  ['madgwickahrs_2eh',['MadgwickAHRS.h',['../_madgwick_a_h_r_s_8h.html',1,'']]],
-  ['magfactor',['magFactor',['../namespace_a_d_b_lib.html#a30d5adf3979dd232d59534a4fb67b025',1,'ADBLib']]],
+  ['mag',['mag',['../class_hydra_1_1_vector3_d.html#a06af38fe691f13d8162adc56d58d718f',1,'Hydra::Vector3D']]],
   ['mat',['mat',['../class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6',1,'Hydra::Matrix']]],
   ['matrix',['Matrix',['../class_hydra_1_1_matrix.html',1,'Hydra']]],
   ['matrix',['Matrix',['../class_hydra_1_1_matrix.html#a77a588c4a0124e9ae19f5cf596fa711a',1,'Hydra::Matrix']]],
@@ -12,7 +8,6 @@ var searchData=
   ['matrix_2eh',['Matrix.h',['../_matrix_8h.html',1,'']]],
   ['max_5flogbuffer_5fentries',['MAX_LOGBUFFER_ENTRIES',['../_logger_8h.html#a48a968345be6e9ee102fc108d120d048',1,'Logger.h']]],
   ['maxval',['maxVal',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1jys_cfg.html#a32c8d9b477123ab60eca1ac439430fd0',1,'ADBLib::ctrlCfg::jysCfg']]],
-  ['mdgw',['mdgw',['../class_a_d_b_lib_1_1_robo_positioner.html#a06aa517683256eef5476392e2772ea14',1,'ADBLib::RoboPositioner']]],
   ['mecanum',['mecanum',['../class_a_d_b_lib_1_1_octocanum_drive.html#a5ea3c8478ba7ed61eac3e44ed6088081a75617b1117a175b0110b5cfc03563299',1,'ADBLib::OctocanumDrive']]],
   ['mecanumdrive',['MecanumDrive',['../class_a_d_b_lib_1_1_mecanum_drive.html#a256873dbb79a7bb9b9a99a4fa3a69a54',1,'ADBLib::MecanumDrive']]],
   ['mecanumdrive',['MecanumDrive',['../class_a_d_b_lib_1_1_mecanum_drive.html',1,'ADBLib']]],
@@ -24,8 +19,8 @@ var searchData=
   ['motornames',['MotorNames',['../class_a_d_b_lib_1_1_drivebase.html#a65c31abf89fe43620bd711b9a2466ae5',1,'ADBLib::Drivebase']]],
   ['motorpos',['MotorPos',['../class_a_d_b_lib_1_1_drivebase.html#ab33722176bd9e8dc072fd277d3db93d7',1,'ADBLib::Drivebase']]],
   ['motors',['motors',['../class_a_d_b_lib_1_1_drivebase.html#af35fd70421d240510d92e8f14a977f8d',1,'ADBLib::Drivebase']]],
-  ['mpu6050',['MPU6050',['../class_a_d_b_lib_1_1_m_p_u6050.html',1,'ADBLib']]],
   ['mpu6050',['MPU6050',['../class_a_d_b_lib_1_1_m_p_u6050.html#a8f716e05da25d8c4adfbec3212a8b0cc',1,'ADBLib::MPU6050::MPU6050()'],['../class_a_d_b_lib_1_1_m_p_u6050.html#a3ae9e6dd80882c823b4b7863cf5f2eae',1,'ADBLib::MPU6050::MPU6050(uint8_t address)']]],
+  ['mpu6050',['MPU6050',['../class_a_d_b_lib_1_1_m_p_u6050.html',1,'ADBLib']]],
   ['mpu6050_2ecpp',['MPU6050.cpp',['../_m_p_u6050_8cpp.html',1,'']]],
   ['mpu6050_2eh',['MPU6050.h',['../_m_p_u6050_8h.html',1,'']]],
   ['mpu6050_5faccel_5ffifo_5fen_5fbit',['MPU6050_ACCEL_FIFO_EN_BIT',['../_m_p_u6050_8h.html#a3b2263e85c479475b12c39e6ab913258',1,'MPU6050.h']]],
@@ -356,8 +351,5 @@ var searchData=
   ['multivision',['MultiVision',['../class_a_d_b_lib_1_1_multi_vision.html#a61209f763dea326726e5a7c24642d71a',1,'ADBLib::MultiVision']]],
   ['multivision',['MultiVision',['../class_a_d_b_lib_1_1_multi_vision.html',1,'ADBLib']]],
   ['multivision_2ecpp',['MultiVision.cpp',['../_multi_vision_8cpp.html',1,'']]],
-  ['multivision_2eh',['MultiVision.h',['../_multi_vision_8h.html',1,'']]],
-  ['mx',['mx',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a8a2bd811b114dd62980a3a4a98683c8b',1,'ADBLib::RoboPositioner']]],
-  ['my',['my',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a1ffdb9f76cb73c24ec8fd18e8650dc3b',1,'ADBLib::RoboPositioner']]],
-  ['mz',['mz',['../class_a_d_b_lib_1_1_robo_positioner.html#a93b3fd9e51d45059a1d9fc5241e61515a2fdffed89dab818d85fcc13744b1c420',1,'ADBLib::RoboPositioner']]]
+  ['multivision_2eh',['MultiVision.h',['../_multi_vision_8h.html',1,'']]]
 ];

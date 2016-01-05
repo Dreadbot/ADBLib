@@ -1,7 +1,0 @@
-<map id="ADBLib::Path" name="ADBLib::Path">
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_robo_positioner.html" title="ADBLib::RoboPositioner" alt="" coords="217,95,381,121"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_vector3_d.html" title="Hydra::Vector3D" alt="" coords="37,5,157,32"/>
-<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_madgwick_a_h_r_s.html" title="ADBLib::MadgwickAHRS" alt="" coords="182,5,354,32"/>
-<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_m_p_u6050.html" title="ADBLib::MPU6050" alt="" coords="379,5,512,32"/>
-<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_drivebase.html" title="ADBLib::Drivebase" alt="" coords="466,95,601,121"/>
-</map>

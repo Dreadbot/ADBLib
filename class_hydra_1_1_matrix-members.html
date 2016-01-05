@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('class_hydra_1_1_matrix.html','');});
 
 <p>This is the complete list of members for <a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#afa151cd87b28d3c309dd541653cac26c">getValue</a>(unsigned short int x=0, unsigned short int y=0) const </td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae">getValue</a>(unsigned short int x, unsigned short int y) const </td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a010972cff2aafe559ecc380c4414b985">getXSize</a>() const </td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a6bed12006cee0dba40fee86e05b4de00">getYSize</a>() const </td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6">mat</a></td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -122,8 +122,8 @@ $(document).ready(function(){initNavTree('class_hydra_1_1_matrix.html','');});
   <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#afd0530ec123be079028614889e29dade">operator*</a>(const double num)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a7f277220e42bc6754a3119cdf01b7ebb">operator+</a>(const Matrix &amp;matr)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#aeec2d245e68b91bb6ecceebf98865706">operator-</a>(const Matrix &amp;matr)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#ae685c3b86f53c164f9133c3a68965a29">setSize</a>(unsigned short int newXSize=2, unsigned short int newYSize=2)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a4e461e7e4118e1f2281637da7440fdf8">setValue</a>(double value, unsigned short int x=0, unsigned short int y=0)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a9bbc9522ee976fcbfa9b030499354427">setSize</a>(unsigned short int newXSize, unsigned short int newYSize)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6">setValue</a>(double value, unsigned short int x, unsigned short int y)</td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a599c17e959e56a18253fe412e1eddc25">xSize</a></td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html#a5b0c0807da7c628316a0553e4526f2f4">ySize</a></td><td class="entry"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
 </table></div><!-- contents -->
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('class_hydra_1_1_matrix.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Nov 24 2015 16:06:45 for ADBLib by
+    <li class="footer">Generated on Tue Jan 5 2016 07:04:52 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['value',['value',['../class_a_d_b_lib_1_1_token.html#a80ee1b8826fe22992de40652c6173bc2',1,'ADBLib::Token::value()'],['../namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3ea96162fe30a91a570c382de887bd78d9b',1,'ADBLib::VALUE()']]],
-  ['variable',['VARIABLE',['../namespace_a_d_b_lib.html#a727f7b8feaebbd4309e01d3e9dea4f3eaefb72920e81e73a4b0fcc6d9dca26f93',1,'ADBLib']]],
-  ['vector3d',['Vector3D',['../class_hydra_1_1_vector3_d.html',1,'Hydra']]],
-  ['vector3d',['Vector3D',['../class_hydra_1_1_vector3_d.html#a7f1af4dabac052479f852cebb965e1fc',1,'Hydra::Vector3D::Vector3D()'],['../class_hydra_1_1_vector3_d.html#a7f9a3d9c6fd8a11325796bd3bee16ad8',1,'Hydra::Vector3D::Vector3D(double newX, double newY, double newZ)']]],
-  ['vector3d_2ecpp',['Vector3D.cpp',['../_vector3_d_8cpp.html',1,'']]],
-  ['vector3d_2eh',['Vector3D.h',['../_vector3_d_8h.html',1,'']]],
-  ['vel',['vel',['../class_a_d_b_lib_1_1_robo_positioner.html#a2e8bedc68eb88ee7d3e92887bc51c0ce',1,'ADBLib::RoboPositioner']]]
+  ['writebit',['writeBit',['../class_a_d_b_lib_1_1_i2_cdev.html#a3530717d0fbec98599d199ba8bd5bebc',1,'ADBLib::I2Cdev']]],
+  ['writebits',['writeBits',['../class_a_d_b_lib_1_1_i2_cdev.html#ac369238346fc7b686dd53107f0f1f777',1,'ADBLib::I2Cdev']]],
+  ['writebyte',['writeByte',['../class_a_d_b_lib_1_1_i2_cdev.html#ac9901ebcf63a691f9fee163e7dee9ae9',1,'ADBLib::I2Cdev']]],
+  ['writebytes',['writeBytes',['../class_a_d_b_lib_1_1_i2_cdev.html#a8650d9795a8dbebac88e27db7cef3176',1,'ADBLib::I2Cdev']]],
+  ['writedmpconfigurationset',['writeDMPConfigurationSet',['../class_a_d_b_lib_1_1_m_p_u6050.html#aa81a999463f81989e09463bb94660c60',1,'ADBLib::MPU6050']]],
+  ['writememoryblock',['writeMemoryBlock',['../class_a_d_b_lib_1_1_m_p_u6050.html#acee9a26dd3ea3bd0dd188512435f16e6',1,'ADBLib::MPU6050']]],
+  ['writememorybyte',['writeMemoryByte',['../class_a_d_b_lib_1_1_m_p_u6050.html#a4113b9b7cf4706167fac58d44bd209c6',1,'ADBLib::MPU6050']]],
+  ['writeprogdmpconfigurationset',['writeProgDMPConfigurationSet',['../class_a_d_b_lib_1_1_m_p_u6050.html#a52856bf2485f7c204e8014bf58c0e258',1,'ADBLib::MPU6050']]],
+  ['writeprogmemoryblock',['writeProgMemoryBlock',['../class_a_d_b_lib_1_1_m_p_u6050.html#a2d1a338ff55e85ca064b3d9f7af51d45',1,'ADBLib::MPU6050']]]
 ];

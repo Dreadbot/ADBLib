@@ -2,15 +2,14 @@
 <area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a825a6733f74128a6d21c4ac2e9bf4ffc" title="ADBLib::MPU6050::setExternal\lFrameSync" alt="" coords="247,5,454,47"/>
 <area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_m_p_u6050.html#affc3f41bf5060365ac7f1c95e8979767" title="ADBLib::MPU6050::setDLPFMode" alt="" coords="238,71,463,98"/>
 <area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_m_p_u6050.html#af279c9808e9b2949afe028f3387de7fd" title="ADBLib::MPU6050::setFull\lScaleGyroRange" alt="" coords="261,123,441,164"/>
-<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ad96465cb644655b5fec4cf7b69fbb2ae" title="ADBLib::MPU6050::setFull\lScaleAccelRange" alt="" coords="261,188,441,229"/>
-<area shape="rect" id="node8" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a977842e47e25bf379b8f7cb0583fbbc6" title="ADBLib::MPU6050::setDHPFMode" alt="" coords="237,254,465,281"/>
-<area shape="rect" id="node9" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a97386dabd47a0a979d5e422b27d02e03" title="ADBLib::MPU6050::setMaster\lClockSpeed" alt="" coords="251,305,450,347"/>
-<area shape="rect" id="node10" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0a2a98ee7c43e28f936a2cb77f6cfb57" title="ADBLib::MPU6050::setSlave\lDataLength" alt="" coords="255,371,447,412"/>
-<area shape="rect" id="node11" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aad87d7e374188c1f256d1ba1ae3f16a1" title="ADBLib::MPU6050::setSlave4\lMasterDelay" alt="" coords="251,436,450,477"/>
-<area shape="rect" id="node12" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0e78bd31af92945eb46f898d00bfa2f4" title="ADBLib::MPU6050::setAccelerometer\lPowerOnDelay" alt="" coords="229,501,472,543"/>
-<area shape="rect" id="node13" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a634b17b029b8635c50381cac892c36f5" title="ADBLib::MPU6050::setFreefall\lDetectionCounterDecrement" alt="" coords="249,567,452,608"/>
-<area shape="rect" id="node14" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a68432c521d98fc3bac711dd8900ca667" title="ADBLib::MPU6050::setMotion\lDetectionCounterDecrement" alt="" coords="251,632,450,673"/>
-<area shape="rect" id="node15" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a365c9f740b240bb4368aa87e192c4cc0" title="ADBLib::MPU6050::setClock\lSource" alt="" coords="254,697,447,739"/>
+<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_m_p_u6050.html#ad96465cb644655b5fec4cf7b69fbb2ae" title="ADBLib::MPU6050::setFull\lScaleAccelRange" alt="" coords="261,188,441,229"/>
+<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a977842e47e25bf379b8f7cb0583fbbc6" title="ADBLib::MPU6050::setDHPFMode" alt="" coords="237,254,465,281"/>
+<area shape="rect" id="node8" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a97386dabd47a0a979d5e422b27d02e03" title="ADBLib::MPU6050::setMaster\lClockSpeed" alt="" coords="251,305,450,347"/>
+<area shape="rect" id="node9" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0a2a98ee7c43e28f936a2cb77f6cfb57" title="ADBLib::MPU6050::setSlave\lDataLength" alt="" coords="255,371,447,412"/>
+<area shape="rect" id="node10" href="$class_a_d_b_lib_1_1_m_p_u6050.html#aad87d7e374188c1f256d1ba1ae3f16a1" title="ADBLib::MPU6050::setSlave4\lMasterDelay" alt="" coords="251,436,450,477"/>
+<area shape="rect" id="node11" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a0e78bd31af92945eb46f898d00bfa2f4" title="ADBLib::MPU6050::setAccelerometer\lPowerOnDelay" alt="" coords="229,501,472,543"/>
+<area shape="rect" id="node12" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a634b17b029b8635c50381cac892c36f5" title="ADBLib::MPU6050::setFreefall\lDetectionCounterDecrement" alt="" coords="249,567,452,608"/>
+<area shape="rect" id="node13" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a68432c521d98fc3bac711dd8900ca667" title="ADBLib::MPU6050::setMotion\lDetectionCounterDecrement" alt="" coords="251,632,450,673"/>
+<area shape="rect" id="node14" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a365c9f740b240bb4368aa87e192c4cc0" title="ADBLib::MPU6050::setClock\lSource" alt="" coords="254,697,447,739"/>
 <area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_m_p_u6050.html#abbf6fa0f6271e9869557293b896ad9df" title="ADBLib::MPU6050::initialize" alt="" coords="520,195,708,222"/>
-<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_robo_positioner.html#a497d494981b7010fcfa85e6bae0daae3" title="Constructor; accepts an MPU9150. " alt="" coords="756,188,920,229"/>
 </map>

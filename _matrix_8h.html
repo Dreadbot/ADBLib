@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">0.5</span>
+   &#160;<span id="projectnumber">1.0</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -106,13 +106,15 @@ $(document).ready(function(){initNavTree('_matrix_8h.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Matrix.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;math.h&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Matrix.h:</div>
 <div class="dyncontent">
@@ -125,7 +127,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="_matrix_8h__dep__incl.png" border="0" usemap="#lib_2hydra_2_matrix_8hdep" alt=""/></div>
 <map name="lib_2hydra_2_matrix_8hdep" id="lib_2hydra_2_matrix_8hdep">
-<area shape="rect" id="node2" href="_a_d_b_lib_8h.html" title="src/ADBLib.h" alt="" coords="5,155,105,181"/><area shape="rect" id="node3" href="_vector3_d_8h.html" title="lib/hydra/Vector3D.h" alt="" coords="137,80,278,107"/><area shape="rect" id="node9" href="_matrix_8cpp.html" title="lib/hydra/Matrix.cpp" alt="" coords="302,80,438,107"/><area shape="rect" id="node4" href="_robo_positioner_8h.html" title="src/control/RoboPositioner.h" alt="" coords="130,155,317,181"/><area shape="rect" id="node8" href="_vector3_d_8cpp.html" title="lib/hydra/Vector3D.cpp" alt="" coords="341,155,495,181"/><area shape="rect" id="node5" href="_path_8h.html" title="src/control/Path.h" alt="" coords="67,229,193,256"/><area shape="rect" id="node7" href="_robo_positioner_8cpp.html" title="src/control/RoboPositioner.cpp" alt="" coords="217,229,419,256"/><area shape="rect" id="node6" href="_path_8cpp.html" title="src/control/Path.cpp" alt="" coords="61,304,199,331"/></map>
+<area shape="rect" id="node2" href="_a_d_b_lib_8h.html" title="src/ADBLib.h" alt="" coords="5,155,105,181"/><area shape="rect" id="node3" href="_vector3_d_8h.html" title="lib/hydra/Vector3D.h" alt="" coords="93,80,234,107"/><area shape="rect" id="node5" href="_matrix_8cpp.html" title="lib/hydra/Matrix.cpp" alt="" coords="258,80,394,107"/><area shape="rect" id="node4" href="_vector3_d_8cpp.html" title="lib/hydra/Vector3D.cpp" alt="" coords="129,155,283,181"/></map>
 </div>
 </div>
 <p><a href="_matrix_8h_source.html">Go to the source code of this file.</a></p>
@@ -133,13 +135,19 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A generic class for matrix math. All matrix slots are zero-ordered. Note that the y axis is inverted.  <a href="class_hydra_1_1_matrix.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for matrix math.  <a href="class_hydra_1_1_matrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_hydra"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hydra.html">Hydra</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa04d02f9766098479241abc4c1aded90"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_hydra.html#aa04d02f9766098479241abc4c1aded90">Hydra::operator&lt;&lt;</a> (ostream &amp;output, Matrix &amp;matr)</td></tr>
+<tr class="memdesc:aa04d02f9766098479241abc4c1aded90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debugging overload for output to console.  <a href="#aa04d02f9766098479241abc4c1aded90">More...</a><br /></td></tr>
+<tr class="separator:aa04d02f9766098479241abc4c1aded90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -147,7 +155,7 @@ Namespaces</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_a6d7d479d8442ca9bc975994f6a79db3.html">hydra</a></li><li class="navelem"><a class="el" href="_matrix_8h.html">Matrix.h</a></li>
-    <li class="footer">Generated on Tue Nov 24 2015 16:06:44 for ADBLib by
+    <li class="footer">Generated on Tue Jan 5 2016 07:04:51 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>
