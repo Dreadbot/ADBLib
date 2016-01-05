@@ -2,9 +2,9 @@
 #include <WPILib.h>
 
 //AI
-#include "FiniteStateMachine.h"
-#include "FSMState.h"
-#include "FSMTransition.h"
+#include "ai/FiniteStateMachine.h"
+#include "ai/FSMState.h"
+#include "ai/FSMTransition.h"
 
 //Drivebase
 #include "drivebase/Drivebase.h"
