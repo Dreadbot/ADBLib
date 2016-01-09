@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-namespace Hydra
+namespace ADBLib
 {
 	/**
 	 * @brief Constructor. Sets y and z to 0, and x to 1.

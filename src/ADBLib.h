@@ -25,8 +25,6 @@
 
 //Misc
 #include "misc/Equation.h"
-
-//External library files
-#include "../lib/hydra/Logger.h"
-#include "../lib/hydra/Matrix.h"
-#include "../lib/hydra/Vector3D.h"
+#include "misc/Logger.h"
+#include "misc/Matrix.h"
+#include "misc/Vector3D.h"

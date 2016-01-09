@@ -2,9 +2,8 @@
 
 #include <WPILib.h>
 #include <string>
-#include "../../lib/hydra/Logger.h"
+#include "../misc/Logger.h"
 using std::string;
-using Hydra::Logger;
 
 namespace ADBLib
 {

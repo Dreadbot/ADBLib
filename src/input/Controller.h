@@ -5,7 +5,7 @@
 #include <string>
 #include "../misc/Equation.h"
 #include "../../lib/pugixml/pugixml.hpp"
-#include "../../lib/hydra/Logger.h"
+#include "../misc/Logger.h"
 using std::unordered_map;
 using std::vector;
 using std::string;

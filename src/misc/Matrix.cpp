@@ -1,6 +1,6 @@
 #include "Matrix.h"
 
-namespace Hydra
+namespace ADBLib
 {
 	/**
 	 * @brief Constructor; sets dimensions of matrix.

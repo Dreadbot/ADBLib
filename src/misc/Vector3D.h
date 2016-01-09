@@ -7,7 +7,7 @@
 #define H_RADCONV   0.0174532925
 #define H_DEGCONV   57.29577951
 
-namespace Hydra
+namespace ADBLib
 {
     class Vector3D
     {

@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std; //Ugh
 
-namespace Hydra
+namespace ADBLib
 {
     /** @brief A class for matrix math.*/
     class Matrix

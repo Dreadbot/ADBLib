@@ -8,7 +8,7 @@ using std::ofstream;
 using std::stringstream;
 
 
-namespace Hydra
+namespace ADBLib
 {
 	/**
 	 * @brief Constructor for log.

@@ -16,7 +16,7 @@ using std::stringstream;
 
 //Logger files were ripped out of a game dev library. Some things here (such as flags) are customized more for game dev than for robotics.
 //Note that as the roboRIO is Linux-based (or something really close) a "/" needs to be at the beginning of the filename in order to log anything.
-namespace Hydra
+namespace ADBLib
 {
 	#define MAX_LOGBUFFER_ENTRIES 10 //How many entries the log buffer stores before outputting all entries to a file. Change this to 0 for unstable (i.e. can crash) environments.
 

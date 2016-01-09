@@ -1,5 +1,4 @@
 #include "Controller.h"
-using Hydra::Logger;
 
 namespace ADBLib
 {
@@ -168,7 +167,7 @@ namespace ADBLib
 		if (profiles.count(profileName) != 0)
 			currentProfile = profileName;
 		else
-			Logger::log("Couldn't switch to profile - it doesn't exist!", "sysLog", Hydra::error);
+			Logger::log("Couldn't switch to profile - it doesn't exist!", "sysLog", error);
 	}
 
 	/**
@@ -181,8 +180,8 @@ namespace ADBLib
 	{
 		if (profiles[currentProfile].count(name) == 0)
 		{
-			Logger::log("Could not find control " + name, "sysLog", Hydra::error);
-			return 0; //There IS no control by this name!
+			Logger::log("Could not find control " + name, "sysLog", error);
+			return 0; //There is no control by this name!
 		}
 			
 		ctrlCfg control = profiles[currentProfile][name];
