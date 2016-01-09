@@ -94,8 +94,8 @@ namespace ADBLib
     	if (logFiles.count(name) == 0)
     	{
     		//No log file exists
-    		log("Cannot find log " + name + ", creating new one at." + name + ".txt", "sysLog", info);
-    		Log newLog(name, name);
+    		log("Cannot find log " + name + ", creating new one at /" + name + ".txt", "sysLog", info);
+    		Log newLog(name, "/" + name + ".txt");
     		logFiles[name] = newLog;
     	}
     	logFiles[name].log(message, flag);
@@ -104,7 +104,8 @@ namespace ADBLib
     /**
      * @brief Creates a new log with the given name and filename.
      * @param name The name of the log to create.
-     * @param filename The file to write to. Do NOT append a file extension, it does it for you.
+     * @param filename The file to write to.
+     * @note Don't forget a leading '/' on the filename.
      */
     void Logger::newLog(string name, string filename)
     {
