@@ -105,8 +105,8 @@ namespace ADBLib
 	 *	 </ControlConfig>
 	 *
 	 * @param cfgFile The path/filename to the config file.
-	 * @note RoboRIOs are LINUX BASED! This means that your directory (even if it's just the root directory!) should start out with a '/' !
-	 * @note NOT SETTING A CONTROL PARAMETER IN THE FILE WILL CAUSE DEFAULT VALUES TO BE USED! IF YOU SUSPECT ERROR, CHECK THE LOG!
+	 * @note RoboRIOs are UNIX-y! This means that your directory (even if it's just the root directory!) should start out with a '/' !
+	 * @note Not setting a control parameter in the file will cause default values to be used! If you suspect error, check the log!
 	 */
 	void Controller::parseConfig(string filename)
 	{
@@ -142,7 +142,16 @@ namespace ADBLib
 					newCtrl.jys.maxVal = control.child("maxInput").attribute("value").as_double();
 					newCtrl.jys.minVal = control.child("minInput").attribute("value").as_double();
 					newCtrl.jys.deadzone = control.child("deadzone").attribute("value").as_double();
-					newCtrl.jys.equ.parse(control.child("equation").attribute("value").as_string());
+					try
+					{
+						newCtrl.jys.equ.parse(control.child("equation").attribute("value").as_string());
+					}
+					catch (const parse_error &ex)
+					{
+						Logger::log("Failed to parse equation ' " + control.child("equation").attribute("value").as_string() + ": " + ex.what(), "sysLog", error);
+						Logger::log("Defaulting to equation y=x", "sysLog", error);
+						newCtrl.jys.equ.parse("x");
+					}
 				}
 				profileSet[control.attribute("name").as_string()] = newCtrl;
 			}
