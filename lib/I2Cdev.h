@@ -18,14 +18,14 @@
 
 namespace ADBLib
 {
-	template <typename T>
-	void assert(T toassert, std::string msg)
-	{
-		if (toassert)
-			SmartDashboard::PutBoolean("Assert::" + msg, true);
-		else
-			SmartDashboard::PutBoolean("Assert::" + msg, false);
-	}
+	//template <typename T>
+	//void assert(T toassert, std::string msg)
+	//{
+	//	if (toassert)
+	//		SmartDashboard::PutBoolean("Assert::" + msg, true);
+	//	else
+	//		SmartDashboard::PutBoolean("Assert::" + msg, false);
+	//}
 
 	class I2Cdev
 	{
