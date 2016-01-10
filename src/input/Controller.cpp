@@ -148,7 +148,7 @@ namespace ADBLib
 					}
 					catch (const parse_error &ex)
 					{
-						Logger::log("Failed to parse equation ' " + control.child("equation").attribute("value").as_string() + ": " + ex.what(), "sysLog", error);
+						Logger::log(string("Failed to parse equation ' ") + control.child("equation").attribute("value").as_string() + string(": ") + ex.what(), string("sysLog"), error);
 						Logger::log("Defaulting to equation y=x", "sysLog", error);
 						newCtrl.jys.equ.parse("x");
 					}
