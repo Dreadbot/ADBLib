@@ -21,7 +21,6 @@
 
 //Output
 #include "output/SimplePneumatic.h"
-#include "output/PIDMotor.h"
 
 //Misc
 #include "misc/Equation.h"
