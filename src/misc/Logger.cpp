@@ -93,8 +93,7 @@ namespace ADBLib
     {
     	if (logFiles.count(name) == 0)
     	{
-    		//No log file exists
-    		log("Cannot find log " + name + ", creating new one at /" + name + ".txt", "sysLog", info);
+    		//No log file exist
     		Log newLog(name, "/" + name + ".txt");
     		logFiles[name] = newLog;
     	}
