@@ -6,9 +6,6 @@
 #include "ai/FSMState.h"
 #include "ai/FSMTransition.h"
 
-//Control
-#include "control/RoboPositioner.h"
-
 //Drivebase
 #include "drivebase/Drivebase.h"
 #include "drivebase/MecanumDrive.h"
@@ -20,7 +17,6 @@
 #include "input/Camera.h"
 #include "input/Controller.h"
 #include "input/MultiVision.h"
-#include "input/TriGyro.h"
 
 //Output
 #include "output/SimplePneumatic.h"
