@@ -6,6 +6,9 @@
 #include "ai/FSMState.h"
 #include "ai/FSMTransition.h"
 
+//Control
+#include "control/SimplePID.h"
+
 //Drivebase
 #include "drivebase/Drivebase.h"
 #include "drivebase/MecanumDrive.h"
