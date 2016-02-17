@@ -1,4 +1,4 @@
 <map id="ADBLib::Camera::stop" name="ADBLib::Camera::stop">
-<area shape="rect" id="node2" href="$class_hydra_1_1_logger.html#adbd91aee6d2202bbc1bc05aabeaa2283" title="Logs a message to the log designated log. " alt="" coords="208,5,337,32"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_logger.html#a3dfa8dd01724d80facd992da512ec355" title="Creates a new log with the given name and filename. " alt="" coords="385,5,543,32"/>
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_logger.html#a6602bc3c75b10b9fe17639f37b6d176b" title="Logs a message to the log designated log. " alt="" coords="208,5,347,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_logger.html#ab1b11e0ee7410480565eff30ac95127b" title="Creates a new log with the given name and filename. " alt="" coords="395,5,561,32"/>
 </map>

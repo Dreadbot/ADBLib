@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -128,7 +128,7 @@ Collaboration diagram for ADBLib::FiniteStateMachine:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a749423fca85166612ac8abc0e0ea2963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#a749423fca85166612ac8abc0e0ea2963">FiniteStateMachine</a> ()</td></tr>
 <tr class="separator:a749423fca85166612ac8abc0e0ea2963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4fc378a46f70d83dd063df7fa686776"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776">init</a> (<a class="el" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> *newStateTable, <a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a> *initState)</td></tr>
+<tr class="memitem:ac4fc378a46f70d83dd063df7fa686776"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776">init</a> (<a class="el" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> *newStateTable, <a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a> *initState)</td></tr>
 <tr class="separator:ac4fc378a46f70d83dd063df7fa686776"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6883a3a5d7ef714d32401e575440d36f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#a6883a3a5d7ef714d32401e575440d36f">update</a> ()</td></tr>
 <tr class="memdesc:a6883a3a5d7ef714d32401e575440d36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current state and applies transitions when needed. Uses multimaps to enhance transition speed.  <a href="#a6883a3a5d7ef714d32401e575440d36f">More...</a><br /></td></tr>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a3b99bb13c66a0fd70e18f35bebf67bef"><td class="memItemLeft" align="right" valign="top">multimap&lt; <a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a> <br class="typebreak" />
-*, <a class="el" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#a3b99bb13c66a0fd70e18f35bebf67bef">transitions</a></td></tr>
+*, <a class="el" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#a3b99bb13c66a0fd70e18f35bebf67bef">transitions</a></td></tr>
 <tr class="separator:a3b99bb13c66a0fd70e18f35bebf67bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcadf3914bac5ae53a8f9d5737dd8eec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html#abcadf3914bac5ae53a8f9d5737dd8eec">currentState</a></td></tr>
 <tr class="separator:abcadf3914bac5ae53a8f9d5737dd8eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,7 +194,7 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void ADBLib::FiniteStateMachine::init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a> *&#160;</td>
           <td class="paramname"><em>newStateTable</em>, </td>
         </tr>
         <tr>
@@ -298,7 +298,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">multimap&lt;<a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>*, <a class="el" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a>&gt; ADBLib::FiniteStateMachine::transitions</td>
+          <td class="memname">multimap&lt;<a class="el" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>*, <a class="el" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a>&gt; ADBLib::FiniteStateMachine::transitions</td>
         </tr>
       </table>
   </td>
@@ -320,7 +320,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_a_d_b_lib.html">ADBLib</a></li><li class="navelem"><a class="el" href="class_a_d_b_lib_1_1_finite_state_machine.html">FiniteStateMachine</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:51 for ADBLib by
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:35 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

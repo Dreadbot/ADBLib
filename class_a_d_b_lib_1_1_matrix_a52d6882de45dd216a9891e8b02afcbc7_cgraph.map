@@ -1,0 +1,4 @@
+<map id="ADBLib::Matrix::operator*" name="ADBLib::Matrix::operator*">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_matrix.html#afedada03fa8c977c1f90ce14a7916d13" title="Changes the size of this matrix, setting all elements to zero in the process. " alt="" coords="228,5,391,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_matrix.html#a65e46314b1be6a45be11d6232fdfd0b0" title="Sets the value at a point in the matrix. " alt="" coords="224,56,395,83"/>
+</map>

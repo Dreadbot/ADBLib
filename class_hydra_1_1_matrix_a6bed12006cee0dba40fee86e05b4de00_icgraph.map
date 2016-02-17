@@ -1,5 +1,0 @@
-<map id="Hydra::Matrix::getYSize" name="Hydra::Matrix::getYSize">
-<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#ac9cd36fe6fdd970fa6638f001ea40717" title="Standard matrix multiplication. " alt="" coords="227,5,388,32"/>
-<area shape="rect" id="node3" href="$namespace_hydra.html#aa04d02f9766098479241abc4c1aded90" title="Debugging overload for output to console. " alt="" coords="243,56,371,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_vector3_d.html#af2bd85e6c7aad7980d3cbf14a819fbfc" title="Sets the components of this vector based on a 3x1 matrix. " alt="" coords="216,107,399,133"/>
-</map>

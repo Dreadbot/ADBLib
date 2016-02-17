@@ -1,5 +1,5 @@
 <map id="src/input/MultiVision.cpp" name="src/input/MultiVision.cpp">
-<area shape="rect" id="node2" href="$_multi_vision_8h.html" title="MultiVision.h" alt="" coords="306,80,403,107"/>
-<area shape="rect" id="node5" href="$_camera_8h.html" title="Camera.h" alt="" coords="315,155,394,181"/>
-<area shape="rect" id="node7" href="$_logger_8h.html" title="../../lib/hydra/Logger.h" alt="" coords="280,229,429,256"/>
+<area shape="rect" id="node2" href="$_multi_vision_8h.html" title="MultiVision.h" alt="" coords="322,80,419,107"/>
+<area shape="rect" id="node5" href="$_camera_8h.html" title="Camera.h" alt="" coords="331,155,410,181"/>
+<area shape="rect" id="node7" href="$_logger_8h.html" title="../misc/Logger.h" alt="" coords="313,229,429,256"/>
 </map>

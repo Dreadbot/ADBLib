@@ -1,4 +1,0 @@
-<map id="ADBLib::MPU6050::setFreefallDetectionThreshold" name="ADBLib::MPU6050::setFreefallDetectionThreshold">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac9901ebcf63a691f9fee163e7dee9ae9" title="ADBLib::I2Cdev::writeByte" alt="" coords="256,13,436,39"/>
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#a8650d9795a8dbebac88e27db7cef3176" title="ADBLib::I2Cdev::writeBytes" alt="" coords="484,13,671,39"/>
-</map>

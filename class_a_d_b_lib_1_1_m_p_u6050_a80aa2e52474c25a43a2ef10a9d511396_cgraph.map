@@ -1,6 +1,0 @@
-<map id="ADBLib::MPU6050::getMotion9" name="ADBLib::MPU6050::getMotion9">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_m_p_u6050.html#a75f40d373e4526e38a4e5e41d9afc739" title="ADBLib::MPU6050::getMotion6" alt="" coords="259,5,464,32"/>
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628" title="ADBLib::I2Cdev::readBytes" alt="" coords="513,31,697,57"/>
-<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac9901ebcf63a691f9fee163e7dee9ae9" title="ADBLib::I2Cdev::writeByte" alt="" coords="271,107,451,133"/>
-<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_i2_cdev.html#a8650d9795a8dbebac88e27db7cef3176" title="ADBLib::I2Cdev::writeBytes" alt="" coords="512,107,699,133"/>
-</map>

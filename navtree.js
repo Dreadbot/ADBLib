@@ -17,7 +17,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
@@ -27,8 +27,9 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Macros", "globals_defs.html", "globals_defs" ]
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -37,9 +38,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_d_b_lib_8h.html",
-"_m_p_u6050_8h.html#a95960b2c82d00341b6174272e2fb3e07",
-"class_a_d_b_lib_1_1_m_p_u6050.html#a1cb8f9502c4f107ed13b588104e82b31",
-"class_a_d_b_lib_1_1_octocanum_drive.html#a5ac6cf5dc0491335f6126540f8d73b51"
+"class_a_d_b_lib_1_1_simple_pneumatic.html#ac0e87e4818469d23daf0524cac8e60cf"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

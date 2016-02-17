@@ -1,7 +1,7 @@
 <map id="ADBLib::MultiVision::switchCamera" name="ADBLib::MultiVision::switchCamera">
 <area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9" title="Stops the camera. " alt="" coords="192,5,347,32"/>
 <area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd" title="Starts the camera. " alt="" coords="192,56,347,83"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_logger.html#adbd91aee6d2202bbc1bc05aabeaa2283" title="Logs a message to the log designated log. " alt="" coords="427,5,557,32"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_logger.html#a3dfa8dd01724d80facd992da512ec355" title="Creates a new log with the given name and filename. " alt="" coords="637,5,795,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_logger.html#a6602bc3c75b10b9fe17639f37b6d176b" title="Logs a message to the log designated log. " alt="" coords="423,5,561,32"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_logger.html#ab1b11e0ee7410480565eff30ac95127b" title="Creates a new log with the given name and filename. " alt="" coords="637,5,804,32"/>
 <area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81" title="Gets the status of the camera. " alt="" coords="395,56,589,83"/>
 </map>

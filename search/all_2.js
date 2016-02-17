@@ -1,20 +1,21 @@
 var searchData=
 [
+  ['calculate',['calculate',['../class_a_d_b_lib_1_1_simple_p_i_d.html#a3eca6fc0e94f89322b9f185ef9301311',1,'ADBLib::SimplePID']]],
+  ['callcalculate',['callCalculate',['../class_a_d_b_lib_1_1_simple_p_i_d.html#a72ec73ef177924dd4e007a7b4ded034e',1,'ADBLib::SimplePID']]],
   ['camera',['Camera',['../class_a_d_b_lib_1_1_camera.html',1,'ADBLib']]],
   ['camera',['Camera',['../class_a_d_b_lib_1_1_camera.html#af2ec8d73c857b48bec3c54ccf6680958',1,'ADBLib::Camera']]],
   ['camera_2ecpp',['Camera.cpp',['../_camera_8cpp.html',1,'']]],
   ['camera_2eh',['Camera.h',['../_camera_8h.html',1,'']]],
   ['cameras',['cameras',['../class_a_d_b_lib_1_1_multi_vision.html#ae44745913c76124208427830f9d3c36c',1,'ADBLib::MultiVision']]],
   ['camsession',['camSession',['../class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f',1,'ADBLib::Camera']]],
-  ['checkmagstatus',['checkMagStatus',['../class_a_d_b_lib_1_1_m_p_u6050.html#ac3111bcec17cd1ca7f4cd3c82782ef7d',1,'ADBLib::MPU6050']]],
   ['controller',['Controller',['../class_a_d_b_lib_1_1_controller.html',1,'ADBLib']]],
   ['controller_2ecpp',['Controller.cpp',['../_controller_8cpp.html',1,'']]],
   ['controller_2eh',['Controller.h',['../_controller_8h.html',1,'']]],
   ['cooldown',['cooldown',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1btn_cfg.html#ac34aecd9b930c3de17f57b0d8bb66cea',1,'ADBLib::ctrlCfg::btnCfg']]],
   ['cooldowntimer',['cooldownTimer',['../struct_a_d_b_lib_1_1ctrl_cfg_1_1btn_cfg.html#a95224caee35528054b74ce82f5a82f1b',1,'ADBLib::ctrlCfg::btnCfg']]],
-  ['ctrlcfg',['ctrlCfg',['../class_a_d_b_lib_1_1ctrl_cfg.html',1,'ADBLib']]],
   ['ctrlcfg',['ctrlCfg',['../class_a_d_b_lib_1_1ctrl_cfg.html#aaf420f8cc9c626f78115cc7cf389167d',1,'ADBLib::ctrlCfg']]],
+  ['ctrlcfg',['ctrlCfg',['../class_a_d_b_lib_1_1ctrl_cfg.html',1,'ADBLib']]],
   ['current',['current',['../class_a_d_b_lib_1_1_multi_vision.html#a94138bedffca429f48ff5194cf854fdb',1,'ADBLib::MultiVision']]],
   ['currentprofile',['currentProfile',['../class_a_d_b_lib_1_1_controller.html#a2c14979a530854a378ac17c931e3f083',1,'ADBLib::Controller']]],
-  ['currentstate',['currentState',['../class_a_d_b_lib_1_1_finite_state_machine.html#abcadf3914bac5ae53a8f9d5737dd8eec',1,'ADBLib::FiniteStateMachine::currentState()'],['../class_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d',1,'ADBLib::FSMTransition::currentState()']]]
+  ['currentstate',['currentState',['../class_a_d_b_lib_1_1_finite_state_machine.html#abcadf3914bac5ae53a8f9d5737dd8eec',1,'ADBLib::FiniteStateMachine::currentState()'],['../struct_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d',1,'ADBLib::FSMTransition::currentState()']]]
 ];

@@ -1,0 +1,6 @@
+<map id="ADBLib::Matrix::setSize" name="ADBLib::Matrix::setSize">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_matrix.html#a3c010f7a55e5723928982fdfd6f07a17" title="Constructor; sets dimensions of matrix. " alt="" coords="226,5,381,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_matrix.html#acce68eb20c353b88e9f8ad42a75952a4" title="Standard matrix addition. " alt="" coords="216,56,391,83"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_matrix.html#a0c155063899fd2a3fe5f58f584a2500b" title="Standard matrix subtraction. " alt="" coords="218,107,389,133"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_matrix.html#adde9259bbd64c22bd155ab74125ae3d8" title="Standard matrix multiplication. " alt="" coords="218,157,389,184"/>
+</map>

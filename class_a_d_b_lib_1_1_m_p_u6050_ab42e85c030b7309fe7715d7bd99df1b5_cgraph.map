@@ -1,7 +1,0 @@
-<map id="ADBLib::MPU6050::setTempFIFOEnabled" name="ADBLib::MPU6050::setTempFIFOEnabled">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#a3530717d0fbec98599d199ba8bd5bebc" title="ADBLib::I2Cdev::writeBit" alt="" coords="245,31,415,57"/>
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4" title="ADBLib::I2Cdev::readByte" alt="" coords="464,5,641,32"/>
-<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac9901ebcf63a691f9fee163e7dee9ae9" title="ADBLib::I2Cdev::writeByte" alt="" coords="463,56,643,83"/>
-<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628" title="ADBLib::I2Cdev::readBytes" alt="" coords="692,5,876,32"/>
-<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_i2_cdev.html#a8650d9795a8dbebac88e27db7cef3176" title="ADBLib::I2Cdev::writeBytes" alt="" coords="691,56,877,83"/>
-</map>

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['log',['log',['../class_hydra_1_1_log.html#a6f1b3481a09a2bb669fe401928ece356',1,'Hydra::Log::log()'],['../class_hydra_1_1_logger.html#adbd91aee6d2202bbc1bc05aabeaa2283',1,'Hydra::Logger::log()'],['../class_hydra_1_1_log.html#a9eea0476ef32377d9affa087dfc114f5',1,'Hydra::Log::Log(string newName, string newFilename)'],['../class_hydra_1_1_log.html#aba37030eed896b19d2f369e00ea33128',1,'Hydra::Log::Log()']]],
-  ['logger',['Logger',['../class_hydra_1_1_logger.html#a304bd9efb5fb7dd59764b74fadd46740',1,'Hydra::Logger']]]
+  ['madgwickahrs',['MadgwickAHRS',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#a06711f47d4a40decaf50af5114df0b83',1,'ADBLib::MadgwickAHRS']]],
+  ['mag',['mag',['../class_a_d_b_lib_1_1_vector3_d.html#a0f1e2208d8f9bdb87186ade3d80b1b62',1,'ADBLib::Vector3D']]],
+  ['matrix',['Matrix',['../class_a_d_b_lib_1_1_matrix.html#a3c010f7a55e5723928982fdfd6f07a17',1,'ADBLib::Matrix']]],
+  ['mecanumdrive',['MecanumDrive',['../class_a_d_b_lib_1_1_mecanum_drive.html#a256873dbb79a7bb9b9a99a4fa3a69a54',1,'ADBLib::MecanumDrive']]],
+  ['multivision',['MultiVision',['../class_a_d_b_lib_1_1_multi_vision.html#a61209f763dea326726e5a7c24642d71a',1,'ADBLib::MultiVision']]]
 ];

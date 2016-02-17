@@ -1,5 +1,0 @@
-<map id="Hydra::Matrix::operator&#45;" name="Hydra::Matrix::operator&#45;">
-<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a9bbc9522ee976fcbfa9b030499354427" title="Changes the size of this matrix, setting all elements to zero in the process. " alt="" coords="217,5,370,32"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#a1fe9cc0db7aa212c19746b616bc43fae" title="Gets the value at a point in the matrix. " alt="" coords="213,56,373,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#a101fcb1d37e7387fd6e98b6f45ad8fd6" title="Sets the value at a point in the matrix. " alt="" coords="213,107,373,133"/>
-</map>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>ADBLib: lib/hydra/Matrix.h Source File</title>
+<title>ADBLib: src/misc/Matrix.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -115,17 +115,17 @@ $(document).ready(function(){initNavTree('_matrix_8h_source.html','');});
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>; <span class="comment">//Ugh</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_hydra.html">Hydra</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_a_d_b_lib.html">ADBLib</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_hydra_1_1_matrix.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_hydra_1_1_matrix.html">Matrix</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_matrix.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> x = 2, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> y = 2);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> x = 2, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> y = 2);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> operator+(<span class="keyword">const</span> <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> &amp;matr);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> operator-(<span class="keyword">const</span> <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> &amp;matr);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> operator*(<span class="keyword">const</span> <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> &amp;matr);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a> operator*(<span class="keyword">const</span> <span class="keywordtype">double</span> num);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> operator+(<span class="keyword">const</span> <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> &amp;matr);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> operator-(<span class="keyword">const</span> <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> &amp;matr);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> operator*(<span class="keyword">const</span> <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> &amp;matr);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a> operator*(<span class="keyword">const</span> <span class="keywordtype">double</span> num);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> setValue(<span class="keywordtype">double</span> value, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> x, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> y);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> setSize(<span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> newXSize, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> newYSize);</div>
@@ -134,27 +134,27 @@ $(document).ready(function(){initNavTree('_matrix_8h_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> getXSize() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> getYSize() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_hydra_1_1_matrix.html#a599c17e959e56a18253fe412e1eddc25">   28</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_hydra_1_1_matrix.html#a599c17e959e56a18253fe412e1eddc25">xSize</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_hydra_1_1_matrix.html#a5b0c0807da7c628316a0553e4526f2f4">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_hydra_1_1_matrix.html#a5b0c0807da7c628316a0553e4526f2f4">ySize</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6">   30</a></span>&#160;        vector&lt;vector&lt;double&gt;&gt; <a class="code" href="class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6">mat</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_matrix.html#a577df6fc7daef43b8368b2d52583eebb">   28</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_a_d_b_lib_1_1_matrix.html#a577df6fc7daef43b8368b2d52583eebb">xSize</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_matrix.html#aa7db9457f148710cdef5ef34e5861706">   29</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="class_a_d_b_lib_1_1_matrix.html#aa7db9457f148710cdef5ef34e5861706">ySize</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_matrix.html#aae220f1eec052e800786642d9608943e">   30</a></span>&#160;        vector&lt;vector&lt;double&gt;&gt; <a class="code" href="class_a_d_b_lib_1_1_matrix.html#aae220f1eec052e800786642d9608943e">mat</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ostream&amp; <a class="code" href="namespace_hydra.html#aa04d02f9766098479241abc4c1aded90">operator&lt;&lt;</a>(ostream&amp; output, <a class="code" href="class_hydra_1_1_matrix.html">Matrix</a>&amp; matr);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    ostream&amp; <a class="code" href="namespace_a_d_b_lib.html#ad102b9a62525635322155874763c68f7">operator&lt;&lt;</a>(ostream&amp; output, <a class="code" href="class_a_d_b_lib_1_1_matrix.html">Matrix</a>&amp; matr);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="ttc" id="class_hydra_1_1_matrix_html_aae3c890da848eafdfa5edc2a90b187c6"><div class="ttname"><a href="class_hydra_1_1_matrix.html#aae3c890da848eafdfa5edc2a90b187c6">Hydra::Matrix::mat</a></div><div class="ttdeci">vector&lt; vector&lt; double &gt; &gt; mat</div><div class="ttdef"><b>Definition:</b> Matrix.h:30</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_matrix_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_matrix.html">ADBLib::Matrix</a></div><div class="ttdoc">A class for matrix math. </div><div class="ttdef"><b>Definition:</b> Matrix.h:11</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_matrix_html_aae220f1eec052e800786642d9608943e"><div class="ttname"><a href="class_a_d_b_lib_1_1_matrix.html#aae220f1eec052e800786642d9608943e">ADBLib::Matrix::mat</a></div><div class="ttdeci">vector&lt; vector&lt; double &gt; &gt; mat</div><div class="ttdef"><b>Definition:</b> Matrix.h:30</div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
-<div class="ttc" id="class_hydra_1_1_matrix_html_a5b0c0807da7c628316a0553e4526f2f4"><div class="ttname"><a href="class_hydra_1_1_matrix.html#a5b0c0807da7c628316a0553e4526f2f4">Hydra::Matrix::ySize</a></div><div class="ttdeci">unsigned short int ySize</div><div class="ttdef"><b>Definition:</b> Matrix.h:29</div></div>
-<div class="ttc" id="class_hydra_1_1_matrix_html"><div class="ttname"><a href="class_hydra_1_1_matrix.html">Hydra::Matrix</a></div><div class="ttdoc">A class for matrix math. </div><div class="ttdef"><b>Definition:</b> Matrix.h:11</div></div>
-<div class="ttc" id="namespace_hydra_html_aa04d02f9766098479241abc4c1aded90"><div class="ttname"><a href="namespace_hydra.html#aa04d02f9766098479241abc4c1aded90">Hydra::operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;output, Matrix &amp;matr)</div><div class="ttdoc">Debugging overload for output to console. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:185</div></div>
-<div class="ttc" id="class_hydra_1_1_matrix_html_a599c17e959e56a18253fe412e1eddc25"><div class="ttname"><a href="class_hydra_1_1_matrix.html#a599c17e959e56a18253fe412e1eddc25">Hydra::Matrix::xSize</a></div><div class="ttdeci">unsigned short int xSize</div><div class="ttdef"><b>Definition:</b> Matrix.h:28</div></div>
-<div class="ttc" id="namespace_hydra_html"><div class="ttname"><a href="namespace_hydra.html">Hydra</a></div><div class="ttdef"><b>Definition:</b> Logger.cpp:11</div></div>
+<div class="ttc" id="namespace_a_d_b_lib_html"><div class="ttname"><a href="namespace_a_d_b_lib.html">ADBLib</a></div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:3</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_matrix_html_a577df6fc7daef43b8368b2d52583eebb"><div class="ttname"><a href="class_a_d_b_lib_1_1_matrix.html#a577df6fc7daef43b8368b2d52583eebb">ADBLib::Matrix::xSize</a></div><div class="ttdeci">unsigned short int xSize</div><div class="ttdef"><b>Definition:</b> Matrix.h:28</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_matrix_html_aa7db9457f148710cdef5ef34e5861706"><div class="ttname"><a href="class_a_d_b_lib_1_1_matrix.html#aa7db9457f148710cdef5ef34e5861706">ADBLib::Matrix::ySize</a></div><div class="ttdeci">unsigned short int ySize</div><div class="ttdef"><b>Definition:</b> Matrix.h:29</div></div>
+<div class="ttc" id="namespace_a_d_b_lib_html_ad102b9a62525635322155874763c68f7"><div class="ttname"><a href="namespace_a_d_b_lib.html#ad102b9a62525635322155874763c68f7">ADBLib::operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;output, Matrix &amp;matr)</div><div class="ttdoc">Debugging overload for output to console. </div><div class="ttdef"><b>Definition:</b> Matrix.cpp:185</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_a6d7d479d8442ca9bc975994f6a79db3.html">hydra</a></li><li class="navelem"><a class="el" href="_matrix_8h.html">Matrix.h</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:50 for ADBLib by
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_88826aa2a10e1882b573f502bc7f4b55.html">misc</a></li><li class="navelem"><a class="el" href="_matrix_8h.html">Matrix.h</a></li>
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:34 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

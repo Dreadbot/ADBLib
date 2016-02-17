@@ -1,7 +1,26 @@
 var searchData=
 [
-  ['finitestatemachine',['FiniteStateMachine',['../class_a_d_b_lib_1_1_finite_state_machine.html#a749423fca85166612ac8abc0e0ea2963',1,'ADBLib::FiniteStateMachine']]],
-  ['flushbuffer',['flushBuffer',['../class_hydra_1_1_log.html#a0549120fa8d5d1abca08dd77b2c68486',1,'Hydra::Log']]],
-  ['flushlogbuffers',['flushLogBuffers',['../class_hydra_1_1_logger.html#a842e0f5671d5855a1ef949c95b66a955',1,'Hydra::Logger']]],
-  ['free',['free',['../class_a_d_b_lib_1_1ctrl_cfg.html#a361b014f1792eb5c095dce065235996e',1,'ADBLib::ctrlCfg']]]
+  ['getadelt',['getADelt',['../class_a_d_b_lib_1_1_vector3_d.html#a9a6d50b491b29f009d406db2d95b0ad9',1,'ADBLib::Vector3D']]],
+  ['getanglex',['getAngleX',['../class_a_d_b_lib_1_1_vector3_d.html#ac4f63f6dac88cbd1cffdfbcd78cf1f54',1,'ADBLib::Vector3D']]],
+  ['getangley',['getAngleY',['../class_a_d_b_lib_1_1_vector3_d.html#af12c19438579f56caf424a89a973bf31',1,'ADBLib::Vector3D']]],
+  ['getanglez',['getAngleZ',['../class_a_d_b_lib_1_1_vector3_d.html#a724fa240745b01e48414dfd4abadcea2',1,'ADBLib::Vector3D']]],
+  ['getbuttonraw',['getButtonRaw',['../class_a_d_b_lib_1_1_controller.html#a235e99f6fa88a2ccd3441fd2dd446524',1,'ADBLib::Controller']]],
+  ['getcamera',['getCamera',['../class_a_d_b_lib_1_1_multi_vision.html#a4e2d7d029377ebf85591098d4375524d',1,'ADBLib::MultiVision']]],
+  ['getcurrentimage',['getCurrentImage',['../class_a_d_b_lib_1_1_multi_vision.html#a4a8e4e44af4efca3dc3182170f2f2eb2',1,'ADBLib::MultiVision']]],
+  ['getenabled',['getEnabled',['../class_a_d_b_lib_1_1_drivebase.html#aae23d50b728caa07dc0464778740acfe',1,'ADBLib::Drivebase::getEnabled()'],['../class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81',1,'ADBLib::Camera::getEnabled()']]],
+  ['geteuler',['getEuler',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#aa70a334b66ec4702d33b3b5da4fcd9bb',1,'ADBLib::MadgwickAHRS']]],
+  ['getimage',['getImage',['../class_a_d_b_lib_1_1_camera.html#a5d7aeaaf4a561d25809cfd8d3d636d94',1,'ADBLib::Camera']]],
+  ['getjoystickraw',['getJoystickRaw',['../class_a_d_b_lib_1_1_controller.html#aefda0d8eadba47376aa1cf31de10cd43',1,'ADBLib::Controller']]],
+  ['getlog',['getLog',['../class_a_d_b_lib_1_1_logger.html#abdc2e28fa385950c8fd7d9b915b4f537',1,'ADBLib::Logger']]],
+  ['getmode',['getMode',['../class_a_d_b_lib_1_1_octocanum_drive.html#ace4bb848eeb8625254c4a652975f1035',1,'ADBLib::OctocanumDrive']]],
+  ['getotype',['getOType',['../class_a_d_b_lib_1_1_equation.html#a4bb08706643a74f70bdc66d6c515c380',1,'ADBLib::Equation']]],
+  ['getoutput',['getOutput',['../class_a_d_b_lib_1_1_simple_p_i_d.html#a11e9de4ec9939a1c8f915cd61360230c',1,'ADBLib::SimplePID']]],
+  ['getquat',['getQuat',['../class_a_d_b_lib_1_1_madgwick_a_h_r_s.html#aeb9d55bdf0add16d43e59f4d95325249',1,'ADBLib::MadgwickAHRS']]],
+  ['getttype',['getTType',['../class_a_d_b_lib_1_1_equation.html#a0bdf3810dcc6eba66a98ad54c5b58509',1,'ADBLib::Equation']]],
+  ['getvalue',['getValue',['../class_a_d_b_lib_1_1_equation.html#a1f3a25ca803bce9e281beb33800f0c26',1,'ADBLib::Equation::getValue()'],['../class_a_d_b_lib_1_1_matrix.html#ab792aab1a32cf9fd5b03bca243434433',1,'ADBLib::Matrix::getValue()']]],
+  ['getx',['getX',['../class_a_d_b_lib_1_1_vector3_d.html#a9338b405a909687a234adba033d81fd4',1,'ADBLib::Vector3D']]],
+  ['getxsize',['getXSize',['../class_a_d_b_lib_1_1_matrix.html#a8e39b6f815f07cce6bfddcf339ee20d5',1,'ADBLib::Matrix']]],
+  ['gety',['getY',['../class_a_d_b_lib_1_1_vector3_d.html#a2b77718d472fd2014d518e4d45364305',1,'ADBLib::Vector3D']]],
+  ['getysize',['getYSize',['../class_a_d_b_lib_1_1_matrix.html#abae6392c6d048ffe68cf6b1ea039b07f',1,'ADBLib::Matrix']]],
+  ['getz',['getZ',['../class_a_d_b_lib_1_1_vector3_d.html#a7d3cad49c1d4576c3123962c7981fa0c',1,'ADBLib::Vector3D']]]
 ];

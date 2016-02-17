@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['i2cdev',['I2Cdev',['../class_a_d_b_lib_1_1_i2_cdev.html#a0a466e2323d9f719a1ecc9fa11ac5c84',1,'ADBLib::I2Cdev']]],
-  ['init',['init',['../class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776',1,'ADBLib::FiniteStateMachine']]],
-  ['initialize',['initialize',['../class_a_d_b_lib_1_1_m_p_u6050.html#abbf6fa0f6271e9869557293b896ad9df',1,'ADBLib::MPU6050::initialize()'],['../class_a_d_b_lib_1_1_i2_cdev.html#a125a49c5f890f40119fc5fc158bc7c69',1,'ADBLib::I2Cdev::initialize()']]],
-  ['isontarget',['isOnTarget',['../class_a_d_b_lib_1_1_p_i_d_motor.html#a79486652566871bb9dacf5b5d3c2945c',1,'ADBLib::PIDMotor']]]
+  ['log',['Log',['../class_a_d_b_lib_1_1_log.html#a77742571e401d5d90edb91c29cae01c3',1,'ADBLib::Log::Log(string newName, string newFilename)'],['../class_a_d_b_lib_1_1_log.html#a926d1858533b971cca88c04e797f00cc',1,'ADBLib::Log::Log()'],['../class_a_d_b_lib_1_1_log.html#a0c389dc72aabd1c72b5e3a5b60a93067',1,'ADBLib::Log::log(string message, logFlag flag=info)'],['../class_a_d_b_lib_1_1_logger.html#a6602bc3c75b10b9fe17639f37b6d176b',1,'ADBLib::Logger::log()']]],
+  ['logger',['Logger',['../class_a_d_b_lib_1_1_logger.html#a401e0eacba51e3f098fed09040b261d4',1,'ADBLib::Logger']]]
 ];

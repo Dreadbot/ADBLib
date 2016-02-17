@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -112,46 +112,44 @@ $(document).ready(function(){initNavTree('_camera_8h_source.html','');});
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;WPILib.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../../lib/hydra/Logger.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../misc/Logger.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::string;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> <a class="code" href="class_hydra_1_1_logger.html">Hydra::Logger</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_a_d_b_lib.html">ADBLib</a></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_a_d_b_lib_1_1_camera.html">Camera</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_camera.html#af2ec8d73c857b48bec3c54ccf6680958">Camera</a>(<span class="keywordtype">string</span> newName);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd">start</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9">stop</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81">getEnabled</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Image* <a class="code" href="class_a_d_b_lib_1_1_camera.html#a5d7aeaaf4a561d25809cfd8d3d636d94">getImage</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">   20</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">name</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">   21</a></span>&#160;        Image* <a class="code" href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">frame</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">   22</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">enabled</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">   23</a></span>&#160;        IMAQdxSession <a class="code" href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">camSession</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a8302add7e5188bf31e93f08874e78889"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">ADBLib::Camera::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> Camera.h:20</div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_a_d_b_lib.html">ADBLib</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_a_d_b_lib_1_1_camera.html">Camera</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_camera.html#af2ec8d73c857b48bec3c54ccf6680958">Camera</a>(<span class="keywordtype">string</span> newName);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd">start</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9">stop</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81">getEnabled</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        Image* <a class="code" href="class_a_d_b_lib_1_1_camera.html#a5d7aeaaf4a561d25809cfd8d3d636d94">getImage</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">   19</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">name</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">   20</a></span>&#160;        Image* <a class="code" href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">frame</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">   21</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">enabled</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">   22</a></span>&#160;        IMAQdxSession <a class="code" href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">camSession</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a8302add7e5188bf31e93f08874e78889"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a8302add7e5188bf31e93f08874e78889">ADBLib::Camera::name</a></div><div class="ttdeci">string name</div><div class="ttdef"><b>Definition:</b> Camera.h:19</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_camera_html_af2ec8d73c857b48bec3c54ccf6680958"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#af2ec8d73c857b48bec3c54ccf6680958">ADBLib::Camera::Camera</a></div><div class="ttdeci">Camera(string newName)</div><div class="ttdoc">Creates a new camera with a name ID&#39;d by the roboRIO. </div><div class="ttdef"><b>Definition:</b> Camera.cpp:9</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a5d7aeaaf4a561d25809cfd8d3d636d94"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a5d7aeaaf4a561d25809cfd8d3d636d94">ADBLib::Camera::getImage</a></div><div class="ttdeci">Image * getImage()</div><div class="ttdoc">Gets an image from the camera. </div><div class="ttdef"><b>Definition:</b> Camera.cpp:79</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_aa944f49fcaf32227537c314fe2eb371f"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">ADBLib::Camera::camSession</a></div><div class="ttdeci">IMAQdxSession camSession</div><div class="ttdef"><b>Definition:</b> Camera.h:23</div></div>
-<div class="ttc" id="class_hydra_1_1_logger_html"><div class="ttname"><a href="class_hydra_1_1_logger.html">Hydra::Logger</a></div><div class="ttdoc">Static logging class allowing for global access to logging capabilities without a whole lot of annoya...</div><div class="ttdef"><b>Definition:</b> Logger.h:45</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_aa944f49fcaf32227537c314fe2eb371f"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#aa944f49fcaf32227537c314fe2eb371f">ADBLib::Camera::camSession</a></div><div class="ttdeci">IMAQdxSession camSession</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a7236b0ad5ed8a9599e7af9a79c25f1fd"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd">ADBLib::Camera::start</a></div><div class="ttdeci">bool start()</div><div class="ttdoc">Starts the camera. </div><div class="ttdef"><b>Definition:</b> Camera.cpp:21</div></div>
 <div class="ttc" id="namespace_a_d_b_lib_html"><div class="ttname"><a href="namespace_a_d_b_lib.html">ADBLib</a></div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:3</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a71dca9831313a9e5c2aaca1977ec0c81"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a71dca9831313a9e5c2aaca1977ec0c81">ADBLib::Camera::getEnabled</a></div><div class="ttdeci">bool getEnabled()</div><div class="ttdoc">Gets the status of the camera. </div><div class="ttdef"><b>Definition:</b> Camera.cpp:69</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_camera_html_afb8fdbd9e0ad5f562ae3f8cc528572b9"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9">ADBLib::Camera::stop</a></div><div class="ttdeci">bool stop()</div><div class="ttdoc">Stops the camera. </div><div class="ttdef"><b>Definition:</b> Camera.cpp:49</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a92a6716ad261ce4b8972d3ddf3780468"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">ADBLib::Camera::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> Camera.h:22</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_camera_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html">ADBLib::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:11</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_ae039519c116e0f03b057a7c5e4b19f96"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">ADBLib::Camera::frame</a></div><div class="ttdeci">Image * frame</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_a92a6716ad261ce4b8972d3ddf3780468"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#a92a6716ad261ce4b8972d3ddf3780468">ADBLib::Camera::enabled</a></div><div class="ttdeci">bool enabled</div><div class="ttdef"><b>Definition:</b> Camera.h:21</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_camera_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html">ADBLib::Camera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:10</div></div>
+<div class="ttc" id="class_a_d_b_lib_1_1_camera_html_ae039519c116e0f03b057a7c5e4b19f96"><div class="ttname"><a href="class_a_d_b_lib_1_1_camera.html#ae039519c116e0f03b057a7c5e4b19f96">ADBLib::Camera::frame</a></div><div class="ttdeci">Image * frame</div><div class="ttdef"><b>Definition:</b> Camera.h:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d365e15d984c8d0205117ee0c40d6716.html">input</a></li><li class="navelem"><a class="el" href="_camera_8h.html">Camera.h</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:50 for ADBLib by
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:34 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

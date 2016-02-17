@@ -1,0 +1,9 @@
+<map id="ADBLib::Matrix::setValue" name="ADBLib::Matrix::setValue">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_matrix.html#acce68eb20c353b88e9f8ad42a75952a4" title="Standard matrix addition. " alt="" coords="229,5,404,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_matrix.html#a0c155063899fd2a3fe5f58f584a2500b" title="Standard matrix subtraction. " alt="" coords="231,56,402,83"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_matrix.html#adde9259bbd64c22bd155ab74125ae3d8" title="Standard matrix multiplication. " alt="" coords="231,107,402,133"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_vector3_d.html#aacb703a5e0db59ccb6978c916afb8dec" title="Rotates the vector about the X axis. " alt="" coords="227,157,407,184"/>
+<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_vector3_d.html#a14be09992489cc9f690c9d5f36df6b6c" title="Rotates the vector about the Y axis. " alt="" coords="227,208,407,235"/>
+<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_vector3_d.html#a545f59ef0beb0ac1ace338955f099735" title="Rotates the vector about the Z axis. " alt="" coords="227,259,406,285"/>
+<area shape="rect" id="node8" href="$class_a_d_b_lib_1_1_vector3_d.html#ab35a82d8c6b04466bb684fb957e95745" title="Converts this vector to a 3x1 matrix. " alt="" coords="224,309,409,336"/>
+</map>

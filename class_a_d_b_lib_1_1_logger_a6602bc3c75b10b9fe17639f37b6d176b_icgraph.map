@@ -1,0 +1,8 @@
+<map id="ADBLib::Logger::log" name="ADBLib::Logger::log">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd" title="Starts the camera. " alt="" coords="192,5,347,32"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9" title="Stops the camera. " alt="" coords="192,56,347,83"/>
+<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_controller.html#a053d1ea07804659bac4ca135fcadae9c" title="Loads control settings from a config file, because hard&#45;coded controls are awful. ..." alt="" coords="399,118,529,159"/>
+<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_controller.html#a1f9bb5d4882774b19ee33b748663bb59" title="Switches out the current control profile for another profile, specified by name. " alt="" coords="204,158,335,199"/>
+<area shape="rect" id="node7" href="$class_a_d_b_lib_1_1_controller.html#a1c7f74e2b194265dbad081719e2610df" title="Get the value of a set control, referenced by name. " alt="" coords="204,223,335,265"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_multi_vision.html#a76d24a5a3203763cd295e925be913822" title="Switches to the new camera, automatically stopping the previous camera and starting the new one..." alt="" coords="395,31,533,73"/>
+</map>

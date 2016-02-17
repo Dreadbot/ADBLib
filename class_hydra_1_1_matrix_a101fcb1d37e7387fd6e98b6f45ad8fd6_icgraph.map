@@ -1,9 +1,0 @@
-<map id="Hydra::Matrix::setValue" name="Hydra::Matrix::setValue">
-<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a7f277220e42bc6754a3119cdf01b7ebb" title="Standard matrix addition. " alt="" coords="219,5,383,32"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#aeec2d245e68b91bb6ecceebf98865706" title="Standard matrix subtraction. " alt="" coords="221,56,381,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#ac9cd36fe6fdd970fa6638f001ea40717" title="Standard matrix multiplication. " alt="" coords="220,107,381,133"/>
-<area shape="rect" id="node5" href="$class_hydra_1_1_vector3_d.html#a81f839920319b1c501815173a1c7fb56" title="Rotates the vector about the X axis. " alt="" coords="215,157,386,184"/>
-<area shape="rect" id="node6" href="$class_hydra_1_1_vector3_d.html#a24a098941e008d97c4ed07a46088de55" title="Rotates the vector about the Y axis. " alt="" coords="215,208,386,235"/>
-<area shape="rect" id="node7" href="$class_hydra_1_1_vector3_d.html#ad80c58d96304b6d54438f453ec73c142" title="Rotates the vector about the Z axis. " alt="" coords="216,259,385,285"/>
-<area shape="rect" id="node8" href="$class_hydra_1_1_vector3_d.html#abed70f06c0445143175f11101ceb0e73" title="Converts this vector to a 3x1 matrix. " alt="" coords="213,309,388,336"/>
-</map>

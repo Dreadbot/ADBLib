@@ -1,7 +1,0 @@
-<map id="ADBLib::MPU6050::setAccelerometerPowerOnDelay" name="ADBLib::MPU6050::setAccelerometerPowerOnDelay">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac369238346fc7b686dd53107f0f1f777" title="ADBLib::I2Cdev::writeBits" alt="" coords="296,31,472,57"/>
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_i2_cdev.html#ad0fef8410e1a015373085da394c569d4" title="ADBLib::I2Cdev::readByte" alt="" coords="521,5,699,32"/>
-<area shape="rect" id="node5" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac9901ebcf63a691f9fee163e7dee9ae9" title="ADBLib::I2Cdev::writeByte" alt="" coords="520,56,700,83"/>
-<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_i2_cdev.html#ac82b7e1a5cf123a37bdd745a1afbd628" title="ADBLib::I2Cdev::readBytes" alt="" coords="749,5,933,32"/>
-<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_i2_cdev.html#a8650d9795a8dbebac88e27db7cef3176" title="ADBLib::I2Cdev::writeBytes" alt="" coords="748,56,935,83"/>
-</map>

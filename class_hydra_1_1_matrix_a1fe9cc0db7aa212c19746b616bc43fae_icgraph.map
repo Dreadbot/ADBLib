@@ -1,7 +1,0 @@
-<map id="Hydra::Matrix::getValue" name="Hydra::Matrix::getValue">
-<area shape="rect" id="node2" href="$class_hydra_1_1_matrix.html#a7f277220e42bc6754a3119cdf01b7ebb" title="Standard matrix addition. " alt="" coords="223,5,387,32"/>
-<area shape="rect" id="node3" href="$class_hydra_1_1_matrix.html#aeec2d245e68b91bb6ecceebf98865706" title="Standard matrix subtraction. " alt="" coords="225,56,385,83"/>
-<area shape="rect" id="node4" href="$class_hydra_1_1_matrix.html#ac9cd36fe6fdd970fa6638f001ea40717" title="Standard matrix multiplication. " alt="" coords="224,107,385,133"/>
-<area shape="rect" id="node5" href="$namespace_hydra.html#aa04d02f9766098479241abc4c1aded90" title="Debugging overload for output to console. " alt="" coords="241,157,369,184"/>
-<area shape="rect" id="node6" href="$class_hydra_1_1_vector3_d.html#af2bd85e6c7aad7980d3cbf14a819fbfc" title="Sets the components of this vector based on a 3x1 matrix. " alt="" coords="213,208,396,235"/>
-</map>

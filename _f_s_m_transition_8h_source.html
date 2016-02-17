@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -112,32 +112,31 @@ $(document).ready(function(){initNavTree('_f_s_m_transition_8h_source.html','');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_s_m_state_8h.html">FSMState.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_f_s_m_transition_8h.html#ad138f57d3be6eb768f49bb5e92d6606f">    5</a></span>&#160;<span class="preprocessor">#define END_STATE_TABLE {nullptr, 0, false} </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_f_s_m_transition_8h.html#ad138f57d3be6eb768f49bb5e92d6606f">    5</a></span>&#160;<span class="preprocessor">#define END_STATE_TABLE {nullptr, 0, nullptr} </span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_a_d_b_lib.html">ADBLib</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_f_s_m_transition.html">    9</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">    9</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">   12</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* <a class="code" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">currentState</a>; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">   13</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">input</a>;              </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">   14</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* <a class="code" href="class_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">nextState</a>;    </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    };</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
-<div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_transition_html_a9158dba066a644a51793651c551f8f4d"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">ADBLib::FSMTransition::currentState</a></div><div class="ttdeci">FSMState * currentState</div><div class="ttdoc">The current state. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:12</div></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">   11</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* <a class="code" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">currentState</a>; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">   12</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">input</a>;              </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">   13</a></span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* <a class="code" href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">nextState</a>;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    };</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
 <div class="ttc" id="_f_s_m_state_8h_html"><div class="ttname"><a href="_f_s_m_state_8h.html">FSMState.h</a></div></div>
+<div class="ttc" id="struct_a_d_b_lib_1_1_f_s_m_transition_html"><div class="ttname"><a href="struct_a_d_b_lib_1_1_f_s_m_transition.html">ADBLib::FSMTransition</a></div><div class="ttdef"><b>Definition:</b> FSMTransition.h:9</div></div>
 <div class="ttc" id="namespace_a_d_b_lib_html"><div class="ttname"><a href="namespace_a_d_b_lib.html">ADBLib</a></div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:3</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_transition_html_a4cb4351ed3d73c496096b6eb8d673e4f"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">ADBLib::FSMTransition::nextState</a></div><div class="ttdeci">FSMState * nextState</div><div class="ttdoc">The next state to transition to. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:14</div></div>
+<div class="ttc" id="struct_a_d_b_lib_1_1_f_s_m_transition_html_a9158dba066a644a51793651c551f8f4d"><div class="ttname"><a href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a9158dba066a644a51793651c551f8f4d">ADBLib::FSMTransition::currentState</a></div><div class="ttdeci">FSMState * currentState</div><div class="ttdoc">The current state. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:11</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_state_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_state.html">ADBLib::FSMState</a></div><div class="ttdef"><b>Definition:</b> FSMState.h:5</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_transition_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_transition.html">ADBLib::FSMTransition</a></div><div class="ttdef"><b>Definition:</b> FSMTransition.h:9</div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_transition_html_a03cdcbf865d11d991b9ccce97659249d"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">ADBLib::FSMTransition::input</a></div><div class="ttdeci">int input</div><div class="ttdoc">If this input is recieved and the FSM state is the currentState, transition. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:13</div></div>
+<div class="ttc" id="struct_a_d_b_lib_1_1_f_s_m_transition_html_a4cb4351ed3d73c496096b6eb8d673e4f"><div class="ttname"><a href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a4cb4351ed3d73c496096b6eb8d673e4f">ADBLib::FSMTransition::nextState</a></div><div class="ttdeci">FSMState * nextState</div><div class="ttdoc">The next state to transition to. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:13</div></div>
+<div class="ttc" id="struct_a_d_b_lib_1_1_f_s_m_transition_html_a03cdcbf865d11d991b9ccce97659249d"><div class="ttname"><a href="struct_a_d_b_lib_1_1_f_s_m_transition.html#a03cdcbf865d11d991b9ccce97659249d">ADBLib::FSMTransition::input</a></div><div class="ttdeci">int input</div><div class="ttdoc">If this input is received and the FSM state is the currentState, transition. </div><div class="ttdef"><b>Definition:</b> FSMTransition.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_128a93aeeff33a8423f079f46929dbb3.html">ai</a></li><li class="navelem"><a class="el" href="_f_s_m_transition_8h.html">FSMTransition.h</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:50 for ADBLib by
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:34 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

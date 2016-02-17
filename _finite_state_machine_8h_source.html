@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_finite_state_machine_8h_source.html',
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="code" href="class_a_d_b_lib_1_1_finite_state_machine.html#a749423fca85166612ac8abc0e0ea2963">FiniteStateMachine</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776">init</a>(<a class="code" href="class_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a>* newStateTable, <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* initState);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776">init</a>(<a class="code" href="struct_a_d_b_lib_1_1_f_s_m_transition.html">FSMTransition</a>* newStateTable, <a class="code" href="class_a_d_b_lib_1_1_f_s_m_state.html">FSMState</a>* initState);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_a_d_b_lib_1_1_finite_state_machine.html#a6883a3a5d7ef714d32401e575440d36f">update</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_a_d_b_lib_1_1_finite_state_machine.html#af9f34ccda5a5043b1b117591f01f6c21">   17</a></span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_a_d_b_lib_1_1_finite_state_machine.html#af9f34ccda5a5043b1b117591f01f6c21">~FiniteStateMachine</a>() {}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">protected</span>:</div>
@@ -133,6 +133,7 @@ $(document).ready(function(){initNavTree('_finite_state_machine_8h_source.html',
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html_af9f34ccda5a5043b1b117591f01f6c21"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html#af9f34ccda5a5043b1b117591f01f6c21">ADBLib::FiniteStateMachine::~FiniteStateMachine</a></div><div class="ttdeci">virtual ~FiniteStateMachine()</div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.h:17</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html">ADBLib::FiniteStateMachine</a></div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.h:11</div></div>
 <div class="ttc" id="_f_s_m_state_8h_html"><div class="ttname"><a href="_f_s_m_state_8h.html">FSMState.h</a></div></div>
+<div class="ttc" id="struct_a_d_b_lib_1_1_f_s_m_transition_html"><div class="ttname"><a href="struct_a_d_b_lib_1_1_f_s_m_transition.html">ADBLib::FSMTransition</a></div><div class="ttdef"><b>Definition:</b> FSMTransition.h:9</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html_abcadf3914bac5ae53a8f9d5737dd8eec"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html#abcadf3914bac5ae53a8f9d5737dd8eec">ADBLib::FiniteStateMachine::currentState</a></div><div class="ttdeci">FSMState * currentState</div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.h:20</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html_a3b99bb13c66a0fd70e18f35bebf67bef"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html#a3b99bb13c66a0fd70e18f35bebf67bef">ADBLib::FiniteStateMachine::transitions</a></div><div class="ttdeci">multimap&lt; FSMState *, FSMTransition &gt; transitions</div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.h:19</div></div>
 <div class="ttc" id="namespace_a_d_b_lib_html"><div class="ttname"><a href="namespace_a_d_b_lib.html">ADBLib</a></div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:3</div></div>
@@ -140,7 +141,6 @@ $(document).ready(function(){initNavTree('_finite_state_machine_8h_source.html',
 <div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_state_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_state.html">ADBLib::FSMState</a></div><div class="ttdef"><b>Definition:</b> FSMState.h:5</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html_ac4fc378a46f70d83dd063df7fa686776"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html#ac4fc378a46f70d83dd063df7fa686776">ADBLib::FiniteStateMachine::init</a></div><div class="ttdeci">virtual void init(FSMTransition *newStateTable, FSMState *initState)</div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:15</div></div>
 <div class="ttc" id="_f_s_m_transition_8h_html"><div class="ttname"><a href="_f_s_m_transition_8h.html">FSMTransition.h</a></div></div>
-<div class="ttc" id="class_a_d_b_lib_1_1_f_s_m_transition_html"><div class="ttname"><a href="class_a_d_b_lib_1_1_f_s_m_transition.html">ADBLib::FSMTransition</a></div><div class="ttdef"><b>Definition:</b> FSMTransition.h:9</div></div>
 <div class="ttc" id="class_a_d_b_lib_1_1_finite_state_machine_html_a6883a3a5d7ef714d32401e575440d36f"><div class="ttname"><a href="class_a_d_b_lib_1_1_finite_state_machine.html#a6883a3a5d7ef714d32401e575440d36f">ADBLib::FiniteStateMachine::update</a></div><div class="ttdeci">virtual void update()</div><div class="ttdoc">Updates the current state and applies transitions when needed. Uses multimaps to enhance transition s...</div><div class="ttdef"><b>Definition:</b> FiniteStateMachine.cpp:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('_finite_state_machine_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_128a93aeeff33a8423f079f46929dbb3.html">ai</a></li><li class="navelem"><a class="el" href="_finite_state_machine_8h.html">FiniteStateMachine.h</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:50 for ADBLib by
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:34 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

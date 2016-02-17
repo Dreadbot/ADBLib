@@ -1,5 +1,0 @@
-<map id="Hydra::Logger::log" name="Hydra::Logger::log">
-<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_camera.html#a7236b0ad5ed8a9599e7af9a79c25f1fd" title="Starts the camera. " alt="" coords="183,5,337,32"/>
-<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_camera.html#afb8fdbd9e0ad5f562ae3f8cc528572b9" title="Stops the camera. " alt="" coords="183,56,337,83"/>
-<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_multi_vision.html#a76d24a5a3203763cd295e925be913822" title="Switches to the new camera, automatically stopping the previous camera and starting the new one..." alt="" coords="385,23,524,65"/>
-</map>

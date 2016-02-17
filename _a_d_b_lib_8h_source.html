@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">ADBLib
-   &#160;<span id="projectnumber">1.0</span>
+   &#160;<span id="projectnumber">0.5</span>
    </div>
    <div id="projectbrief">A simple library for rapid robot code development</div>
   </td>
@@ -116,36 +116,37 @@ $(document).ready(function(){initNavTree('_a_d_b_lib_8h_source.html','');});
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_s_m_state_8h.html">ai/FSMState.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_s_m_transition_8h.html">ai/FSMTransition.h</a>&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//Drivebase</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_drivebase_8h.html">drivebase/Drivebase.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mecanum_drive_8h.html">drivebase/MecanumDrive.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_octocanum_drive_8h.html">drivebase/OctocanumDrive.h</a>&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_omni_drive_8h.html">drivebase/OmniDrive.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_traction_drive_8h.html">drivebase/TractionDrive.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//Input</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">input/Camera.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_controller_8h.html">input/Controller.h</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_multi_vision_8h.html">input/MultiVision.h</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_m_p_u6050_8h.html">input/MPU6050.h</a>&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//Output</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simple_pneumatic_8h.html">output/SimplePneumatic.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_p_i_d_motor_8h.html">output/PIDMotor.h</a>&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//Misc</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_equation_8h.html">misc/Equation.h</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//External library files</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../lib/hydra/Logger.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;../lib/hydra/Matrix.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;../lib/hydra/Vector3D.h&quot;</span></div>
-<div class="ttc" id="_p_i_d_motor_8h_html"><div class="ttname"><a href="_p_i_d_motor_8h.html">PIDMotor.h</a></div></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//Control</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simple_p_i_d_8h.html">control/SimplePID.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//Drivebase</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_drivebase_8h.html">drivebase/Drivebase.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mecanum_drive_8h.html">drivebase/MecanumDrive.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_octocanum_drive_8h.html">drivebase/OctocanumDrive.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_omni_drive_8h.html">drivebase/OmniDrive.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_traction_drive_8h.html">drivebase/TractionDrive.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//Input</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_camera_8h.html">input/Camera.h</a>&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_controller_8h.html">input/Controller.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_multi_vision_8h.html">input/MultiVision.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//Output</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simple_pneumatic_8h.html">output/SimplePneumatic.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//Misc</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_equation_8h.html">misc/Equation.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_logger_8h.html">misc/Logger.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_matrix_8h.html">misc/Matrix.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vector3_d_8h.html">misc/Vector3D.h</a>&quot;</span></div>
 <div class="ttc" id="_finite_state_machine_8h_html"><div class="ttname"><a href="_finite_state_machine_8h.html">FiniteStateMachine.h</a></div></div>
+<div class="ttc" id="_matrix_8h_html"><div class="ttname"><a href="_matrix_8h.html">Matrix.h</a></div></div>
 <div class="ttc" id="_multi_vision_8h_html"><div class="ttname"><a href="_multi_vision_8h.html">MultiVision.h</a></div></div>
+<div class="ttc" id="_vector3_d_8h_html"><div class="ttname"><a href="_vector3_d_8h.html">Vector3D.h</a></div></div>
 <div class="ttc" id="_f_s_m_state_8h_html"><div class="ttname"><a href="_f_s_m_state_8h.html">FSMState.h</a></div></div>
 <div class="ttc" id="_controller_8h_html"><div class="ttname"><a href="_controller_8h.html">Controller.h</a></div></div>
 <div class="ttc" id="_octocanum_drive_8h_html"><div class="ttname"><a href="_octocanum_drive_8h.html">OctocanumDrive.h</a></div></div>
+<div class="ttc" id="_logger_8h_html"><div class="ttname"><a href="_logger_8h.html">Logger.h</a></div></div>
 <div class="ttc" id="_mecanum_drive_8h_html"><div class="ttname"><a href="_mecanum_drive_8h.html">MecanumDrive.h</a></div></div>
 <div class="ttc" id="_simple_pneumatic_8h_html"><div class="ttname"><a href="_simple_pneumatic_8h.html">SimplePneumatic.h</a></div></div>
 <div class="ttc" id="_f_s_m_transition_8h_html"><div class="ttname"><a href="_f_s_m_transition_8h.html">FSMTransition.h</a></div></div>
@@ -153,15 +154,15 @@ $(document).ready(function(){initNavTree('_a_d_b_lib_8h_source.html','');});
 <div class="ttc" id="_equation_8h_html"><div class="ttname"><a href="_equation_8h.html">Equation.h</a></div></div>
 <div class="ttc" id="_traction_drive_8h_html"><div class="ttname"><a href="_traction_drive_8h.html">TractionDrive.h</a></div></div>
 <div class="ttc" id="_camera_8h_html"><div class="ttname"><a href="_camera_8h.html">Camera.h</a></div></div>
-<div class="ttc" id="_m_p_u6050_8h_html"><div class="ttname"><a href="_m_p_u6050_8h.html">MPU6050.h</a></div></div>
 <div class="ttc" id="_drivebase_8h_html"><div class="ttname"><a href="_drivebase_8h.html">Drivebase.h</a></div></div>
+<div class="ttc" id="_simple_p_i_d_8h_html"><div class="ttname"><a href="_simple_p_i_d_8h.html">SimplePID.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="_a_d_b_lib_8h.html">ADBLib.h</a></li>
-    <li class="footer">Generated on Tue Jan 5 2016 07:04:50 for ADBLib by
+    <li class="footer">Generated on Tue Feb 16 2016 19:39:34 for ADBLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

@@ -1,0 +1,7 @@
+<map id="ADBLib::Matrix::getValue" name="ADBLib::Matrix::getValue">
+<area shape="rect" id="node2" href="$class_a_d_b_lib_1_1_matrix.html#acce68eb20c353b88e9f8ad42a75952a4" title="Standard matrix addition. " alt="" coords="233,5,407,32"/>
+<area shape="rect" id="node3" href="$class_a_d_b_lib_1_1_matrix.html#a0c155063899fd2a3fe5f58f584a2500b" title="Standard matrix subtraction. " alt="" coords="235,56,405,83"/>
+<area shape="rect" id="node4" href="$class_a_d_b_lib_1_1_matrix.html#adde9259bbd64c22bd155ab74125ae3d8" title="Standard matrix multiplication. " alt="" coords="235,107,405,133"/>
+<area shape="rect" id="node5" href="$namespace_a_d_b_lib.html#ad102b9a62525635322155874763c68f7" title="Debugging overload for output to console. " alt="" coords="251,157,389,184"/>
+<area shape="rect" id="node6" href="$class_a_d_b_lib_1_1_vector3_d.html#a83a75483d736e240ffcabc1a16162cd5" title="Sets the components of this vector based on a 3x1 matrix. " alt="" coords="224,208,416,235"/>
+</map>
