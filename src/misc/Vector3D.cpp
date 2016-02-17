@@ -161,6 +161,11 @@ namespace ADBLib
         return (xComp * vec.xComp) + (yComp * vec.yComp) + (zComp * vec.zComp);
     }
 
+    Vector3D Vector3D::operator*(const double& num) const
+    {
+    	return Vector3D(num * xComp, num * yComp, num * zComp);
+    }
+
     /**
      * @brief Vector cross product.
      * @return Resulting vector of vector cross product.

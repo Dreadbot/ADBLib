@@ -27,6 +27,7 @@ namespace ADBLib
         Vector3D operator+(const Vector3D& vec) const;
         Vector3D operator-(const Vector3D& vec) const;
         double operator*(const Vector3D& vec) const;
+        Vector3D operator*(const double& num) const;
         Vector3D operator%(const Vector3D& vec) const;
 
         void setX(double newX);

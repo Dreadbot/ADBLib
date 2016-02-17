@@ -6,6 +6,9 @@
 #include "ai/FSMState.h"
 #include "ai/FSMTransition.h"
 
+//Control
+#include "control/SimplePID.h"
+
 //Drivebase
 #include "drivebase/Drivebase.h"
 #include "drivebase/MecanumDrive.h"
@@ -17,11 +20,9 @@
 #include "input/Camera.h"
 #include "input/Controller.h"
 #include "input/MultiVision.h"
-#include "input/MPU6050.h"
 
 //Output
 #include "output/SimplePneumatic.h"
-#include "output/PIDMotor.h"
 
 //Misc
 #include "misc/Equation.h"
