@@ -20,6 +20,7 @@
 #include "input/Camera.h"
 #include "input/Controller.h"
 #include "input/MultiVision.h"
+#include "input/AHRS.h"
 
 //Output
 #include "output/SimplePneumatic.h"
