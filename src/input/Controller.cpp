@@ -127,7 +127,6 @@ namespace ADBLib
 
 				if (control.attribute("type").as_string() == string("button"))
 				{
-					Logger::log("Control is of type button", "sysLog");
 					newCtrl.type = ctrlCfg::BUTTON;
 					newCtrl.inverse = control.child("inverse").attribute("value").as_bool();
 					newCtrl.btn.cooldown = control.child("cooldown").attribute("value").as_double();
@@ -137,7 +136,6 @@ namespace ADBLib
 				}
 				else
 				{
-					Logger::log("Control is of type joystick", "sysLog");
 					newCtrl.type = ctrlCfg::JOYSTICK;
 					newCtrl.jys.maxVal = control.child("maxInput").attribute("value").as_double();
 					newCtrl.jys.minVal = control.child("minInput").attribute("value").as_double();
@@ -199,24 +197,23 @@ namespace ADBLib
 			bool ret = false;
 			if (control.btn.toggle)
 			{
-				//Toggles
 				if (joystick->GetRawButton(control.id) && control.btn.cooldownTimer->Get() >= control.btn.cooldown)
+				{
+					control.btn.cooldownTimer->Stop();
+					control.btn.cooldownTimer->Reset();
+					control.btn.cooldownTimer->Start();
 					*control.btn.on = !*control.btn.on;
+				}
 				ret = *control.btn.on;
 			}
-			else
-			{
-				//Non-toggle, still needs cooldown
-				if (joystick->GetRawButton(control.id) && control.btn.cooldownTimer->Get() >= control.btn.cooldown)
-					ret = true;
-			}
-
-			if (control.btn.cooldownTimer->Get() >= control.btn.cooldown)
-			{ //Reset cooldown timer if its time is too high.
+			else if (joystick->GetRawButton(control.id) && control.btn.cooldownTimer->Get() >= control.btn.cooldown)
+			{//Non-toggle, still needs cooldown
 				control.btn.cooldownTimer->Stop();
 				control.btn.cooldownTimer->Reset(); //All of these function calls may not be needed, but screw timers.
 				control.btn.cooldownTimer->Start();
+				ret = true;
 			}
+
 			return control.inverse ? !ret : ret;
 		}
 		else
