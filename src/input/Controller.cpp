@@ -222,6 +222,8 @@ namespace ADBLib
 		else
 		{ //It's a joystick
 			double value = joystick->GetRawAxis(control.id);
+			if (fabs(value) <= control.jys.deadzone)
+				return 0;
 			double slope = (control.jys.maxVal - control.jys.minVal) / 2.0;
 			return (slope * value) - slope + control.jys.maxVal;
 
