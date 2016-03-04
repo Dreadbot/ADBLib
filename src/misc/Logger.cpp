@@ -13,7 +13,7 @@ namespace ADBLib
 	/**
 	 * @brief Constructor for log.
 	 * @param newName the name of the log as referred to when grabbed by Logger.
-	 * @param newFileName The filename for the log file. Do NOT append any file extension, it does it for you.
+	 * @param newFileName The filename for the log file.
 	 * @note If on a linux-based system (such as a roboRIO), you need to add "/" to the beginning of the filename.
 	 */
     Log::Log(string newName, string newFilename)
@@ -75,6 +75,7 @@ namespace ADBLib
         file.open(filename);
         for (auto iter = logBuffer.begin(); iter != logBuffer.end(); iter++)
             file << *iter << endl;
+        file.close();
     }
 
     unordered_map<string, Log> Logger::logFiles;
@@ -88,15 +89,12 @@ namespace ADBLib
      * @param message The message to log.
      * @param flag The flag of the message.
      * @param name The name of the log to log to.
+     * @note If the log does not exist, it will be created for you as [name].txt under the root directory.
      */
     void Logger::log(string message, string name, logFlag flag)
     {
     	if (logFiles.count(name) == 0)
-    	{
-    		//No log file exist
-    		Log newLog(name, "/" + name + ".txt");
-    		logFiles[name] = newLog;
-    	}
+    		newLog(name, "/" + name + ".txt");
     	logFiles[name].log(message, flag);
     }
 
