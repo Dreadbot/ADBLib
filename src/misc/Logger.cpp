@@ -72,7 +72,7 @@ namespace ADBLib
     {
         //TODO: Have this operate in a separate thread (for efficiency)
         ofstream file;
-        file.open(filename, ofstream::out | ofstream::app);
+        file.open(filename);
         for (auto iter = logBuffer.begin(); iter != logBuffer.end(); iter++)
             file << *iter << endl;
         file.close();
