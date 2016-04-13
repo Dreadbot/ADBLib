@@ -26,14 +26,14 @@ namespace ADBLib
 		IMAQdxError imaqError = IMAQdxOpenCamera(name.c_str(), IMAQdxCameraControlModeController, &camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::log(name + " IMAQdxOpenCamera error - " + std::to_string((long)imaqError), "sysLog", error);
+			Logger::log(name + " IMAQdxOpenCamera error - " + std::to_string((long)imaqError), "robolog", error);
 			return false;
 		}
 
 		imaqError = IMAQdxConfigureGrab(camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::log(name + " IMAQdxConfigureGrab error - " + std::to_string((long)imaqError), "sysLog", error);
+			Logger::log(name + " IMAQdxConfigureGrab error - " + std::to_string((long)imaqError), "robolog", error);
 			return false;
 		}
 		IMAQdxStartAcquisition(camSession);
@@ -55,7 +55,7 @@ namespace ADBLib
 		IMAQdxError imaqError = IMAQdxCloseCamera(camSession);
 		if (imaqError != IMAQdxErrorSuccess)
 		{
-			Logger::log(name + " IMAQdxCloseCamera error - " + std::to_string((long)imaqError), "sysLog", error);
+			Logger::log(name + " IMAQdxCloseCamera error - " + std::to_string((long)imaqError), "robolog", error);
 			return false;
 		}
 		enabled = false;

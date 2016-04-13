@@ -112,22 +112,22 @@ namespace ADBLib
 	{
 		pugi::xml_document doc;
 		pugi::xml_parse_result result = doc.load_file(filename.c_str());
-		Logger::log(string("XML Load Result: ") + result.description(), "sysLog");
+		Logger::log(string("XML Load Result: ") + result.description(), "robolog");
 
 		for (pugi::xml_node profile: doc.child("ControlConfig").children("profile"))
 		{ //Loop through all profiles
 			unordered_map<string, ctrlCfg> profileSet;
-			Logger::log(string("Found profile ") + profile.attribute("name").as_string(), "sysLog");
+			Logger::log(string("Found profile ") + profile.attribute("name").as_string(), "robolog");
 
 			for (auto control = profile.child("control"); control; control = control.next_sibling())
 			{ //Loop through all controls
 				ctrlCfg newCtrl;
 				newCtrl.id = control.attribute("id").as_int();
-				Logger::log(string("Found control ") + control.attribute("name").as_string(), "sysLog");
+				Logger::log(string("Found control ") + control.attribute("name").as_string(), "robolog");
 
 				if (control.attribute("type").as_string() == string("button"))
 				{
-					Logger::log("Control is of type button", "sysLog");
+					Logger::log("Control is of type button", "robolog");
 					newCtrl.type = ctrlCfg::BUTTON;
 					newCtrl.inverse = control.child("inverse").attribute("value").as_bool();
 					newCtrl.btn.cooldown = control.child("cooldown").attribute("value").as_double();
@@ -137,7 +137,7 @@ namespace ADBLib
 				}
 				else
 				{
-					Logger::log("Control is of type joystick", "sysLog");
+					Logger::log("Control is of type joystick", "robolog");
 					newCtrl.type = ctrlCfg::JOYSTICK;
 					newCtrl.jys.maxVal = control.child("maxInput").attribute("value").as_double();
 					newCtrl.jys.minVal = control.child("minInput").attribute("value").as_double();
@@ -148,8 +148,8 @@ namespace ADBLib
 					}
 					catch (const parse_error &ex)
 					{
-						Logger::log(string("Failed to parse equation ' ") + control.child("equation").attribute("value").as_string() + string(": ") + ex.what(), string("sysLog"), error);
-						Logger::log("Defaulting to equation y=x", "sysLog", error);
+						Logger::log(string("Failed to parse equation ' ") + control.child("equation").attribute("value").as_string() + string(": ") + ex.what(), string("robolog"), error);
+						Logger::log("Defaulting to equation y=x", "robolog", error);
 						newCtrl.jys.equ.parse("x");
 					}
 				}
@@ -159,12 +159,12 @@ namespace ADBLib
 
 			if (profile.attribute("active").as_bool()) //Automatically switch to default active profiles
 			{
-				Logger::log(string("Switching to active profile ") + profile.attribute("name").as_string(), "sysLog");
+				Logger::log(string("Switching to active profile ") + profile.attribute("name").as_string(), "robolog");
 				switchProfile(profile.attribute("name").as_string());
 			}
 
 		}
-		Logger::log("Finished parsing config file", "sysLog");
+		Logger::log("Finished parsing config file", "robolog");
 	}
 
 	/**
@@ -176,7 +176,7 @@ namespace ADBLib
 		if (profiles.count(profileName) != 0)
 			currentProfile = profileName;
 		else
-			Logger::log("Couldn't switch to profile - it doesn't exist!", "sysLog", error);
+			Logger::log("Couldn't switch to profile - it doesn't exist!", "robolog", error);
 	}
 
 	/**
@@ -189,7 +189,7 @@ namespace ADBLib
 	{
 		if (profiles[currentProfile].count(name) == 0)
 		{
-			Logger::log("Could not find control " + name, "sysLog", error);
+			Logger::log("Could not find control " + name, "robolog", error);
 			return 0; //There is no control by this name!
 		}
 			
