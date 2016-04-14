@@ -72,10 +72,11 @@ namespace ADBLib
     {
         //TODO: Have this operate in a separate thread (for efficiency)
         ofstream file;
-        file.open(filename);
+        file.open(filename, ofstream::out | ofstream::app);
         for (auto iter = logBuffer.begin(); iter != logBuffer.end(); iter++)
             file << *iter << endl;
         file.close();
+        logBuffer.clear();
     }
 
     unordered_map<string, Log> Logger::logFiles;
