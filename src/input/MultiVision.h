@@ -12,14 +12,14 @@ namespace ADBLib
 	 */
 	class MultiVision
 	{
-	public:
-		MultiVision();
-		bool switchCamera(string camName);
-		void postImage();
-		Image* getCurrentImage();
-		Camera* getCamera(string camName);
-	protected:
-		unordered_map<string, Camera*> cameras;
-		Camera* current;
+		public:
+			MultiVision();
+			bool switchCamera(string camName);
+			void postImage();
+			Image* getCurrentImage();
+			Camera* getCamera(string camName);
+		protected:
+			unordered_map<string, Camera*> cameras;
+			Camera* current;
 	};
 }

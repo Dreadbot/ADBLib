@@ -20,8 +20,7 @@ namespace ADBLib
 			SimplePneumatic* pFrontLeft,
 			SimplePneumatic* pFrontRight,
 			SimplePneumatic* pBackRight,
-			SimplePneumatic* pBackLeft) : Drivebase(
-					mFrontLeft, mFrontRight,mBackRight,mBackLeft)
+			SimplePneumatic* pBackLeft) : Drivebase(mFrontLeft, mFrontRight,mBackRight,mBackLeft)
 	{
 		mode = mecanum;
 		solenoids[frontLeft]	= pFrontLeft;
@@ -52,14 +51,10 @@ namespace ADBLib
 	{
 		if (mode == mecanum)
 		{
-			speeds[frontLeft] = x + y + r;
+			speeds[frontLeft] = (-x + y + r);
 			speeds[frontRight] = -x + y - r;
 			speeds[backRight] = x + y - r;
-			speeds[backLeft] = -x + y + r;
-
-			speeds[frontLeft] = -speeds[frontLeft];
-			speeds[backLeft] = -speeds[backLeft];
-
+			speeds[backLeft] = -(-x + y + r);
 			normSpeeds();
 
 			for (int i = 0; i < 4; i++)
@@ -73,12 +68,10 @@ namespace ADBLib
 		}
 		if (mode == traction)
 		{
-
 			speeds[frontLeft] = y + r;
 			speeds[frontRight] = y - r;
 			speeds[backRight] = -(y - r);
 			speeds[backLeft] = -(y + r);
-
 			normSpeeds();
 
 			for (int i = 0; i < 4; ++i)
@@ -109,3 +102,4 @@ namespace ADBLib
 		return mode;
 	}
 }
+

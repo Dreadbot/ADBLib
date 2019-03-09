@@ -13,23 +13,23 @@ namespace ADBLib
 	 */
 	class OctocanumDrive : public Drivebase
 	{
-	public:
-		enum driveMode {mecanum, traction};
+		public:
+			enum driveMode {mecanum, traction};
 
-		OctocanumDrive(SpeedController* mFrontLeft,
-				SpeedController* mFrontRight,
-				SpeedController* mBackRight,
-				SpeedController* mBackLeft,
-				SimplePneumatic* pFrontLeft,
-				SimplePneumatic* pFrontRight,
-				SimplePneumatic* pBackRight,
-				SimplePneumatic* pBackLeft);
-		~OctocanumDrive();
-		void drive(float x = 0.0, float y = 0.0, float r = 0.0);
-		void switchMode(driveMode newMode);
-		driveMode getMode();
-	protected:
-		SimplePneumatic* solenoids[4];
-		driveMode mode;
+			OctocanumDrive(SpeedController* mFrontLeft,
+					SpeedController* mFrontRight,
+					SpeedController* mBackRight,
+					SpeedController* mBackLeft,
+					SimplePneumatic* pFrontLeft,
+					SimplePneumatic* pFrontRight,
+					SimplePneumatic* pBackRight,
+					SimplePneumatic* pBackLeft);
+			~OctocanumDrive();
+			void drive(float x = 0.0, float y = 0.0, float r = 0.0);
+			void switchMode(driveMode newMode);
+			driveMode getMode();
+		protected:
+			SimplePneumatic* solenoids[4];
+			driveMode mode;
 	};
 }

@@ -11,16 +11,15 @@ namespace ADBLib
 	 */
 	void TractionDrive::drive(float x, float y, float r)
 	{
-
 		speeds[frontLeft] = y + r;
 		speeds[frontRight] = y - r;
 		speeds[backRight] = -(y - r);
 		speeds[backLeft] = -(y + r);
-
 		normSpeeds();
 
-		for (int i = 0; i < 4; ++i)
+		for (int i = 0; i < 4; ++i) {
 			if (motors[i] != nullptr)
 				motors[i]->Set(speeds[i]);
+		}
 	}
 }

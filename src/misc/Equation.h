@@ -22,26 +22,26 @@ namespace ADBLib
 	 */
 	class Equation
 	{
-	public:
-		Equation() {}
-		Equation(string newEqu);
-		void parse(string newEqu);
-		long double evaluate(long double value);
-	protected:
-		inline tokenType getTType(string::iterator iter) const;
-		inline operations getOType(string::iterator iter) const;
-		long double getValue(string::iterator& iter, string& equation) const;
+		public:
+			Equation() {}
+			Equation(string newEqu);
+			void parse(string newEqu);
+			long double evaluate(long double value);
+		protected:
+			inline tokenType getTType(string::iterator iter) const;
+			inline operations getOType(string::iterator iter) const;
+			long double getValue(string::iterator& iter, string& equation) const;
 
-		queue<class Token> outputQueue;
+			queue<class Token> outputQueue;
 	};
 
 	class Token
 	{
-	public:
-		operations operation;
-		tokenType type;
-		long double value;
-		Token evaluate(Token arg1, Token arg2, long double variable);
+		public:
+			operations operation;
+			tokenType type;
+			long double value;
+			Token evaluate(Token arg1, Token arg2, long double variable);
 	};
 
 	/** Exception indicating issue during parsing of the equation.
@@ -49,7 +49,7 @@ namespace ADBLib
 	 */
 	class parse_error: public std::runtime_error
 	{
-	public:
-		parse_error(string const& msg) : std::runtime_error(msg) {}
+		public:
+			parse_error(string const& msg) : std::runtime_error(msg) {}
 	};
 }

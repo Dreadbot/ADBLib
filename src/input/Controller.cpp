@@ -66,7 +66,7 @@ namespace ADBLib
 	void Controller::setRumble(Joystick::RumbleType side, float intensity)
 	{
 		if (joystick != nullptr)
-		joystick->SetRumble(side, intensity);
+			joystick->SetRumble(side, intensity);
 	}
 
 	/**
@@ -115,12 +115,14 @@ namespace ADBLib
 		Logger::log(string("XML Load Result: ") + result.description(), "sysLog");
 
 		for (pugi::xml_node profile: doc.child("ControlConfig").children("profile"))
-		{ //Loop through all profiles
+		{
+			//Loop through all profiles
 			unordered_map<string, ctrlCfg> profileSet;
 			Logger::log(string("Found profile ") + profile.attribute("name").as_string(), "sysLog");
 
 			for (auto control = profile.child("control"); control; control = control.next_sibling())
-			{ //Loop through all controls
+			{
+				//Loop through all controls
 				ctrlCfg newCtrl;
 				newCtrl.id = control.attribute("id").as_int();
 				Logger::log(string("Found control ") + control.attribute("name").as_string(), "sysLog");
@@ -192,7 +194,7 @@ namespace ADBLib
 			Logger::log("Could not find control " + name, "sysLog", error);
 			return 0; //There is no control by this name!
 		}
-			
+
 		ctrlCfg control = profiles[currentProfile][name];
 		if (control.type == ctrlCfg::BUTTON)
 		{

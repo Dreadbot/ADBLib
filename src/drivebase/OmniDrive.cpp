@@ -14,8 +14,7 @@ namespace ADBLib
 			SpeedController* mFrontRight,
 			SpeedController* mBackRight,
 			SpeedController* mBackLeft,
-			SpeedController* newTransMotor) : Drivebase(mFrontLeft,
-					mFrontRight, mBackRight, mBackLeft)
+			SpeedController* newTransMotor) : Drivebase(mFrontLeft,mFrontRight, mBackRight, mBackLeft)
 	{
 		transMotor = newTransMotor;
 	}
@@ -40,24 +39,23 @@ namespace ADBLib
 	}
 
 	/**
-	* @brief Uses omni wheels to drive in combination with a translational omni wheel. Capable of full translation and rotation.
-	* @param x Strafing. Negative is left, positive is right. From -1 to 1.
-	* @param y Forward/Reverse. Positive is forward, negative is reverse. From 1 to -1.
-	* @param r Rotation. Positive is clockwise, negative is counterclockwise. From 1 to -1.
-	*/
+	 * @brief Uses omni wheels to drive in combination with a translational omni wheel. Capable of full translation and rotation.
+	 * @param x Strafing. Negative is left, positive is right. From -1 to 1.
+	 * @param y Forward/Reverse. Positive is forward, negative is reverse. From 1 to -1.
+	 * @param r Rotation. Positive is clockwise, negative is counterclockwise. From 1 to -1.
+	 */
 	void OmniDrive::drive(float x, float y, float r)
 	{
-
 		speeds[frontLeft] = y + r;
 		speeds[frontRight] = y - r;
 		speeds[backRight] = -(y - r);
 		speeds[backLeft] = -(y + r);
-
 		normSpeeds();
 
-		for (int i = 0; i < 4; ++i)
+		for (int i = 0; i < 4; ++i) {
 			if (motors[i] != nullptr)
 				motors[i]->Set(speeds[i]);
+		}
 
 		if (transMotor != nullptr)
 			transMotor->Set(x);

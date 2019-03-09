@@ -18,7 +18,7 @@ using std::stringstream;
 //Note that as the roboRIO is Linux-based (or something really close) a "/" needs to be at the beginning of the filename in order to log anything.
 namespace ADBLib
 {
-	#define MAX_LOGBUFFER_ENTRIES 10 //How many entries the log buffer stores before outputting all entries to a file. Change this to 0 for unstable (i.e. can crash) environments.
+#define MAX_LOGBUFFER_ENTRIES 10 //How many entries the log buffer stores before outputting all entries to a file. Change this to 0 for unstable (i.e. can crash) environments.
 
 	enum logFlag {error, hydsys, info, resource}; //!< All possible flags that could be used. Default is hydsys.
 
@@ -27,16 +27,16 @@ namespace ADBLib
 	 */
 	class Log
 	{
-	public:
-		Log(string newName, string newFilename);
-		Log() {} //!< This is never used. It has something to do with tuples. DO NOT USE THIS CONSTRUCTOR.
-		void log(string message, logFlag flag = info);
-		void flushBuffer();
-	private:
-		vector<string> logBuffer;
-		string filename;
-		string name;
-		friend class Logger;
+		public:
+			Log(string newName, string newFilename);
+			Log() {} //!< This is never used. It has something to do with tuples. DO NOT USE THIS CONSTRUCTOR.
+			void log(string message, logFlag flag = info);
+			void flushBuffer();
+		private:
+			vector<string> logBuffer;
+			string filename;
+			string name;
+			friend class Logger;
 	};
 
 	/**
@@ -44,13 +44,13 @@ namespace ADBLib
 	 */
 	class Logger
 	{
-	public:
-		Logger();
-		static void log(string message, string name, logFlag flag = info);
-		static void newLog(string name, string filename);
-		static Log* getLog(string name);
-		static void flushLogBuffers();
-	private:
-		static unordered_map<string, Log> logFiles;
+		public:
+			Logger();
+			static void log(string message, string name, logFlag flag = info);
+			static void newLog(string name, string filename);
+			static Log* getLog(string name);
+			static void flushLogBuffers();
+		private:
+			static unordered_map<string, Log> logFiles;
 	};
 };
