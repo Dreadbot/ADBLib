@@ -51,10 +51,10 @@ namespace ADBLib
 	{
 		if (mode == mecanum)
 		{
-			speeds[frontLeft] = (-x + y + r);
+			speeds[frontLeft] = x + y + r;
 			speeds[frontRight] = -x + y - r;
 			speeds[backRight] = x + y - r;
-			speeds[backLeft] = -(-x + y + r);
+			speeds[backLeft] = -x + y + r;
 			normSpeeds();
 
 			for (int i = 0; i < 4; i++)
