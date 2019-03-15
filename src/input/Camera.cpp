@@ -36,6 +36,7 @@ namespace ADBLib
 			Logger::log(name + " IMAQdxConfigureGrab error - " + std::to_string((long)imaqError), "sysLog", error);
 			return false;
 		}
+
 		IMAQdxStartAcquisition(camSession);
 		enabled = true;
 		return true;

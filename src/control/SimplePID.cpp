@@ -76,11 +76,9 @@ namespace ADBLib
 						m_error = m_error + m_maximumInput - m_minimumInput;
 				}
 			}
-			if (((m_totalError + m_error) * m_I < m_maximumOutput)
-					&& ((m_totalError + m_error) * m_I > m_minimumOutput))
+			if (((m_totalError + m_error) * m_I < m_maximumOutput) && ((m_totalError + m_error) * m_I > m_minimumOutput))
 				m_totalError += m_error;
-			m_result = m_P * m_error + m_I * m_totalError
-					+ m_D * (m_error - m_prevError);
+			m_result = m_P * m_error + m_I * m_totalError + m_D * (m_error - m_prevError);
 			m_prevError = m_error;
 			if (m_result > m_maximumOutput)
 				m_result = m_maximumOutput;

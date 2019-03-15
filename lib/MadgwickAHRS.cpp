@@ -119,7 +119,7 @@ namespace ADBLib
 		q2 += qDot3 * (1.0f / sampleFreq);
 		q3 += qDot4 * (1.0f / sampleFreq);
 
-			// Normalise quaternion
+		// Normalise quaternion
 		recipNorm = invSqrt(q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3);
 		q0 *= recipNorm;
 		q1 *= recipNorm;
@@ -217,10 +217,10 @@ float invSqrt(float x)
 	return 1.f / sqrt(x);
 
 	/*float halfx = 0.5f * x;
-	float y = x;
-	long i = *(long*)&y;
-	i = 0x5f3759df - (i>>1);
-	y = *(float*)&i;
-	y = y * (1.5f - (halfx * y * y));
-	return y;*/
+	  float y = x;
+	  long i = *(long*)&y;
+	  i = 0x5f3759df - (i>>1);
+	  y = *(float*)&i;
+	  y = y * (1.5f - (halfx * y * y));
+	  return y;*/
 }

@@ -20,9 +20,9 @@ namespace ADBLib
 	{
 		if (cameras.count(camName) == 0)
 			cameras[camName] = new Camera(camName);
-
 		if (current != nullptr)
 			current->stop();
+
 		current = cameras[camName];
 		return current->start();
 	}

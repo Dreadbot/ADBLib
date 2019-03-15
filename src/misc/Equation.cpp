@@ -183,32 +183,32 @@ namespace ADBLib
 		operations returnval;
 		switch (*iter)
 		{
-		case '(':
-			returnval = LPAREN;
-			break;
-		case ')':
-			returnval = RPAREN;
-			break;
-		case '^':
-			returnval = EXPON;
-			break;
-		case '*':
-			returnval = MULTI;
-			break;
-		case '/':
-			returnval = DIVIS;
-			break;
-		case '+':
-			returnval = ADDIT;
-			break;
-		case '-':
-			returnval = SUBTRA;
-			break;
-		default:
-			string error = "Unidentified operator ('";
-			error = error + *iter + "') found.";
-			throw parse_error(error.c_str());
-			break;
+			case '(':
+				returnval = LPAREN;
+				break;
+			case ')':
+				returnval = RPAREN;
+				break;
+			case '^':
+				returnval = EXPON;
+				break;
+			case '*':
+				returnval = MULTI;
+				break;
+			case '/':
+				returnval = DIVIS;
+				break;
+			case '+':
+				returnval = ADDIT;
+				break;
+			case '-':
+				returnval = SUBTRA;
+				break;
+			default:
+				string error = "Unidentified operator ('";
+				error = error + *iter + "') found.";
+				throw parse_error(error.c_str());
+				break;
 		}
 		return returnval;
 	}
@@ -260,24 +260,24 @@ namespace ADBLib
 		long double value = 0;
 		switch (operation)
 		{
-		case EXPON:
-			value = pow(arg2.value, arg1.value);
-			break;
-		case MULTI:
-			value = arg1.value * arg2.value;
-			break;
-		case DIVIS:
-			value = arg2.value / arg1.value;
-			break;
-		case ADDIT:
-			value = arg1.value + arg2.value;
-			break;
-		case SUBTRA:
-			value = arg2.value - arg1.value;
-			break;
-		default:
-			throw parse_error("Unidentified operator of some kind found in evaluation algorithm! You REALLY screwed up!");
-			break;
+			case EXPON:
+				value = pow(arg2.value, arg1.value);
+				break;
+			case MULTI:
+				value = arg1.value * arg2.value;
+				break;
+			case DIVIS:
+				value = arg2.value / arg1.value;
+				break;
+			case ADDIT:
+				value = arg1.value + arg2.value;
+				break;
+			case SUBTRA:
+				value = arg2.value - arg1.value;
+				break;
+			default:
+				throw parse_error("Unidentified operator of some kind found in evaluation algorithm! You REALLY screwed up!");
+				break;
 		}
 		Token newToken;
 		newToken.type = VALUE;

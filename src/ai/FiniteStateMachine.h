@@ -10,13 +10,13 @@ namespace ADBLib
 {
 	class FiniteStateMachine
 	{
-	public:
-		FiniteStateMachine();
-		virtual void init(FSMTransition* newStateTable, FSMState* initState);
-		virtual void update();
-		virtual ~FiniteStateMachine() {}
-	protected:
-		multimap<FSMState*, FSMTransition> transitions; //Key is the previous state
-		FSMState* currentState;
+		public:
+			FiniteStateMachine();
+			virtual void init(FSMTransition* newStateTable, FSMState* initState);
+			virtual void update();
+			virtual ~FiniteStateMachine() {}
+		protected:
+			multimap<FSMState*, FSMTransition> transitions; //Key is the previous state
+			FSMState* currentState;
 	};
 }

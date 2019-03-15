@@ -62,8 +62,9 @@ namespace ADBLib
 			absSpeeds[i] = fabs(speeds[i]);
 
 		float mag = *std::max_element(absSpeeds, absSpeeds + 4);
-		if (mag > 1.0)
+		if (mag > 1.0) {
 			for (int i = 0; i < 4; ++i)
 				speeds[i] /= mag;
+		}
 	}
 }

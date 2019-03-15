@@ -1,9 +1,9 @@
-#ADBLib
-####(Somewhat) Advanced Dreadbot Library
+# ADBLib
+#### (Somewhat) Advanced Dreadbot Library
 
 The simple and stupid library for making programming FRC robots easier.
 
-##Features
+## Features
 
 * Easy-to-use, fast finite state machines
 * New controller type allows for dynamic loading of controls, allowing drivers to have their own control scheme. This has the effect of eliminating the need for button/axis IDs in the code.
@@ -13,6 +13,6 @@ The simple and stupid library for making programming FRC robots easier.
 * Simplification/abstraction of pneumatics and PID motors
 * Several utility classes for math operations, including an equation class for loading formulas at runtime.
 
-##Documentation
+## Documentation
 Documentation is available in browsable form [here](http://dreadbot.github.io/ADBLib/).
 
